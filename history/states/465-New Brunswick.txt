@@ -1,0 +1,28 @@
+
+state={
+	id=465
+	name="STATE_465"
+
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			4285 = {
+				naval_base = 2
+
+			}
+
+		}
+		add_core_of = USA
+
+	}
+
+	provinces={
+		634 1424 4285 4342 4362 4432 7379 12289 17653 17660 17663 17669 17670 17671 17673 17674 17675 17680 17681 17682 17683 17687 17694 17695 17698 17701 17703 17704 17708 17711 17712 17716 17717 17719 17720 17723 17724 17725
+	}
+	manpower=475020
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

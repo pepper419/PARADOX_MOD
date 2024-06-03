@@ -1,0 +1,31 @@
+
+state={
+	id=771
+	name="STATE_771"
+	resources={
+		chromium=35.000
+		tungsten=8.000
+		precious_metals=24.000
+	}
+
+	history={
+		owner = ZIM
+		add_core_of = ZIM
+		victory_points = {
+			5199 1 
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+
+	}
+
+	provinces={
+		697 1643 1846 3917 5199 5221 7872 10538 10594 10894 10930 12504 12677 13173 14666 14985 14988 15009 15027 15034 15040 15048 15088 15724 15739 15950 16085 16256 16258 16573 16813 16826 16862 16867 
+	}
+	manpower=1380089
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

@@ -1,0 +1,20 @@
+idea_categories = {
+	# ledger can be define for idea > idea slot > idea category
+	# first one overrides the others
+	# multiple ledgers can be defined, in that case will show on all
+	# possible values : army, air, navy, military (shows on all military ledgers), civilian, all (shows up everywhere), hidden (does not show up)
+
+	ROOT_market_and_state = {
+		slot = health_care_system_category
+		slot = education_system
+		slot = pensions_system
+		slot = subsidies_system
+		slot = union_system
+		slot = working_market_system
+		
+		ledger = civilian
+		
+		cost = 150
+		removal_cost = -1
+	}
+}	

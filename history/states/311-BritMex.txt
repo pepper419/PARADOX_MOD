@@ -1,0 +1,30 @@
+
+state={
+	id=311
+	name="STATE_311"
+
+	history={
+		add_core_of = GUA
+		owner = GUA
+		victory_points = {
+			2077 1 
+		}
+		buildings = {
+			infrastructure = 1
+			2077 = {
+				naval_base = 1
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		2077 14555 15823 15827 
+	}
+	manpower=51000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

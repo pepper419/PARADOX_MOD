@@ -1,0 +1,27 @@
+
+state={
+	id=894
+	name="STATE_894"
+	resources={
+		precious_metals=6.000
+	}
+
+	history={
+		owner = HOL
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = SAF
+		add_core_of = HOL
+
+	}
+
+	provinces={
+		3972 9920 10957 10978 12921 15726 15727 15740 16020 
+	}
+	manpower=69300
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

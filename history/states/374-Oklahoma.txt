@@ -1,0 +1,42 @@
+
+state={
+	id=374
+	name="STATE_374"
+	resources={
+		oil=60.000
+		aluminium=20.000
+		cotton=20.000
+		grain=30.000
+		coal=26.000
+	}
+
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			air_base = 2
+
+		}
+		add_core_of = USA
+		victory_points = {
+			1806 1 
+		}
+		1939.1.1 = {
+			buildings = {
+				industrial_complex = 3
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		1618 1806 2043 4919 5103 6803 7762 7904 7945 8025 9822 10702 10798 11743 11802 15945 15946 15949 15951 15953 15954 15956 15958 15960 15963 15964 15965 15966 15967 15968 15969 15970 15971 15972 15973 15974 15975 15976 15977 15978 15979 15980 15981 15982 15983 15984 15985 15986 15987 15988 15989 15990 15991 15992 
+	}
+	manpower=2396039
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

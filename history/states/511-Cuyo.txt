@@ -1,0 +1,36 @@
+
+state={
+	id=511
+	name="STATE_511"
+
+	resources={
+		chromium = 22
+		steel = 38
+		grain = 28
+		meat = 28
+		oil = 30
+	}
+
+	history={
+		owner = MND
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			air_base = 1
+
+		}
+		add_core_of = MND
+		
+		victory_points = {
+			10992 10 
+		}
+	}
+
+	provinces={
+		2215 8215 10992 11021 13591 13595 13598 13601 13602 13603 13606 13608 13611 13612 13613 13615 13618 13620 
+	}
+	manpower=3090274
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

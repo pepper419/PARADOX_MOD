@@ -1,0 +1,23 @@
+
+state={
+	id=740
+	name="STATE_740"
+
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = USA
+
+	}
+
+	provinces={
+		1214 1420 7259 12259 12272 18819 18820 18821 18822 18837 18838 18847 18855 18858 18867 
+	}
+	manpower=259612
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

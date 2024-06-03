@@ -1,0 +1,428 @@
+on_actions = {
+    on_daily = {
+		effect = {
+            ###if the variable NOT exist to be create##
+            every_country = {
+                if = {
+                    limit = {
+                        NOT = {
+                            has_variable = pops_taxes_level
+                            has_variable = industry_taxes_level
+                            has_variable = total_budget_balance
+                            has_variable = total_money_reserves
+                            has_variable = root_inflation_level
+                            has_variable = root_printer
+                        }
+                    }
+
+                    set_variable = { var = pops_taxes_level value = 20 }
+                    set_variable = { var = industry_taxes_level value = 20 }
+                    set_variable = { var = total_budget_balance value = 0 }
+                    set_variable = { var = total_money_reserves value = 0 }
+
+                    set_variable = { var = root_inflation_level value = 0 }
+                    set_variable = { var = root_printer value = 5 }
+
+                    clamp_variable = {
+                        var = root_printer
+                        min = 1
+                        max = 100
+                    }
+                    clamp_variable = {
+                        var = root_debt_confidence
+                        min = 0
+                        max = 100
+                    }
+                }
+                add_dynamic_modifier = {
+                    modifier = dynamic_modifier_ROOT_inflation
+                }
+                ###inflation modifiers###
+                set_variable = { var = ROOT_inflation_modifier value = root_inflation_modifier_final_calc }
+                
+                ###
+            }
+
+            ###
+            
+            ###clear the variable for day###
+
+            clear_variable = total_budget_income
+            clear_variable = total_budget_expenses
+            clear_variable = total_budget_balance
+
+            clear_variable = pops_taxes_income
+			clear_variable = industry_taxes_income
+			clear_variable = common_resource_exported
+
+            clear_variable = naval_industry_expenses
+            clear_variable = arms_industry_expenses
+            clear_variable = military_wage_expenses
+            clear_variable = common_resource_imported
+
+            #clear_variable = root_dolar_price
+
+            ###
+            
+            ###common variable###
+
+            set_variable = { var = var_min_of_pops_taxes value = modifier@modifier_min_of_pops_taxes }
+            set_variable = { var = var_max_of_pops_taxes value = modifier@modifier_max_of_pops_taxes }
+            set_variable = { var = var_min_of_industry_taxes value = modifier@modifier_min_of_industry_taxes }
+            set_variable = { var = var_max_of_industry_taxes value = modifier@modifier_max_of_industry_taxes }
+
+            set_variable = { var = total_population_k value = max_manpower_k }
+            set_variable = { var = total_civ_factories value = num_of_civilian_factories }
+            set_variable = { var = total_army_manpower value = max_available_manpower_k }
+            set_variable = { var = consumer_goods_for_people value = modifier@consumer_goods_factor }
+            set_variable = { var = one_hundred value = 100 }
+
+            ###
+
+            ###inflation modfiers calculation###
+
+            set_temp_variable = { var = ROOT_inflation_modifier_initial_calc_1 value = root_inflation_level }
+            set_temp_variable = { var = ROOT_inflation_modifier_initial_calc_2 value = root_inflation_level }
+            
+            multiply_temp_variable = { var = ROOT_inflation_modifier_initial_calc_2 value = 2 }
+            
+            divide_temp_variable = { var = ROOT_inflation_modifier_initial_calc_1 value = 200 }
+            divide_temp_variable = { var = ROOT_inflation_modifier_initial_calc_2 value = 200 }
+
+            subtract_from_temp_variable = { var = ROOT_inflation_modifier_initial_calc_1 value = ROOT_inflation_modifier_initial_calc_2 }
+
+            set_variable = { var = root_inflation_modifier_final_calc value = ROOT_inflation_modifier_initial_calc_1 }
+            
+            ###
+
+            ###taxes restrictions###
+
+            multiply_variable = { var = var_min_of_pops_taxes value = one_hundred }
+            multiply_variable = { var = var_max_of_pops_taxes value = one_hundred }
+            multiply_variable = { var = var_min_of_industry_taxes value = one_hundred }
+            multiply_variable = { var = var_max_of_industry_taxes value = one_hundred }
+
+            clamp_variable = {
+                var = pops_taxes_level
+                min = var_min_of_pops_taxes
+                max = var_max_of_pops_taxes
+            }
+            clamp_variable = {
+                var = industry_taxes_level
+                min = var_min_of_industry_taxes
+                max = var_max_of_industry_taxes
+            }
+
+            round_variable = pops_taxes_level
+
+            round_variable = industry_taxes_level
+
+            ###
+
+            
+            ###variables for calculate pops taxes###
+
+            set_temp_variable = { var = pops_calc_1 value = total_population_k }
+            set_temp_variable = { var = pops_calc_2 value = total_army_manpower }
+            subtract_from_temp_variable = { var = pops_calc_1 value = pops_calc_2 }
+            set_temp_variable = { var = pops_calc_3 value = pops_calc_1 }
+            multiply_temp_variable = { var = pops_calc_3 value = 0.001 }
+            set_temp_variable = { var = pops_calc_4 value = pops_calc_3 }
+            divide_temp_variable = { var = pops_calc_4 value = one_hundred }
+            multiply_temp_variable = { var = pops_calc_4 value = pops_taxes_level }
+            set_temp_variable = { var = pops_calc_5 value = pops_calc_4 }
+            
+            set_temp_variable = { var = pops_calc_6 value = total_civ_factories }
+            set_temp_variable = { var = pops_calc_7 value = 1000 }
+            multiply_temp_variable = { var = pops_calc_7 value = pops_calc_6 }
+            set_temp_variable = { var = pops_calc_8 value = pops_calc_7 }
+            divide_temp_variable = { var = pops_calc_8 value = total_population_k }
+            set_temp_variable = { var = pops_calc_9 value = pops_calc_8 }
+            multiply_temp_variable = { var = pops_calc_9 value = total_civ_factories }
+
+            multiply_temp_variable = { var = pops_calc_5 value = pops_calc_9 }
+            set_temp_variable = { var = pops_calc_10 value = pops_calc_5 }
+            divide_temp_variable = { var = pops_calc_10 value = 8 }
+            set_temp_variable = { var = pops_calc_11 value = pops_calc_10 }
+            set_temp_variable = { var = pops_calc_12 value = pops_calc_10 }
+
+            multiply_temp_variable = { var = pops_calc_11 value = consumer_goods_for_people }
+            set_temp_variable = { var = pops_calc_13 value = pops_calc_11 }
+            add_to_temp_variable = { var = pops_calc_12 value = pops_calc_13 }
+            set_temp_variable = { var = pops_calc_14 value = pops_calc_12 }
+            
+            set_temp_variable = { var = pops_taxes_calculation value = pops_calc_14 }
+            add_to_temp_variable = { var = pops_taxes_calculation value = 3.0 }
+
+            ###
+
+            ###variables for calculate industry taxes###      
+
+            set_temp_variable = { var = industry_taxes_calc_1 value = total_civ_factories }
+            divide_temp_variable = { var = industry_taxes_calc_1 value = one_hundred }
+            multiply_temp_variable = { var = industry_taxes_calc_1 value = industry_taxes_level }
+            set_temp_variable = { var = industry_taxes_calc_2 value = industry_taxes_calc_1 }
+            set_temp_variable = { var = industry_taxes_calc_3 value = industry_taxes_calc_1 }
+            multiply_temp_variable = { var = industry_taxes_calc_2 value = consumer_goods_for_people }
+            add_to_temp_variable = { var = industry_taxes_calc_3 value = industry_taxes_calc_2 }
+            multiply_temp_variable = { var = industry_taxes_calc_3 value = 8 }
+            set_temp_variable = { var = industry_taxes_calc_4 value = industry_taxes_calc_3 }
+            set_temp_variable = { var = industry_taxes_calc_5 value = industry_taxes_calc_4 }
+
+            multiply_temp_variable = { var = industry_taxes_calc_5 value = modifier@industrial_capacity_factory }
+            add_to_temp_variable = { var = industry_taxes_calc_4 value = industry_taxes_calc_5 }
+
+            set_temp_variable = { var = industry_taxes_calculation value = industry_taxes_calc_4 }
+
+            ###
+
+            ###income taxes of budget###
+            
+            set_variable = { var = pops_taxes_income value = pops_taxes_calculation }
+            set_variable = { var = industry_taxes_income value = industry_taxes_calculation }
+
+            ###
+
+            ###resources exported income###
+
+            set_variable = { var = common_resource_exported value = 0 }
+            add_to_variable = { var = common_resource_exported value = resource_exported@steel }
+            add_to_variable = { var = common_resource_exported value = resource_exported@oil }
+            add_to_variable = { var = common_resource_exported value = resource_exported@aluminium }
+            add_to_variable = { var = common_resource_exported value = resource_exported@rubber }
+            add_to_variable = { var = common_resource_exported value = resource_exported@tungsten }
+            add_to_variable = { var = common_resource_exported value = resource_exported@chromium }
+            
+            add_to_variable = { var = common_resource_exported value = resource_exported@grain }
+            add_to_variable = { var = common_resource_exported value = resource_exported@coal }
+            add_to_variable = { var = common_resource_exported value = resource_exported@wood }
+            
+            divide_variable = { var = common_resource_exported value = 8 }
+
+            ###
+
+            ###variables for calculate other espenses###
+            
+            set_temp_variable = { var = temp_var_arms_factories value = num_of_military_factories }
+            divide_temp_variable = { var = temp_var_arms_factories value = 1 }
+            set_temp_variable = { var = arms_industry_expenses_calculation value = temp_var_arms_factories }
+            
+            set_temp_variable = { var = temp_var_naval_factories value = num_of_naval_factories }
+            divide_temp_variable = { var = temp_var_naval_factories value = 1 }
+            set_temp_variable = { var = naval_industry_expenses_calculation value = temp_var_naval_factories }
+
+            set_temp_variable = { var = temp_var_total_batallions value = num_battalions }
+            divide_temp_variable = { var = temp_var_total_batallions value = 4 }
+            set_temp_variable = { var = military_wage_expenses_calculation value = temp_var_total_batallions }
+
+            ###
+
+            ###other expenses of budget###
+            
+            set_variable = { var = arms_industry_expenses value = arms_industry_expenses_calculation }
+            set_variable = { var = naval_industry_expenses value = naval_industry_expenses_calculation }
+            set_variable = { var = military_wage_expenses value = military_wage_expenses_calculation }
+
+            ###
+
+            ###welfare state expenses of budget###
+            
+            #set_variable = { var = health_care_expenses value = health_care_expenses_calculation }
+            #set_variable = { var = education_expenses value = education_expenses_calculation }
+            #set_variable = { var = pensions_expenses value = pensions_expenses_calculation }
+            #set_variable = { var = subsidies_expenses value = subsidies_expenses_calculation }
+
+            ###
+
+
+            ###resources imported expenses###
+
+            set_variable = { var = common_resource_imported value = 0 }
+            add_to_variable = { var = common_resource_imported value = resource_imported@steel }
+            add_to_variable = { var = common_resource_imported value = resource_imported@oil }
+            add_to_variable = { var = common_resource_imported value = resource_imported@aluminium }
+            add_to_variable = { var = common_resource_imported value = resource_imported@rubber }
+            add_to_variable = { var = common_resource_imported value = resource_imported@tungsten }
+            add_to_variable = { var = common_resource_imported value = resource_imported@chromium }
+			divide_variable = { var = common_resource_imported value = 8 }
+
+            ###
+
+            ###add to budget all income and expenses###
+
+            divide_variable = { var = pops_taxes_income value = 30 }
+            divide_variable = { var = industry_taxes_income value = 30 }
+            divide_variable = { var = common_resource_exported value = 30 }
+
+            divide_variable = { var = arms_industry_expenses value = 30 }
+            divide_variable = { var = naval_industry_expenses value = 30 }
+            divide_variable = { var = military_wage_expenses value = 30 }
+            divide_variable = { var = common_resource_imported value = 30 }
+
+            ###
+
+            ###add to budget all income and expenses###
+
+            add_to_variable = { var = total_budget_income value = pops_taxes_income }
+            add_to_variable = { var = total_budget_income value = industry_taxes_income }
+            add_to_variable = { var = total_budget_income value = common_resource_exported }
+
+            add_to_variable = { var = total_budget_expenses value = naval_industry_expenses }
+            add_to_variable = { var = total_budget_expenses value = arms_industry_expenses }
+            add_to_variable = { var = total_budget_expenses value = military_wage_expenses }
+            add_to_variable = { var = total_budget_expenses value = common_resource_imported }
+
+            add_to_variable = { var = total_budget_balance value = total_budget_income }
+            subtract_from_variable = { var = total_budget_balance value = total_budget_expenses }
+            add_to_variable = { var = total_money_reserves value = total_budget_balance }
+
+            ###
+
+            ###central bank calculates the money to be printed now###
+
+            set_temp_variable = { var = money_printer_calc_1 value = total_budget_income }
+			multiply_temp_variable = { var = money_printer_calc_1 value = 360 }
+			divide_temp_variable = { var = money_printer_calc_1 value = one_hundred }
+			multiply_temp_variable = { var = money_printer_calc_1 value = root_printer }
+			set_variable = { var = money_printer_calc_2 value = money_printer_calc_1 }
+
+            ###
+
+            ###diplomacy variables###
+            
+            set_variable = { var = root_send_money_mount value = money_printer_calc_2 }	
+
+            ###
+
+            ###one part of economy to use for calculate the apreciation and devaluation###
+
+            set_temp_variable = { var = porcentage_of_economy_1 value = total_budget_income }
+            multiply_temp_variable = { var = porcentage_of_economy_1 value = 360 }
+			divide_temp_variable = { var = porcentage_of_economy_1 value = one_hundred }
+			multiply_temp_variable = { var = porcentage_of_economy_1 value = 1 }
+            set_variable = { var = porcentage_of_economy_2 value = porcentage_of_economy_1 }
+
+            ###
+
+            ###multiply the apreciation and depreciation for economy 1%=root_printer###
+
+            set_temp_variable = { var = root_economic_size_calc_1 value = money_printer_calc_2 }
+            #set_temp_variable = { var = root_economic_size_dep_calc_1 value = root_devaluation_points }
+            set_temp_variable = { var = root_economic_size_apr_calc_1 value = root_apreciation_points }
+            #multiply_temp_variable = { var = root_economic_size_dep_calc_1 value = root_economic_size_calc_1 }
+            multiply_temp_variable = { var = root_economic_size_apr_calc_1 value = root_economic_size_calc_1 }
+
+            #add_to_variable = { var = root_devaluation_level value = root_economic_size_dep_calc_1 }
+            add_to_variable = { var = root_apreciation_level value = root_economic_size_apr_calc_1 }
+
+            clear_variable = root_devaluation_points
+            clear_variable = root_apreciation_points
+
+            ###
+
+            ###international exchange rate of dolar, money_printer_calc_2 x [1 + ( ( 1 x apr_usa ) / 100 ) + ( ( 1 x dev_arg ) / 100 )] / [ 1 + ( ( 1 x dev_usa ) / 100 ) + ( ( 1 x apr_arg ) /100 )]###
+           
+            set_temp_variable = { var = exchange_rate_calc_1 value = usa.root_apreciation_level }
+            set_temp_variable = { var = exchange_rate_calc_2 value = usa.root_devaluation_level }
+
+            root_calculate_the_buy_and_sell_of_money = yes
+
+            set_variable = { var = root_buy_dolar_price value = exchange_rate_calc_21 } #buy
+            set_variable = { var = root_sell_dolar_price value = exchange_rate_calc_22 } #sell
+            
+            ###
+
+            ###default money apreciation and devaluation###
+            
+            set_temp_variable = { var = exchange_rate_calc_1 value = root_apreciation_level }
+            set_temp_variable = { var = exchange_rate_calc_2 value = root_devaluation_level }
+
+            root_calculate_the_buy_and_sell_of_money = yes
+
+            set_variable = { var = root_buy_money_price value = exchange_rate_calc_21 } #buy
+            set_variable = { var = root_sell_money_price value = exchange_rate_calc_22 } #sell
+            
+            ###
+
+            ###increment of apreciation or depreciation of money in the world###
+
+            set_variable = { var = root_dep_apr_calculation value = money_printer_calc_2 }
+            
+            ###
+
+            ###diplomatic actions effects about the generate inflation when other country financing to other###
+            
+            # USA --> pasa 1% de su PIB a --> ARG
+
+            ###
+
+            # set_temp_variable = { var = root_apreciation_calc_1 value = root_sell_dolar_price }
+            
+            # set_temp_variable = { var = root_apreciation_calc_2 value = money_printer_calc_2 }
+            # multiply_temp_variable = { var = root_apreciation_calc_2 value = root_printer }
+            # multiply_temp_variable = { var = root_apreciation_calc_2 value = root_root_apreciation_calc_1 }
+            # set_temp_variable = { var = root_apreciation_calc_3 value = root_apreciation_calc_2 }
+
+            # set_variable = { var = root_apreciation_calc_usa value = root_apreciation_calc_3 }
+            
+            ###
+
+            ###modifiers of inflation###
+            #
+            ###
+
+            ###modifiers of taxes###
+            #
+            ###
+
+            
+
+
+
+
+            ### 1 = 1
+            ### if { root_devaluation_level_1 = 20 }
+            ### if { root_devaluation_level_2 = 20 }
+            ### (1 + ((1 x root_devaluation_level_1) / 100)) / (1 + ((1 x root_devaluation_level_2) / 100)) = 1
+
+            ###porcentaje de apreciacion###
+            ### si tengo una moneda d1 con 0% de devaluacion y otra d2 con 0% esta se intercambia por 1 
+            ### si tengo una moneda d1 con 0% de devalucion y otra d2 con 0% de devaluacion y 5% de apreciacion esta se intercambia por {}
+            
+            ### if { root_devaluation_level_1 = 20 }
+            ### if { root_devaluation_level_2 = 20 }
+            ### (1 + ((1 x root_devaluation_level_1) / 100)) / (1 + ((1 x root_devaluation_level_2) / 100)) = 1
+            ### 1 dolar por 20 pesos: formula matematica: [1 + ((1 x 1920-20 ) / 100)] / [1 + ((1 x 0 - 0) / 100)] = 20/1
+            ### que pasa cuando una moneda se aprecia? dep ( i1 / i2 ) = [ apr( i2 / i1 ) / 1 - apr ( i2 / i1 ) ]
+            ### si nuestro dinero vale mas seria 1 intercambio 100
+            ### 1 / ( 100 / 100 ) = 1
+            ### ( 1 / 5 = 1 / 5 ) = 1
+            ### 1 + dev - apr = resultado
+            ### 1 + 0.5 - 5.5 = -4
+            ### 1 + 0 + 5.5 = 6.5
+            ### apr 40% dev 0% 
+            ### cambio A) 1 / 1 = 1
+            ### cambio B) 1.4 / 1 = 1.4
+            ### cambio C) 1 / 1.4 = 0.714
+            ### cambio: dolar 1 = peso 20; 20/1
+            ### cambio: peso 1 = dolar 0.05; 1/20
+            ### variable dolar multicada por la devalucion argentina y la moneda argentina o local se pultiplica por la apreciacion
+            ### [1 + ( ( 1 x apr_usa ) / 100 ) + ( ( 1 x dev_arg ) / 100 )] / [ 1 + ( ( 1 x dev_usa ) / 100 ) + ( ( 1 x apr_arg ) /100 )] = tipo de cambio del pais que compra
+            ### 20/1
+            ### 40/2
+            ### 80/4
+            ### 160/8
+            ### USA apr = 75
+            ### USA dev = 10
+            ### ###
+            ### ARG apr = 60
+            ### ARG dev = 50
+            ### [1 + ( ( 1 x dev_arg ) / 100 )] / [ 1 + ( ( 1 x apr_arg ) /100 )] = tipo de cambio del pais que compra
+            ### 
+
+            ### # 0.3 ---> 1
+            ### # reserva: 1
+            ### # 1 ---> 0.3
+        }
+    }
+}

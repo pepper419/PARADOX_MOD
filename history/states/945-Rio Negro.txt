@@ -1,0 +1,33 @@
+
+state={
+	id=945
+	name="STATE_945"
+
+	resources={
+		wool = 38
+		grain = 16
+		oil = 26
+	}
+
+	history={
+		owner = RNG
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = RNG
+
+		victory_points = {
+			10981 4 
+		}
+
+	}
+
+	provinces={
+		10981 12321 12982 13695 13698 13699 13700 13702 13703 13705 13706 13707 13708 13709 13710 13711 13712 13713 13714 13715 13718 13719 13720 13721 13723 13724 13725 13733 13737 
+	}
+	manpower=783325
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

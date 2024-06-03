@@ -1,0 +1,30 @@
+
+state={
+	id=957
+	name="STATE_957"
+
+	resources={
+		oil = 22
+		steel = 22
+		meat = 16
+		grain = 20
+	}
+
+	history={
+		owner = SLU
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = SLU
+
+	}
+
+	provinces={
+		5152 5219 12970 13604 13609 13610 13614 13616 13617 13619 13622 
+	}
+	manpower=1936739
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

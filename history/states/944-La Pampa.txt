@@ -1,0 +1,33 @@
+
+state={
+	id=944
+	name="STATE_944"
+
+	resources={
+		meat = 24
+		grain = 36
+		oil = 20
+	}
+
+	history={
+		owner = LPM
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = LPM
+
+		victory_points = {
+			12998 4 
+		}
+
+	}
+
+	provinces={
+		2149 7550 10935 12494 12998 13583 13584 13585 13586 13587 13588 13589 13590 13592 13593 13594 13596 13597 13599 13600 13605 13607 
+	}
+	manpower=1632838
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

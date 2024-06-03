@@ -1,0 +1,67 @@
+##################
+root_taxes_control_decisions = {
+	icon = generic_economy
+
+	picture = GFX_decisions_cat_picture_root_taxes_control_decisions
+	
+	allowed = {
+	   always = yes
+	}
+	
+	visible = {
+		always = yes
+	}
+}
+root_central_bank_decisions = {
+	icon = generic_economy
+
+	picture = GFX_decisions_cat_picture_root_central_bank_decisions
+	
+	allowed = {
+	   always = yes
+	}
+	
+	visible = {
+		always = yes
+	}
+}
+root_money_market_decisions = {
+	icon = generic_economy
+
+	picture = GFX_decisions_cat_picture_root_money_market_decisions
+	
+	allowed = {
+	   always = yes
+	}
+	
+	visible = {
+		always = yes
+	}
+}
+root_economic_reforms_decisions = {
+	icon = generic_economy
+
+	picture = GFX_decisions_cat_picture_root_economic_reforms_decisions
+	
+	allowed = {
+	   always = yes
+	}
+	
+	visible = {
+		always = yes
+	}
+}
+
+root_economic_diplomatic_support_decisions = {
+	icon = generic_economy
+
+	picture = GFX_decisions_cat_picture_root_taxes_control_decisions
+	
+	allowed = {
+	   always = yes
+	}
+	
+	visible = {
+		always = yes
+	}
+}

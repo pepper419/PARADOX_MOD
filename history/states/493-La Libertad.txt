@@ -1,0 +1,42 @@
+
+state={
+	id=493
+	name="STATE_493"
+	resources={
+		oil=45.000
+		fruit = 16
+	}
+
+	history={
+		owner = COL
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			air_base = 4
+			12790 = {
+				naval_base = 5
+
+			}
+			8056 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = COL
+		victory_points = {
+			2023 1 
+		}
+		victory_points = {
+			12790 5 
+		}
+
+	}
+
+	provinces={
+		1937 2023 2085 4969 8056 10494 10864 12703 12790 12845 12872 14418 14419 14441 14442 14445 14451 14456 14460 14465 14479 14480 14487 14491 14493 14495 14502 14507 14513 14516 14526 14527 14533 
+	}
+	manpower=2826781
+	buildings_max_level_factor=1.000
+	state_category=large_city
+}

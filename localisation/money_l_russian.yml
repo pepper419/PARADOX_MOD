@@ -1,0 +1,251 @@
+﻿l_russian:
+ #Money Text and events#
+ MONEY_TOOLTIP_BASE:0 "У вас [?dx] миллионов денег\n\nВы получаете §G[?nmn]§! миллионов денег в день \n §GДоходы§! \nНалоги [?tax] миллионов в день\nДоход от гражданских заводов [?cfff] миллионов в день\nТорговля(Экспорт) [?resourceincome] миллионов в день\n Экспорт Резины [?rubber_export] миллионов в день\n Экспорт Хрома [?chromium_export] миллионов в день\n Экспорт Вольфрама [?tungsten_export] миллионов в день\n Экспорт Алюминия [?aluminum_export] миллионов в день\n Экспорт Нефти [?oil_export] миллионов в день\n Экспорт Стали [?steel_export] миллионов в день  \n §RРасходы§! \nВоенные Расходы -[?ms] миллионов в день\nСодержание Военных Заводов -[?nf] миллионов в день\nСодержание Верфей -[?navf] миллионов в день\nНалог Хозяину -[?tax_to_overlord] миллионов в день\nВеликая Депрессия -[?depression] миллионов в день\nСодержание Регионов -[?nc] миллионов в день\nТорговля(Импорт) -[?resourceexpenses] миллионов в день\n Импорт Резины -[?rubber_import] миллионов в день\n Импорт Хрома -[?chromium_import] миллионов в день\n Импорт Вольфрама -[?tungsten_import] миллионов в день\n Импорт Алюминия -[?aluminum_import] миллионов в день\n Импорт Нефти -[?oil_import] миллионов в день\n Импорт Стали -[?steel_import] миллионов в день\nЭкономическая Нестабильность -[?nerfeco] миллионов в день\nРасходы на Оккупацию -[?no] миллионов в день\nРасходы на Госдолг -[?debtexp] миллионов в день\n\nГосдолг [?debttotal] миллионов"
+ MONEY_MAIN:0"[?dx] M"
+ MONEY_DEBT:0"§YУ вас [?debttotal] долгов§!"
+ moneymod.1.t:0"Мировые Запасы Обновились"
+ moneymod.1.d:0"Мировые запасы пополнились новыми товарами.\nОни обновляются каждый год."
+ moneymod.1.a:0"Хорошо"
+ moneymod.2.t:0"Нам не хватает денег"
+ moneymod.2.d:0"Нам не хватает денег.\nМы должны что-то предпринять!"
+ moneymod.2.a:0"Возьмём из казны"
+ moneymod.2.b:0"Возьмём в долг"
+ moneymod.2.c:0"И так сойдёт"
+ moneymod.5.t:0"Банкротство!!"
+ moneymod.5.d:0"Мы не можем выплачивать взятые кредиты!!!.\n Мы можем либо поскупиться экономикой, либо репутацией в мировом сообществе."
+ moneymod.5.a:0"Экономика нестабильна"
+ moneymod.5.b:0"Мы потеряли репутацию"
+ MARK_TOOLTIP:0 "У вас [?dx] миллионов рейхсмарок\n\nВы получаете §G[?nmn]§! миллионов рейхсмарок в день \n §GДоходы§! \nНалоги [?tax] миллионов в день\nДоход от гражданских заводов [?cfff] миллионов в день\nТорговля(Экспорт) [?resourceincome] миллионов в день\n Экспорт Резины [?rubber_export] миллионов в день\n Экспорт Хрома [?chromium_export] миллионов в день\n Экспорт Вольфрама [?tungsten_export] миллионов в день\n Экспорт Алюминия [?aluminum_export] миллионов в день\n Экспорт Нефти [?oil_export] миллионов в день\n Экспорт Стали [?steel_export] миллионов в день  \n §RРасходы§! \nВоенные Расходы -[?ms] миллионов в день\nСодержание Военных Заводов -[?nf] миллионов в день\nСодержание Верфей -[?navf] миллионов в день\nНалог Хозяину -[?tax_to_overlord] миллионов в день\nВеликая Депрессия -[?depression] миллионов в день\nСодержание Регионов -[?nc] миллионов в день\nТорговля(Импорт) -[?resourceexpenses] миллионов в день\n Импорт Резины -[?rubber_import] миллионов в день\n Импорт Хрома -[?chromium_import] миллионов в день\n Импорт Вольфрама -[?tungsten_import] миллионов в день\n Импорт Алюминия -[?aluminum_import] миллионов в день\n Импорт Нефти -[?oil_import] миллионов в день\n Импорт Стали -[?steel_import] миллионов в день\nЭкономическая Нестабильность -[?nerfeco] миллионов в день\nРасходы на Оккупацию -[?no] миллионов в день\nРасходы на Госдолг -[?debtexp] миллионов в день\n\nГосдолг [?debttotal] миллионов"
+ MONEY_TOOLTIP:0 "[Root.GetMoneyTooltip]"
+ RUBLE_TOOLTIP:0 "У вас [?dx] миллионов рублей\n\nВы получаете §G[?nmn]§! миллионов рублей в день \n §GДоходы§! \nНалоги [?tax] миллионов в день\nДоход от гражданских заводов [?cfff] миллионов в день\nТорговля(Экспорт) [?resourceincome] миллионов в день\n Экспорт Резины [?rubber_export] миллионов в день\n Экспорт Хрома [?chromium_export] миллионов в день\n Экспорт Вольфрама [?tungsten_export] миллионов в день\n Экспорт Алюминия [?aluminum_export] миллионов в день\n Экспорт Нефти [?oil_export] миллионов в день\n Экспорт Стали [?steel_export] миллионов в день  \n §RРасходы§! \nВоенные Расходы -[?ms] миллионов в день\nСодержание Военных Заводов -[?nf] миллионов в день\nСодержание Верфей -[?navf] миллионов в день\nНалог Хозяину -[?tax_to_overlord] миллионов в день\nВеликая Депрессия -[?depression] миллионов в день\nСодержание Регионов -[?nc] миллионов в день\nТорговля(Импорт) -[?resourceexpenses] миллионов в день\n Импорт Резины -[?rubber_import] миллионов в день\n Импорт Хрома -[?chromium_import] миллионов в день\n Импорт Вольфрама -[?tungsten_import] миллионов в день\n Импорт Алюминия -[?aluminum_import] миллионов в день\n Импорт Нефти -[?oil_import] миллионов в день\n Импорт Стали -[?steel_import] миллионов в день\nЭкономическая Нестабильность -[?nerfeco] миллионов в день\nРасходы на Оккупацию -[?no] миллионов в день\nРасходы на Госдолг -[?debtexp] миллионов в день\n\nГосдолг [?debttotal] миллионов"
+ DOLAR_TOOLTIP:0 "У вас [?dx] миллионов долларов\n\nВы получаете §G[?nmn]§! миллионов долларов в день \n §GДоходы§! \nНалоги [?tax] миллионов в день\nДоход от гражданских заводов [?cfff] миллионов в день\nТорговля(Экспорт) [?resourceincome] миллионов в день\n Экспорт Резины [?rubber_export] миллионов в день\n Экспорт Хрома [?chromium_export] миллионов в день\n Экспорт Вольфрама [?tungsten_export] миллионов в день\n Экспорт Алюминия [?aluminum_export] миллионов в день\n Экспорт Нефти [?oil_export] миллионов в день\n Экспорт Стали [?steel_export] миллионов в день  \n §RРасходы§! \nВоенные Расходы -[?ms] миллионов в день\nСодержание Военных Заводов -[?nf] миллионов в день\nСодержание Верфей -[?navf] миллионов в день\nНалог Хозяину -[?tax_to_overlord] миллионов в день\nВеликая Депрессия -[?depression] миллионов в день\nСодержание Регионов -[?nc] миллионов в день\nТорговля(Импорт) -[?resourceexpenses] миллионов в день\n Импорт Резины -[?rubber_import] миллионов в день\n Импорт Хрома -[?chromium_import] миллионов в день\n Импорт Вольфрама -[?tungsten_import] миллионов в день\n Импорт Алюминия -[?aluminum_import] миллионов в день\n Импорт Нефти -[?oil_import] миллионов в день\n Импорт Стали -[?steel_import] миллионов в день\nЭкономическая Нестабильность -[?nerfeco] миллионов в день\nРасходы на Оккупацию -[?no] миллионов в день\nРасходы на Госдолг -[?debtexp] миллионов в день\n\nГосдолг [?debttotal] миллионов"
+ STERLING_TOOLTIP:0 "У вас [?dx] миллионов фунтов стерлингов\n\nВы получаете §G[?nmn]§! миллионов фунтов стерлингов в день \n §GДоходы§! \nНалоги [?tax] миллионов в день\nДоход от гражданских заводов [?cfff] миллионов в день\nТорговля(Экспорт) [?resourceincome] миллионов в день\n Экспорт Резины [?rubber_export] миллионов в день\n Экспорт Хрома [?chromium_export] миллионов в день\n Экспорт Вольфрама [?tungsten_export] миллионов в день\n Экспорт Алюминия [?aluminum_export] миллионов в день\n Экспорт Нефти [?oil_export] миллионов в день\n Экспорт Стали [?steel_export] миллионов в день  \n §RРасходы§! \nВоенные Расходы -[?ms] миллионов в день\nСодержание Военных Заводов -[?nf] миллионов в день\nСодержание Верфей -[?navf] миллионов в день\nНалог Хозяину -[?tax_to_overlord] миллионов в день\nВеликая Депрессия -[?depression] миллионов в день\nСодержание Регионов -[?nc] миллионов в день\nТорговля(Импорт) -[?resourceexpenses] миллионов в день\n Импорт Резины -[?rubber_import] миллионов в день\n Импорт Хрома -[?chromium_import] миллионов в день\n Импорт Вольфрама -[?tungsten_import] миллионов в день\n Импорт Алюминия -[?aluminum_import] миллионов в день\n Импорт Нефти -[?oil_import] миллионов в день\n Импорт Стали -[?steel_import] миллионов в день\nЭкономическая Нестабильность -[?nerfeco] миллионов в день\nРасходы на Оккупацию -[?no] миллионов в день\nРасходы на Госдолг -[?debtexp] миллионов в день\n\nГосдолг [?debttotal] миллионов"
+ FRANC_TOOLTIP:0 "У вас [?dx] миллионов франков\n\nВы получаете §G[?nmn]§! миллионов франков в день \n §GДоходы§! \nНалоги [?tax] миллионов в день\nДоход от гражданских заводов [?cfff] миллионов в день\nТорговля(Экспорт) [?resourceincome] миллионов в день\n Экспорт Резины [?rubber_export] миллионов в день\n Экспорт Хрома [?chromium_export] миллионов в день\n Экспорт Вольфрама [?tungsten_export] миллионов в день\n Экспорт Алюминия [?aluminum_export] миллионов в день\n Экспорт Нефти [?oil_export] миллионов в день\n Экспорт Стали [?steel_export] миллионов в день  \n §RРасходы§! \nВоенные Расходы -[?ms] миллионов в день\nСодержание Военных Заводов -[?nf] миллионов в день\nСодержание Верфей -[?navf] миллионов в день\nНалог Хозяину -[?tax_to_overlord] миллионов в день\nВеликая Депрессия -[?depression] миллионов в день\nСодержание Регионов -[?nc] миллионов в день\nТорговля(Импорт) -[?resourceexpenses] миллионов в день\n Импорт Резины -[?rubber_import] миллионов в день\n Импорт Хрома -[?chromium_import] миллионов в день\n Импорт Вольфрама -[?tungsten_import] миллионов в день\n Импорт Алюминия -[?aluminum_import] миллионов в день\n Импорт Нефти -[?oil_import] миллионов в день\n Импорт Стали -[?steel_import] миллионов в день\nЭкономическая Нестабильность -[?nerfeco] миллионов в день\nРасходы на Оккупацию -[?no] миллионов в день\nРасходы на Госдолг -[?debtexp] миллионов в день\n\nГосдолг [?debttotal] миллионов"
+ LIRA_TOOLTIP:0 "У вас [?dx] миллионов лир\n\nВы получаете §G[?nmn]§! миллионов лир в день \n §GДоходы§! \nНалоги [?tax] миллионов в день\nДоход от гражданских заводов [?cfff] миллионов в день\nТорговля(Экспорт) [?resourceincome] миллионов в день\n Экспорт Резины [?rubber_export] миллионов в день\n Экспорт Хрома [?chromium_export] миллионов в день\n Экспорт Вольфрама [?tungsten_export] миллионов в день\n Экспорт Алюминия [?aluminum_export] миллионов в день\n Экспорт Нефти [?oil_export] миллионов в день\n Экспорт Стали [?steel_export] миллионов в день  \n §RРасходы§! \nВоенные Расходы -[?ms] миллионов в день\nСодержание Военных Заводов -[?nf] миллионов в день\nСодержание Верфей -[?navf] миллионов в день\nНалог Хозяину -[?tax_to_overlord] миллионов в день\nВеликая Депрессия -[?depression] миллионов в день\nСодержание Регионов -[?nc] миллионов в день\nТорговля(Импорт) -[?resourceexpenses] миллионов в день\n Импорт Резины -[?rubber_import] миллионов в день\n Импорт Хрома -[?chromium_import] миллионов в день\n Импорт Вольфрама -[?tungsten_import] миллионов в день\n Импорт Алюминия -[?aluminum_import] миллионов в день\n Импорт Нефти -[?oil_import] миллионов в день\n Импорт Стали -[?steel_import] миллионов в день\nЭкономическая Нестабильность -[?nerfeco] миллионов в день\nРасходы на Оккупацию -[?no] миллионов в день\nРасходы на Госдолг -[?debtexp] миллионов в день\n\nГосдолг [?debttotal] миллионов"
+ YEN_TOOLTIP:0 "У вас [?dx] миллионов йен\n\nВы получаете §G[?nmn]§! миллионов йен в день \n §GДоходы§! \nНалоги [?tax] миллионов в день\nДоход от гражданских заводов [?cfff] миллионов в день\nТорговля(Экспорт) [?resourceincome] миллионов в день\n Экспорт Резины [?rubber_export] миллионов в день\n Экспорт Хрома [?chromium_export] миллионов в день\n Экспорт Вольфрама [?tungsten_export] миллионов в день\n Экспорт Алюминия [?aluminum_export] миллионов в день\n Экспорт Нефти [?oil_export] миллионов в день\n Экспорт Стали [?steel_export] миллионов в день  \n §RРасходы§! \nВоенные Расходы -[?ms] миллионов в день\nСодержание Военных Заводов -[?nf] миллионов в день\nСодержание Верфей -[?navf] миллионов в день\nНалог Хозяину -[?tax_to_overlord] миллионов в день\nВеликая Депрессия -[?depression] миллионов в день\nСодержание Регионов -[?nc] миллионов в день\nТорговля(Импорт) -[?resourceexpenses] миллионов в день\n Импорт Резины -[?rubber_import] миллионов в день\n Импорт Хрома -[?chromium_import] миллионов в день\n Импорт Вольфрама -[?tungsten_import] миллионов в день\n Импорт Алюминия -[?aluminum_import] миллионов в день\n Импорт Нефти -[?oil_import] миллионов в день\n Импорт Стали -[?steel_import] миллионов в день\nЭкономическая Нестабильность -[?nerfeco] миллионов в день\nРасходы на Оккупацию -[?no] миллионов в день\nРасходы на Госдолг -[?debtexp] миллионов в день\n\nГосдолг [?debttotal] миллионов"
+
+ #Loan Decision Options#
+ economic_decision:0            "Loan Options!"
+ economic_decision_desc:0       "Current Money $[?dx]. \nWe can request local or international loans to help in our country development but we need to be carefull some decisions will make us dependent to other countries. Force us to choose a side. We can become a mere puppet."
+ humanitary_assistance:0        "The League Of Nations Free Loan."
+ humanitary_assistance_desc:0   "We can request a $100M loan through The League Of Nation once with the purpose of improving our economy."
+ league_ass1:0              "League Of Nations Loan.(10% rate)"
+ league_ass1_desc:0         "The League Of Nation is always willing to give us a loan of $200M with special rates as long as we stay in peace with all nations."
+ league_ass2:0              "League Of Nations Loan.(10% rate)"
+ league_ass2_desc:0         "The League Of Nation is always willing to give us a loan of $200M with special rates as long as we stay in peace with all nations and we need to have a small debt."
+ sov_assistance:0           "One Time Soviet Loan"
+ sov_assistance_desc:0      "USSR is willing to give us a $250M loan for some political settlement in their favor.We must take it to boost our nation comrade."
+ ger_assistance:0           "One Time German Loan"
+ ger_assistance_desc:0      "Germany is willing to give us a $250M Loan for some political settlement in their favor.We must take it to boost our nation my Führer"
+ usa_assistance:0           "One Time USA Loan"
+ usa_assistance_desc:0      "USA is willing to give us a $250M Loan for some political settlement in their favor. Mr president we must take this opportunity"
+ swi_assistance:0           "Switzerland Loan.(20% rate)"
+ swi_assistance_desc:0      "Switzerland is always open to give us loan of $150M even when their rates are high they don´t have any special condition."
+ sau_assistance:0           "Saudi Arabia Loan.(20% rate)"
+ sau_assistance_desc:0      "Saudi Arabia is always willing to give us loan of $100M even when their rates are high they don´t have any special condition."
+ com_assistance:0           "Internal Communism Loan.(15% rate)"
+ com_assistance_desc:0      "As long as there are communism members in our country we can use them as an excuse to request an international loan of $75M but be careful this will influence our contry"
+ fas_assistance:0           "Internal Fascism Loan.(15% rate)"
+ fas_assistance_desc:0      "As long as there are fascism members in our country we can use them as an excuse to request an international loan of $75M but be careful this will influence our contry"
+ dem_assistance:0           "Internal Democratic Loan.(15% rate)"
+ dem_assistance_desc:0      "As long as there are democratic members in our country we can use them as an excuse to request an international loan of $75M but be careful this will influence our contry"
+ neu_assistance:0           "Internal Authoritarian Loan.(15% rate)"
+ neu_assistance_desc:0      "As long as there are authoritarian members in our country we can use them as an excuse to request an international loan of $75M but be careful this will influence our contry"
+ priv_assistance0:0         "Private Loan.(15% rate)"
+ priv_assistance0_desc:0    "Private investors are willing to give us $75M loan with a normal rate but we have to wait some time to do it again."
+ priv_assistance1:0         "Private Loan.(20% rate)"
+ priv_assistance1_desc:0    "Private investors are willing to give us $100M loan with a 20%rate but we can take it again faster."
+ usa_puppet:0               "USA Financial Rescue(Puppet)"
+ usa_puppet_desc:0          "USA is willing to give us $350M to resolve our economic crisis with the condition of becoming their puppet. At this time we don´t have many options!"
+ sov_puppet:0               "Soviet Financial Rescue(Puppet)"
+ sov_puppet_desc:0          "The USSR is willing to give us $350M to save our economy from financial collapse but we need to become in their puppet. Comrade we don´t have many options!"
+ ger_puppet:0               "German Financial Rescue(Puppet)"
+ ger_puppet_desc:0          "Germany is willing to give us a rescue of $350M but we have to join their cause. We have to follow the leader to greatness!"
+ 
+ 
+ #Political Invesment Decisions#
+ political_option:0         "Political Investment"
+ political_option_desc:0    "We can use our political influence to force some foreign investment. It can be used to develop the nation."
+ buy_research_slot:0        "Buy Reseach Slot"
+ buy_militar_slot:0         "Buy Military Factory"
+ buy_civil_slot:0           "Buy Civilian Factory"
+ buy_dockyard_slot:0        "Buy Dockyard"
+ buy_militaryexp:0          "Buy 50 Army Experience"
+ buy_airexp:0               "Buy 50 Airforce Experience"
+ buy_navyexp:0              "Buy 50 Navy Experience"
+ buy_steel2:0               "Buy 2 of Steel Production"
+ buy_oil5:0                 "Buy 5 of Oil Production"
+ 
+ #Old Bonus Menu(not used)#
+ political_menu:0       "Political Menu!"
+ polpower:0             "§HBuy temporary And Permanent Bonus§"
+ Politics_Store:0       "Politics Store!"
+ Bonus_Menu:0           "Bonus Menu"
+ buyreserachslot:       "Buy A Research Slot! 500PP!"
+ rs_value:              "500!"
+ buy_army_factory:      "Buy An Army Factory! 100PP!"
+ af_value:              "100!"
+ buy_civ_factory:       "Buy An Industrial Factory! 100PP!"
+ if_value:              "100!"
+ buy_nav_factory:       "Buy A Dockyard! 50PP!"
+ xp_value:              "50!"
+ buy_army_experience:   "Buy 50 of Army Experience! 50PP!"
+ buy_navy_experience:   "Buy 50 of Navy Experience! 50PP!"
+ buy_air_experience:    "Buy 50 of Air Experience! 50PP!"
+ buy_oil:               "Buy 2 Oil Prod.! 50PP!"
+ buy_steel:             "Buy 2 Steel Prod.! 20PP!"
+ slot.1.t:              "Building Slot Full!"
+ 
+ #Currency Reserves Bonus#
+ normal_money:0          "Currency Reserves"
+ normal_money_desc:0     "Our budget is positive. we should keep an eye on it and seek economic oportunities"
+ low_money:0             "We have a small debt"
+ low_money_desc:0        "Our nation is getting afected for this small crisis. we should start working on it before get worse"
+ bad_money:0             "We have a medium debt"
+ bad_money_desc:0        "Our debt is growing and its effects are started to get notice. we should make new economic policies"
+ very_low_money:0        "We have a high debt"
+ very_low_money_desc:0   "Our nation is deeply affected by this debt. We must do something before a revolution takes place"
+ 
+ 
+ #Currency Reserves Bonus(not used)#
+ boost_money:0          "No Debt"
+ boost_money_desc:0     "We have no debt"
+ very_high_money:0       "High Currency Reserves"
+ very_high_money_desc:0  "We have a great amount of currency in our reserves"
+ medium_money:0          "Medium Currency Reserves"
+ medium_money_desc:0     "Our Reserves are good and helpful"
+
+ 
+ #Ideas Bonus#
+ CB_15:0        "Medium subsidy on Construction Industry"
+ CB_15_desc:0   "We did a medium investment in our construction area to speed up our projects"
+ 
+ CB_30:0        "Heavy Subsidy on Construction Industry"
+ CB_30_desc:0   "We did a big investment in construction industry to accelarate our projects"
+ 
+ IB_10:0        "Researchers Salary Increased"
+ IB_10_desc:0   "We increased the salary of our researchers. they should be more motivated to work"
+ 
+ CB_20:0        "Heavy Investment on Research Centers"
+ CB_20_desc:0   "We have invested in a better equipment to improve the efficiency of researchers"
+ 
+ MB_3:0         "Medium Draft"
+ MB_3_desc:0    "We succesfully implemented a draft system to increase our manpower"
+ 
+ MB_7:0         "Heavy Draft"
+ MB_7_desc:0    "We expanded our automatic draft system to maximize our manpower"
+ 
+ GB_3:0         "Small Investment in Consumer Goods"
+ GB_3_desc:0    "We Subsidy a small part of civilian items.consumer goods factories are good"
+ 
+ GB_5:0         "Medium Invesment in Consumer Goods"
+ GB_5_desc:0    "We Subsidy a consider part of civilian equipment.consumer goods factories are grateful"
+ 
+ MB_10:0        "Small Investment in Mining Production"
+ MB_10_desc:0   "We Subsidy a small part of our mining industry. we need resources"
+ 
+ MB_20:0        "Medium Invesment in Mining Production"
+ MB_20_desc:0   "We Subsidy a big part of our mining industry.We need resource as soon as possible. the economy need it!"
+ 
+ JFB_25:0       "Fast Justification War"
+ JFB_25_desc:0  "We have accelarated our policy and now we can declare war faster"
+ 
+ JFB_60:0       "Faster Justification War"
+ JFB_60_desc:0  "We have removed temporary any all who can stop us to declare war and now we can do it really fast"
+ 
+ #Ideas On Menu#
+ CB15_200_200:0 "Buy 15% Construction Bonus for 200 days for $200M!" 
+ 
+ CB30_400_350:0 "Buy 30% Construction Bonus for 400 days for $350M!"
+ 
+ IB10_200_200:0 "Buy 10% Investigation Bonus for 200 days for $200M!"
+ 
+ IB20_400_350:0 "Buy 20% Investigation Bonus for 400 days for $350M!"
+ 
+ MB3_200_150:0 "Buy 3% Manpower Bonus for 200 days for $150M!"
+ 
+ MB7_400_250:0 "Buy 7% Manpower Bonus for 400 days for $250M!"
+ 
+ GB3_200_200:0 "Buy -3% Consumer Goods Bonus for 200 days for $200M!"
+ 
+ GB5_400_300:0 "Buy -5% Consumer Goods Bonus for 400 days for $300M!"
+ 
+ MB10_200_200:0 "Buy 10% Mining Bonus for 500 days for $200M!"
+ 
+ MB20_400_350:0 "Buy 20% Mining Bonus for 1000 days for $350M!"
+ 
+ JFB_25_1:0 "Buy -25% War Goal Justification for 200 days for $150M!"
+ 
+ JFB_60_1:0 "Buy -60% War Goal Justification for 400 days for $300M!"
+ 
+ 
+ 
+ #Militar Menu Composition#
+ money_headline_0:0 "Equipment And Investment Menu"
+ current_money:0    "Current Money"
+
+ infantry_h_0:0  "10000 Infantry Equipment   Stock : [?global.infantrystock]" 
+ infantry_h_1:0  "$200M"
+ infantry_h_2:0  "$70M"
+ 
+
+ support_h_0:0   "1000 Support Equipment    Stock : [?global.supportstock]"
+ support_h_1:0   "$160M"
+ support_h_2:0   "$50M"
+ 
+ artillery_h_0:0 "1000 Artillery Equipment  Stock : [?global.artillerystock]"
+ artillery_h_1:0 "$140M"
+ artillery_h_2:0 "$50M"
+ 
+ motorized_h_0:0 "1000 Motorized Equipment  Stock : [?global.motorizedstock]"
+ motorized_h_1:0 "$200M"
+ motorized_h_2:0 "$70M"
+ 
+ anti_tank_h_0:0 "1000 Anti Tank Equipment  Stock : [?global.antitankstock]"
+ anti_tank_h_1:0 "$160M"
+ anti_tank_h_2:0 "$56M"
+ 
+ anti_air_h_0:0 "1000 Anti Air Equipment    Stock : [?global.antiairstock]"
+ anti_air_h_1:0 "$160M"
+ anti_air_h_2:0 "$56M"
+ 
+ light_tank_headline0:0  "500 Light Tank For $200M   Stock : [?global.lighttankstock]"
+ 
+ medium_tank_headline0:0 "500 Medium Tank For $340M Stock : [?global.mediumtankstock]"
+ 
+ heavy_tank_headline0:0  "500 Heavy Tank For $500M   Stock : [?global.heavytankstock]"
+ 
+ convoy_headline0:0      "50 Convoys For $150M       Stock : [?global.convoystock]"
+
+ civil_factory1:0       "Buy Civilian Factory For $50M"
+ 
+ military_factory1:0    "Buy Military Factory For $100M"
+ 
+ steel_factory:0        "Buy 8 Of Steel For $50M"
+ 
+ tungsten_factory:0     "Buy 8 of Tungsten for $50M"
+ 
+ oil_pump:0             "Buy 8 of oil for $75M"
+ 
+ aluminium_factory:0    "Buy 8 of aluminium for $50M"
+ 
+ rubber_pump:0          "Buy 8 of rubber for 75M"
+ 
+ chromium_factory:0     "Buy 8 of Chromium for $75M"
+ 
+ Buy:0      "Buy"
+ Sell:0     "Sell"
+ 
+ ##########Diplomatic action(send money)###########
+ 
+ MONEY_DIPLOMATIC_ACTION_TITLE:0 "Sent $300M(30% rate)"
+ MONEY_DIPLOMATIC_ACTION_ACTION_DESC:0 "We can loan money to this nation so it can be used to develop them but the rate is high"
+ MONEY_DIPLO_ACTION_LOC:0 "We are going to send them some money\n so they can develop quickly.\n $210M will be deliver."
+ MONEY_DIPLO_ACTION_RECIEVER_LOC:0 "$210M will be sent to this nation so it can be used to develop that nation."
+ MONEY_DIPLO_ACTION_ACCEPTED_TITLE:0 "They accepted our loan"
+ MONEY_DIPLO_ACTION_ACCEPTED_DESC:0 "They received $210M"
+ MONEY_DIPLO_ACTION_REJECTED_TITLE:0 "They rejected our loan"
+ MONEY_DIPLO_ACTION_REJECTED_DESC:0 "Our money was sent back"
+ base_desire:0 "Base Desire"
+ 
+ 

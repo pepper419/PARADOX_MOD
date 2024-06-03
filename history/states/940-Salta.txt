@@ -1,0 +1,34 @@
+
+state={
+	id=940
+	name="STATE_940"
+
+	resources={
+		grain = 14
+		meat = 18
+		precious_metals = 18
+		steel = 12
+	}
+
+	history={
+		owner = SLT
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = SLT
+
+		victory_points = {
+			8195 4 
+		}
+
+	}
+
+	provinces={
+		2224 8195 10944 10965 11001 13499 13502 13513 13517 13531 13547 13548 13552 13557 13780 13782 13784 13785 13786 13787 13788 13791 13794 13796 13806 
+	}
+	manpower=2495803
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

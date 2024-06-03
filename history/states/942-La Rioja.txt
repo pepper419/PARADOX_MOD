@@ -1,0 +1,33 @@
+
+state={
+	id=942
+	name="STATE_942"
+
+	resources={
+		coal = 46
+		steel = 26
+		meat = 16
+	}
+
+	history={
+		owner = LRJ
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = LRJ
+
+		victory_points = {
+			2136 4 
+		}
+
+	}
+
+	provinces={
+		2136 2158 13624 13630 13631 13632 13751 13752 13754 13758 13759 13761 13764 13765 13766 
+	}
+	manpower=2836353
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

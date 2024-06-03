@@ -1,0 +1,33 @@
+
+state={
+	id=949
+	name="STATE_949"
+
+	resources={
+		wood = 24
+		meat = 8
+		grain = 16
+	}
+
+	history={
+		owner = FRM
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = FRM
+
+		victory_points = {
+			12922 4 
+		}
+
+	}
+
+	provinces={
+		12922 12943 13500 13501 13510 13519 13520 13530 13534 13538 
+	}
+	manpower=1204241
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

@@ -1,0 +1,30 @@
+
+state={
+	id=475
+	name="STATE_475"
+
+	resources={
+		wood = 24
+	}
+
+	history={
+		owner = GUA
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = GUA
+		victory_points = {
+			1900 3 
+		}
+
+	}
+
+	provinces={
+		1900 12753 12867 14556 14557 14559 14560 14561 14564 14565 14566 14571 14575 14586 14591 14599 
+	}
+	manpower=805874
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

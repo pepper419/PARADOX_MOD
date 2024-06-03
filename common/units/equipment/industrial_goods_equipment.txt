@@ -1,0 +1,679 @@
+equipments = {
+	television_goods_equipment = {
+		year = 1918
+
+		is_archetype = yes
+		picture = archetype_support_equipment
+		is_buildable = no
+		type = {
+			motorized
+			support
+		}
+		group_by = archetype
+		
+		interface_category = interface_category_land
+		
+		reliability = 0.8
+
+		#Space taken in convoy
+		lend_lease_cost = 1
+
+		build_cost_ic = 0.04
+	}
+
+	televisions_1_good_equipment = {
+		archetype = television_goods_equipment
+
+		year = 1918
+
+		active = no
+
+		priority = 20
+
+		can_be_produced = {
+			has_tech = basic_television_good
+		}
+
+		resources = {
+			coal = 4
+			electricity = 1
+			steel = 1
+		}
+	}
+
+	televisions_2_good_equipment = {
+		archetype = television_goods_equipment
+
+		year = 1936
+
+		active = no
+
+		priority = 20
+
+		can_be_produced = {
+			has_tech = improved_television_good
+		}
+
+		resources = {
+			coal = 4
+			#electricity = 1
+			steel = 1
+		}
+	}
+
+	televisions_3_good_equipment = {
+		archetype = television_goods_equipment
+
+		year = 1954
+
+		active = no
+
+		priority = 20
+
+		can_be_produced = {
+			has_tech = advanced_television_good
+		}
+
+		resources = {
+			oil = 4
+			electricity = 2
+			precious_metals = 2
+		}
+	}
+}
+
+equipments = {
+	phone_goods_equipment = {
+		year = 1918
+
+		is_archetype = yes
+		picture = archetype_support_equipment
+		is_buildable = no
+		type = {
+			motorized
+			support
+		}
+		group_by = archetype
+		
+		interface_category = interface_category_land
+		
+		reliability = 0.8
+
+		#Space taken in convoy
+		lend_lease_cost = 1
+
+		build_cost_ic = 0.04
+	}
+
+	phone_1_good_equipment = {
+		archetype = phone_goods_equipment
+
+		year = 1918
+
+		active = no
+
+		priority = 20
+
+		can_be_produced = {
+			always = yes
+		}
+
+		resources = {
+			coal = 4
+			electricity = 1
+			precious_metals = 2
+		}
+	}
+
+	phone_2_good_equipment = {
+		archetype = phone_goods_equipment
+
+		year = 1936
+
+		active = no
+
+		priority = 20
+
+		can_be_produced = {
+			always = yes
+		}
+
+		resources = {
+			coal = 4
+			electricity = 2
+			precious_metals = 2
+		}
+	}
+
+	phone_3_good_equipment = {
+		archetype = phone_goods_equipment
+
+		year = 1954
+
+		active = no
+
+		priority = 20
+
+		can_be_produced = {
+			always = yes
+		}
+		resources = {
+		    oil = 4
+			electricity = 3
+			precious_metals = 2
+		}
+	}
+}
+
+equipments = {
+	luxury_clothes_goods_equipment = {
+		year = 1918
+
+		is_archetype = yes
+		picture = archetype_support_equipment
+		is_buildable = no
+		type = {
+			motorized
+			support
+		}
+		group_by = archetype
+		
+		interface_category = interface_category_land
+		
+		reliability = 0.8
+
+		#Space taken in convoy
+		lend_lease_cost = 1
+
+		build_cost_ic = 0.04
+	}
+
+	luxury_clothes_1_good_equipment = {
+		archetype = luxury_clothes_goods_equipment
+
+		year = 1918
+
+		active = yes
+
+		priority = 20
+
+		can_be_produced = {
+			
+		}
+
+		resources = {
+			coal = 4
+			cotton = 8
+		}
+	}
+}
+
+equipments = {
+	small_clothes_goods_equipment = {
+		year = 1918
+
+		is_archetype = yes
+		picture = archetype_support_equipment
+		is_buildable = no
+		type = {
+			motorized
+			support
+		}
+		group_by = archetype
+		
+		interface_category = interface_category_land
+		
+		reliability = 0.8
+
+		#Space taken in convoy
+		lend_lease_cost = 1
+
+		build_cost_ic = 0.02
+	}
+	small_clothes_1_good_equipment = {
+		archetype = small_clothes_goods_equipment
+
+		year = 1918
+
+		active = yes
+
+		priority = 20
+
+		can_be_produced = {
+			
+		}
+
+		resources = {
+			coal = 4
+			wool = 16
+		}
+	}
+}	
+
+equipments = {
+	canned_food_goods_equipment = {
+		year = 1918
+
+		is_archetype = yes
+		picture = archetype_support_equipment
+		is_buildable = no
+		type = {
+			motorized
+			support
+		}
+		group_by = archetype
+		
+		interface_category = interface_category_land
+		
+		reliability = 0.8
+
+		#Space taken in convoy
+		lend_lease_cost = 1
+
+		build_cost_ic = 0.02
+	}
+	canned_food_1_good_equipment = {
+		archetype = canned_food_goods_equipment
+
+		year = 1918
+
+		active = yes
+
+		priority = 20
+
+		can_be_produced = {
+			
+		}
+
+		resources = {
+			meat = 8
+			grain = 16
+			fish = 8
+		}
+	}
+}
+
+equipments = {
+	winery_goods_equipment = {
+		year = 1918
+
+		is_archetype = yes
+		picture = archetype_support_equipment
+		is_buildable = no
+		type = {
+			motorized
+			support
+		}
+		group_by = archetype
+		
+		interface_category = interface_category_land
+		
+		reliability = 0.8
+
+		#Space taken in convoy
+		lend_lease_cost = 1
+
+		build_cost_ic = 0.02
+	}
+	winery_1_good_equipment = {
+		archetype = winery_goods_equipment
+
+		year = 1918
+
+		active = yes
+
+		priority = 20
+
+		can_be_produced = {
+			
+		}
+
+		resources = {
+			fruit = 16
+			grain = 8
+		}
+	}
+}
+
+equipments = {
+	simple_movables_goods_equipment = {
+		year = 1918
+
+		is_archetype = yes
+		picture = archetype_support_equipment
+		is_buildable = no
+		type = {
+			motorized
+			support
+		}
+		group_by = archetype
+		
+		interface_category = interface_category_land
+		
+		reliability = 0.8
+
+		#Space taken in convoy
+		lend_lease_cost = 1
+
+		build_cost_ic = 0.02
+	}
+	simple_movables_1_good_equipment = {
+		archetype = simple_movables_goods_equipment
+
+		year = 1918
+
+		active = yes
+
+		priority = 20
+
+		can_be_produced = {
+			
+		}
+
+		resources = {
+			steel = 2
+			wood = 12
+		}
+	}
+}
+
+equipments = {
+	luxury_movables_goods_equipment = {
+		year = 1918
+
+		is_archetype = yes
+		picture = archetype_support_equipment
+		is_buildable = no
+		type = {
+			motorized
+			support
+		}
+		group_by = archetype
+		
+		interface_category = interface_category_land
+		
+		reliability = 0.8
+
+		#Space taken in convoy
+		lend_lease_cost = 1
+
+		build_cost_ic = 0.04
+	}
+	luxury_movables_1_good_equipment = {
+		archetype = luxury_movables_goods_equipment
+
+		year = 1918
+
+		active = yes
+
+		priority = 20
+
+		can_be_produced = {
+			
+		}
+
+		resources = {
+			precious_metals = 4
+			wood = 16
+		}
+	}
+}
+
+equipments = {
+	civil_cars_goods_equipment = {
+		year = 1918
+
+		is_archetype = yes
+		picture = archetype_support_equipment
+		is_buildable = no
+		type = {
+			motorized
+			support
+		}
+		group_by = archetype
+		
+		interface_category = interface_category_land
+		
+		reliability = 0.8
+
+		#Space taken in convoy
+		lend_lease_cost = 1
+
+		build_cost_ic = 0.04
+	}
+
+	civil_cars_1_good_equipment = {
+		archetype = civil_cars_goods_equipment
+
+		year = 1918
+
+		active = no
+
+		priority = 20
+
+		can_be_produced = {
+			
+		}
+
+		resources = {
+			coal = 8
+			steel = 4
+			rubber = 1
+		}
+	}
+
+	civil_cars_2_good_equipment = {
+		archetype = civil_cars_goods_equipment
+
+		year = 1936
+
+		active = no
+
+		priority = 20
+
+		can_be_produced = {
+			
+		}
+
+		resources = {
+			coal = 8
+			steel = 4
+			rubber = 1
+		}
+	}
+
+	civil_cars_3_good_equipment = {
+		archetype = civil_cars_goods_equipment
+
+		year = 1954
+
+		active = no
+
+		priority = 20
+
+		can_be_produced = {
+			
+		}
+
+		resources = {
+			oil = 8
+			steel = 4
+			rubber = 1
+		}
+	}
+}
+
+
+equipments = {
+	civilian_radio_goods_equipment = {
+		year = 1918
+
+		is_archetype = yes
+		picture = archetype_support_equipment
+		is_buildable = no
+		type = {
+			motorized
+			support
+		}
+		group_by = archetype
+		
+		interface_category = interface_category_land
+		
+		reliability = 0.8
+
+		#Space taken in convoy
+		lend_lease_cost = 1
+
+		build_cost_ic = 0.04
+	}
+
+	civilian_radio_1_good_equipment = {
+		archetype = civilian_radio_goods_equipment
+
+		year = 1918
+
+		active = no
+
+		priority = 20
+
+		can_be_produced = {
+			
+		}
+
+		resources = {
+			coal = 4
+			electricity = 1
+			precious_metals = 2
+		}
+	}
+
+	civilian_radio_2_good_equipment = {
+		archetype = civilian_radio_goods_equipment
+
+		year = 1936
+
+		active = no
+
+		priority = 20
+
+		can_be_produced = {
+			
+		}
+
+		resources = {
+			coal = 4
+			electricity = 1
+			precious_metals = 2
+		}
+	}
+
+	civilian_radio_3_good_equipment = {
+		archetype = civilian_radio_goods_equipment
+
+		year = 1954
+
+		active = no
+
+		priority = 20
+
+		can_be_produced = {
+			
+		}
+
+		resources = {
+			coal = 4
+			electricity = 1
+			precious_metals = 2
+		}
+	}
+
+
+}
+
+
+equipments = {
+	domestic_machines_goods_equipment = {
+		year = 1918
+
+		is_archetype = yes
+		picture = archetype_support_equipment
+		is_buildable = no
+		type = {
+			motorized
+			support
+		}
+		group_by = archetype
+		
+		interface_category = interface_category_land
+		
+		reliability = 0.8
+
+		#Space taken in convoy
+		lend_lease_cost = 1
+
+		build_cost_ic = 0.08
+	}
+
+	domestic_machines_1_good_equipment = {
+		archetype = domestic_machines_goods_equipment
+
+		year = 1918
+
+		active = no
+
+		priority = 20
+
+		can_be_produced = {
+			
+		}
+
+		resources = {
+			coal = 8
+			electricity = 2
+			precious_metals = 2
+		}
+	}
+
+	domestic_machines_2_good_equipment = {
+		archetype = domestic_machines_goods_equipment
+
+		year = 1936
+
+		active = no
+
+		priority = 20
+
+		can_be_produced = {
+			
+		}
+
+		resources = {
+			coal = 8
+			electricity = 2
+			precious_metals = 2
+		}
+	}
+
+	domestic_machines_3_good_equipment = {
+		archetype = domestic_machines_goods_equipment
+
+		year = 1954
+
+		active = no
+
+		priority = 20
+
+		can_be_produced = {
+			
+		}
+
+		resources = {
+			oil = 4
+			electricity = 2
+			precious_metals = 2
+		}
+	}
+
+	
+}
+

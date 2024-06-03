@@ -1,0 +1,879 @@
+focus_tree = {
+	id = argentine-provinces-focus
+	continuous_focus_position = { x = -40 y = 1050 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			OR = {
+				original_tag = PBA
+				original_tag = JNN
+				original_tag = MPL
+				original_tag = BAB
+				original_tag = URG
+				original_tag = CHL
+				original_tag = PAR
+				original_tag = ENT
+				original_tag = CRR
+				original_tag = MSN
+				original_tag = STF
+				original_tag = CDB
+				original_tag = CHC
+				original_tag = FRM
+				original_tag = CHB
+				original_tag = SLT
+				original_tag = TCM
+				original_tag = STE
+				original_tag = CTM
+				original_tag = LRJ
+				original_tag = SJU
+				original_tag = MND
+				original_tag = SLU
+				original_tag = LPM
+				original_tag = NEQ
+				original_tag = RNG
+				original_tag = CBT
+				original_tag = STC
+				original_tag = TDF
+				original_tag = ARU
+				original_tag = VLP
+				original_tag = ANT
+			}
+		}
+	}
+	#Escuela de Aviacion provincial
+	focus = {
+		id = ARG_escuela_de_aviacion_provincial
+		icon = GFX_goal_generic_air_fighter
+		x = 14
+		y = 2
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = ARG_fortalecer_a_los_milicos  }
+		completion_reward = {
+			air_experience = 100
+			
+			
+		}
+	}
+
+	#Formar alianzas con otras provincias
+	focus = {
+		id = ARG_formar_alianzas_con_otras_provincias
+		icon = GFX_focus_generic_little_entente
+		x = 19
+		y = 2
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		prerequisite = { focus = ARG_politica_exterior_provincial  }
+		mutually_exclusive = { focus = ARG_terminar_con_la_division_ideologica  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Disenios aeronauticos locales
+	focus = {
+		id = ARG_disenios_aeronauticos_locales
+		icon = GFX_goal_generic_air_fighter2
+		x = 13
+		y = 3
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = ARG_escuela_de_aviacion_provincial  }
+		mutually_exclusive = { focus = ARG_estandarizacion_de_modelos  }
+		completion_reward = {
+			###
+			add_tech_bonus = {
+				uses = 1
+				category = light_fighter
+				bonus = 0.50
+			}
+			add_tech_bonus = {
+				uses = 1
+				bonus = 0.50
+				category = air_doctrine
+			}			
+		}
+	}
+
+	#Estandarizacion de modelos
+	focus = {
+		id = ARG_estandarizacion_de_modelos
+		icon = GFX_ARG_estandarizacion_de_modelos-262010
+		x = 15
+		y = 3
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = ARG_escuela_de_aviacion_provincial  }
+		mutually_exclusive = { focus = ARG_disenios_aeronauticos_locales  }
+		completion_reward = {
+			###
+			add_ideas = ARC_produccion_aeronautica_avanzada
+		}
+	}
+
+	#Reavivar la industria aeronautica
+	focus = {
+		id = ARG_reavivar_la_industria_aeronautica
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 14
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ARG_disenios_aeronauticos_locales  focus = ARG_estandarizacion_de_modelos  }
+		completion_reward = {
+			###
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	#Academia militar local
+	focus = {
+		id = ARG_academia_militar_local
+		icon = GFX_goal_generic_army_doctrines
+		x = 11
+		y = 2
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = ARG_fortalecer_a_los_milicos  }
+		completion_reward = {
+			army_experience = 100
+			
+			
+		}
+	}
+
+	#Calidad
+	focus = {
+		id = ARG_calidad
+		icon = GFX_focus_chi_army_reform
+		x = 12
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = ARG_escuelas_militarizadas  }
+		mutually_exclusive = { focus = ARG_cantidad  }
+		completion_reward = {
+			###
+			add_ideas = ARC_oficiales_experimentados
+		}
+	}
+
+	#Cantidad
+	focus = {
+		id = ARG_cantidad
+		icon = GFX_focus_generic_manpower
+		x = 10
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = ARG_escuelas_militarizadas  }
+		mutually_exclusive = { focus = ARG_calidad  }
+		completion_reward = {
+			###
+			add_ideas = ARC_ejercito_popular
+		}
+	}
+
+	#Politica exterior provincial
+	focus = {
+		id = ARG_politica_exterior_provincial
+		icon = GFX_goal_generic_territory_or_war
+		x = 18
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ARG_apuntar_a_la_politica_local  }
+		completion_reward = {
+			add_political_power = 100
+			
+			
+		}
+	}
+
+	#Desarrollo industrial Local
+	focus = {
+		id = ARG_desarrollo_industrial_local
+		icon = GFX_goal_generic_construct_civilian
+		x = 3
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ARG_apuntar_a_la_politica_local  }
+		completion_reward = {
+			add_political_power = 150
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	#Apuntar a la politica local
+	focus = {
+		id = ARG_apuntar_a_la_politica_local
+		icon = GFX_goal_generic_improve_relations
+		x = 11
+		y = 0
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			add_political_power = 300
+		}
+	}
+
+	#Fortalecer a los milicos
+	focus = {
+		id = ARG_fortalecer_a_los_milicos
+		icon = GFX_focus_generic_military_academy
+		x = 11
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = ARG_apuntar_a_la_politica_local  }
+		completion_reward = {
+			add_political_power = 100
+			
+			army_experience = 100
+			
+			navy_experience = 100
+			
+			air_experience = 100
+			
+			
+			
+		}
+	}
+
+	#Escuelas militarizadas
+	focus = {
+		id = ARG_escuelas_militarizadas
+		icon = GFX_goal_generic_military_sphere
+		x = 11
+		y = 3
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = ARG_academia_militar_local  }
+		completion_reward = {
+			###
+			add_ideas = ARC_escuelas_provinciales_militarizadas
+		}
+	}
+
+	#Formar la Confederacion Platense
+	focus = {
+		id = ARG_formar_la_confederacion_platense
+		icon = GFX_goal_generic_demand_territory
+		x = 18
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ARG_rivalidad_fronteriza  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Hay que agarrar la pala
+	focus = {
+		id = ARG_hay_que_agarrar_la_pala
+		icon = GFX_goal_generic_construction2
+		x = 3
+		y = 6
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ARG_ampliar_las_fabricas_de_la_capital  focus = ARG_ampliar_los_proyectos_armamentisticos  focus = ARG_nuevos_diques_secos_de_la_capital  }
+		completion_reward = {		
+			
+		}
+	}
+
+	#Construccion de complejos industriales
+	focus = {
+		id = ARG_construccion_de_complejos_industriales
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 1
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ARG_plan_de_carreteras  }
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	#Construccion de talleres de armas
+	focus = {
+		id = ARG_construccion_de_talleres_de_armas
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 3
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ARG_plan_de_carreteras  }
+		completion_reward = {
+			###
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	#Astilleros provinciales
+	focus = {
+		id = ARG_astilleros_provinciales
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 5
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ARG_plan_de_carreteras  }
+		completion_reward = {
+			###
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	#Ampliar las fabricas de la capital
+	focus = {
+		id = ARG_ampliar_las_fabricas_de_la_capital
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 1
+		y = 5
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ARG_construccion_de_complejos_industriales  }
+		completion_reward = {
+			###
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	#Nuevos Diques secos de la capital
+	focus = {
+		id = ARG_nuevos_diques_secos_de_la_capital
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 5
+		y = 5
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ARG_astilleros_provinciales  }
+		completion_reward = {
+			###
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	#Priorizar Obras publicas
+	focus = {
+		id = ARG_priorizar_obras_publicas
+		icon = GFX_goal_generic_construction
+		x = 2
+		y = 2
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ARG_desarrollo_industrial_local  }
+		mutually_exclusive = { focus = ARG_priorizar_la_produccion_de_armamento  }
+		completion_reward = {
+			###
+			add_ideas = ARC_obra_publica
+		}
+	}
+
+	#Priorizar la produccion de armamento
+	focus = {
+		id = ARG_priorizar_la_produccion_de_armamento
+		icon = GFX_goal_generic_production
+		x = 4
+		y = 2
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ARG_desarrollo_industrial_local  }
+		mutually_exclusive = { focus = ARG_priorizar_obras_publicas  }
+		completion_reward = {
+			###
+			add_ideas = ARC_especializacion_en_armas_ligeras
+		}
+	}
+
+	#Ampliar los proyectos armamentisticos
+	focus = {
+		id = ARG_ampliar_los_proyectos_armamentisticos
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 3
+		y = 5
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ARG_construccion_de_talleres_de_armas  }
+		completion_reward = {
+			###
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	#Plan de Carreteras
+	focus = {
+		id = ARG_plan_de_carreteras
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 3
+		y = 3
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ARG_priorizar_obras_publicas  focus = ARG_priorizar_la_produccion_de_armamento  }
+		completion_reward = {
+			###
+			every_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					is_core_of = ROOT
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	#Rivalidad Fronteriza
+	focus = {
+		id = ARG_rivalidad_fronteriza
+		icon = GFX_goal_generic_more_territorial_claims
+		x = 18
+		y = 3
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		prerequisite = { focus = ARG_terminar_con_la_division_ideologica  focus = ARG_formar_alianzas_con_otras_provincias  }
+		completion_reward = {
+			###
+			custom_effect_tooltip = effect_guerras_fronterizas_tt
+		}
+	}
+
+	#Terminar con la division ideologica
+	focus = {
+		id = ARG_terminar_con_la_division_ideologica
+		icon = GFX_goal_generic_major_war
+		x = 17
+		y = 2
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		prerequisite = { focus = ARG_politica_exterior_provincial  }
+		mutually_exclusive = { focus = ARG_formar_alianzas_con_otras_provincias  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Armada provincial
+	focus = {
+		id = ARG_armada_provincial
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		x = 8
+		y = 2
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = ARG_fortalecer_a_los_milicos  }
+		completion_reward = {
+			navy_experience = 100
+			
+			
+		}
+	}
+
+	#Astilleros de la armada
+	focus = {
+		id = ARG_astilleros_de_la_armada
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 8
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = ARG_primacia_de_barcos_baratos  focus = ARG_primacia_de_barcos_pesados  }
+		completion_reward = {
+			###
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	#Primacia de barcos baratos
+	focus = {
+		id = ARG_primacia_de_barcos_baratos
+		icon = GFX_goal_generic_navy_submarine
+		x = 7
+		y = 3
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = ARG_armada_provincial  }
+		mutually_exclusive = { focus = ARG_primacia_de_barcos_pesados  }
+		completion_reward = {
+			###
+			add_ideas = ARC_estandarizacion_naval
+		}
+	}
+
+	#Primacia de barcos pesados
+	focus = {
+		id = ARG_primacia_de_barcos_pesados
+		icon = GFX_ARG_primacia_de_barcos_pesados-404
+		x = 9
+		y = 3
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = ARG_armada_provincial  }
+		mutually_exclusive = { focus = ARG_primacia_de_barcos_baratos  }
+		completion_reward = {
+			###
+			add_ideas = ARC_primacia_de_barcos_pesados
+		}
+	}
+
+}

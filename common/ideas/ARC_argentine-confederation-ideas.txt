@@ -1,0 +1,135 @@
+ideas = {
+	country = {
+
+		ARC_produccion_aeronautica_avanzada = {
+			picture = ARC_produccion_aeronautica_avanzada-1749
+			allowed = {
+				always = no
+			}
+			visible = {
+				always = yes
+			}
+			equipment_bonus = {
+				fighter = {
+					instant = yes
+					build_cost_ic = -0.05
+				}
+				cas = {
+					instant = yes
+					build_cost_ic = -0.05
+				}
+
+			}
+		}
+
+		ARC_obra_publica = {
+			picture = ARC_obra_publica-1464
+			modifier = {
+				consumer_goods_factor = 0.1
+			}
+		}
+
+		ARC_especializacion_en_armas_ligeras = {
+			picture = ARC_especializacion_en_armas_ligeras-1132
+			allowed = {
+				always = no
+			}
+			visible = {
+				always = yes
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					instant = yes
+					build_cost_ic = -0.20
+				}
+			}
+			modifier = {
+				###
+
+
+			}
+		}
+
+		ARC_escuelas_provinciales_militarizadas = {
+			picture = ARC_escuelas_provinciales_militarizadas-1082
+			allowed = {
+				always = no
+			}
+			visible = {
+				always =  yes
+			}
+			modifier = {
+				conscription = 0.05
+			}
+		}
+
+		ARC_ejercito_popular = {
+			picture = ARC_ejercito_popular-1084
+			allowed = {
+				always = no
+
+
+			}
+			visible = {
+				always =yes
+			}
+			modifier = {
+				conscription = 0.05
+			}
+		}
+
+		ARC_oficiales_experimentados = {
+			picture = ARC_oficiales_experimentados-1364
+			allowed = {
+				always = no
+			}
+			visible = {
+				always = yes
+			}
+			modifier = {
+				army_attack_factor = 0.10
+				army_defence_factor = 0.10
+			}
+		}
+
+		ARC_estandarizacion_naval = {
+			picture = ARC_estandarizacion_naval-1539
+			allowed = {
+				always = no
+			}
+			visible = {
+				always = yes
+			}
+			equipment_bonus = {
+				submarine = {
+					instant = yes
+					build_cost_ic = -0.20
+				}
+				screen_ship = {
+					instant = yes
+					build_cost_ic = -0.20
+				}
+			}
+		}
+
+		ARC_primacia_de_barcos_pesados = {
+			picture = ARC_primacia_de_barcos_pesados-1433
+			allowed = {
+				always = no
+			}
+			visible = {
+				always = yes
+			}
+			equipment_bonus = {
+				capital_ship = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				carrier = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,29 @@
+
+state={
+	id=892
+	name="STATE_892"
+	resources={
+		wood=18.000
+	}
+
+	history={
+		owner = POR
+		buildings = {
+			infrastructure = 1
+
+		}
+		victory_points = {
+			10966 1 
+		}
+		add_core_of = ANG
+
+	}
+
+	provinces={
+		2019 2060 4622 5052 7118 8138 8202 10966 12391 12835 12958 12985 14640 14661 14805 14817 15077 15657 15680 15683 15695 
+	}
+	manpower=960000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

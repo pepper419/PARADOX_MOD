@@ -1,0 +1,101 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			CHL = {
+				set_capital = {
+					state = 279
+				}
+			}
+			PAR = {
+				set_capital = {
+					state = 301
+				}
+			}
+			URG = {
+				set_capital = {
+					state = 300
+				}
+			}
+			every_country = {
+				limit = {
+					OR = {
+						original_tag = PBA
+						original_tag = JNN
+						original_tag = MPL
+						original_tag = BAB
+						original_tag = URG
+						original_tag = PAR
+						original_tag = CHL
+						original_tag = ENT
+						original_tag = CRR
+						original_tag = MSN
+						original_tag = STF
+						original_tag = CHC
+						original_tag = FRM
+						original_tag = CHB
+						original_tag = SLT
+						original_tag = TCM
+						original_tag = CTM
+						original_tag = LRJ
+						original_tag = CDB
+						original_tag = SJU
+						original_tag = MND
+						original_tag = SLU
+						original_tag = LPM
+						original_tag = NEQ
+						original_tag = RNG
+						original_tag = CBT
+						original_tag = STC
+						original_tag = TDF
+						original_tag = ARU
+						original_tag = VLP
+						original_tag = ANT
+					}					
+				}
+				division_template = {
+					name = "Milicia Provincial" 		# Used for both regular infantry divisions and larger garrison divisions
+					division_names_group = SPR_INF_01
+					# Note: Spanish divisions were 2x brigades of 2x2 rgts each, + support
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+					}
+				}
+				division_template = {
+					name = "Gauchos Provinciales"  		# Only one Cavalry Division (3x bge of 2x2 Rgts)
+					division_names_group = SPR_CAV_01
+				
+					regiments = {
+						cavalry = { x = 0 y = 0 }
+						cavalry = { x = 0 y = 1 }
+						cavalry = { x = 0 y = 2 }
+					}
+				}
+				every_owned_state = {
+					limit = {
+						is_capital = yes
+					}
+					create_unit = {
+						division = "division_template = \"Milicia Provincial\" start_manpower_factor = 1.0"
+						owner = PREV
+						count = 10
+						allow_spawning_on_enemy_provs = no
+					}
+					create_unit = {
+						division = "division_template = \"Gauchos Provinciales\" start_manpower_factor = 1.0"
+						owner = PREV
+						count = 5
+						allow_spawning_on_enemy_provs = no
+					}
+
+				}
+			}			
+		}
+	}
+}
+
+

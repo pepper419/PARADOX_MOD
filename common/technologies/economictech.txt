@@ -1,0 +1,111 @@
+technologies = {
+    @1890 = 0
+	@1906 = 2
+	@1910 = 4
+	@1912 = 6
+	@1914 = 8
+	@1916 = 10
+	@1918 = 12
+	@1920 = 14
+	@1922 = 16
+	@1924 = 18
+	@1926 = 20
+
+	basic_banking_system = {
+	
+		production_factory_max_efficiency_factor = 0.1
+		
+		research_cost = 1.5
+		start_year = 1926
+
+        path = {
+			leads_to_tech = banking_trust_system
+			research_cost_coeff = 1
+		}
+
+		folder = {
+			name = economictech_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		categories = {
+			industry
+		}
+	}
+
+	banking_trust_system = {
+	
+		production_factory_max_efficiency_factor = 0.1
+		
+		research_cost = 1.5
+		start_year = 1926
+
+        path = {
+			leads_to_tech = banking_credit_system 
+			research_cost_coeff = 1
+		}
+
+		folder = {
+			name = economictech_folder
+			position = { x = 0 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		categories = {
+			industry
+		}
+	}
+	banking_credit_system = {
+	
+		production_factory_max_efficiency_factor = 0.1
+		
+		research_cost = 1.5
+		start_year = 1926
+
+		path = {
+			leads_to_tech = international_financial_system 
+			research_cost_coeff = 1
+		}
+
+		folder = {
+			name = economictech_folder
+			position = { x = 0 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		categories = {
+			industry
+		}
+	}
+	international_financial_system = {
+	
+		production_factory_max_efficiency_factor = 0.1
+		
+		research_cost = 1.5
+		start_year = 1926
+
+		folder = {
+			name = economictech_folder
+			position = { x = 0 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		categories = {
+			industry
+		}
+	}
+			
+}

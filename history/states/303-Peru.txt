@@ -1,0 +1,36 @@
+
+state={
+	id=303
+	name="STATE_303"
+	resources={
+		oil=28.000
+		precious_metals = 26
+	}
+
+	history={
+		owner = PRU
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 6
+			air_base = 3
+			12997 = {
+				naval_base = 5
+
+			}
+
+		}
+		add_core_of = PRU
+		victory_points = {
+			12997 5 
+		}
+
+	}
+
+	provinces={
+		2156 2162 5190 8199 12969 12983 12997 14048 14078 14079 14082 14092 14104 14112 14120 14130 14140 14147 14163 14165 14167 14177 14181 14186 14198 14203 14206 14209 14214 14235 14239 14256 14263 
+	}
+	manpower=3563249
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+}

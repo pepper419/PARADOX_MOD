@@ -1,0 +1,7 @@
+spriteTypes = {	
+
+	SpriteType = {
+		name = "GFX_decisions_cat_picture_default_parliament"
+		texturefile = "gfx/interface/decisions/picture_generic_parliament.dds"			
+	}
+}

@@ -1,0 +1,2336 @@
+focus_tree = {
+	id = focus-spain
+	continuous_focus_position = { x = 340 y = 270 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SPR
+		}
+	}
+	#Continue the german-spanish alliance
+	focus = {
+		id = SPR_continue_the_germanspanish_alliance
+		icon = GFX_goal_generic_demand_territory
+		x = 30
+		y = 21
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_defend_of_strategic_interest  focus = SPR_defend_our_economic_interest  }
+		mutually_exclusive = { focus = SPR_our_alliance  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Defend of strategic interest
+	focus = {
+		id = SPR_defend_of_strategic_interest
+		icon = GFX_goal_generic_demand_territory
+		x = 30
+		y = 20
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_seek_the_centralization_of_empire  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Support the land reforms
+	focus = {
+		id = SPR_support_the_land_reforms
+		icon = GFX_goal_generic_demand_territory
+		x = 23
+		y = 3
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_spanish_liberalism  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Secret alliance with Romania
+	focus = {
+		id = SPR_secret_alliance_with_romania
+		icon = GFX_goal_generic_demand_territory
+		x = 20
+		y = 22
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_our_alliance  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Spanish decolonization comite
+	focus = {
+		id = SPR_spanish_decolonization_comite
+		icon = GFX_goal_generic_demand_territory
+		x = 18
+		y = 10
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_antimperialist_diplomacy  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Unite the all right
+	focus = {
+		id = SPR_unite_the_all_right
+		icon = GFX_goal_generic_demand_territory
+		x = 34
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_protofascism  focus = SPR_increase_the_monarchy_power  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#The inner free market principle
+	focus = {
+		id = SPR_the_inner_free_market_principle
+		icon = GFX_focus_generic_industry_3
+		x = 35
+		y = 7
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			###
+		}
+		
+	}
+
+	#Reinforce the proteccionism
+	focus = {
+		id = SPR_reinforce_the_proteccionism
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 37
+		y = 8
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_the_inner_free_market_principle  }
+		mutually_exclusive = { focus = SPR_reinforce_the_free_market  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Reinforce the free market
+	focus = {
+		id = SPR_reinforce_the_free_market
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 33
+		y = 8
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_the_inner_free_market_principle  }
+		mutually_exclusive = { focus = SPR_reinforce_the_proteccionism  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Ratify the Rio de Janeiro agreement
+	focus = {
+		id = SPR_ratify_the_rio_de_janeiro_agreement
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 35
+		y = 9
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_TFV_AUTONOMY
+		}
+		prerequisite = { focus = SPR_reinforce_the_proteccionism  focus = SPR_reinforce_the_free_market  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Investment in the industrial complex
+	focus = {
+		id = SPR_investment_in_the_industrial_complex
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 33
+		y = 12
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = SPR_recaudation_plan  focus = SPR_efficiency_factories  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Control the spanish gold reserves
+	focus = {
+		id = SPR_control_the_spanish_gold_reserves
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		x = 36
+		y = 13
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = { focus = SPR_investment_in_the_military_complex  } prerequisite = { focus = SPR_investment_in_the_industrial_complex  } prerequisite = { focus = SPR_development_law  }
+		mutually_exclusive = { focus = SPR_bank_independence_law  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Bank independence law
+	focus = {
+		id = SPR_bank_independence_law
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		x = 34
+		y = 13
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = { focus = SPR_investment_in_the_industrial_complex  } prerequisite = { focus = SPR_investment_in_the_military_complex  } prerequisite = { focus = SPR_development_law  }
+		mutually_exclusive = { focus = SPR_control_the_spanish_gold_reserves  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Development law
+	focus = {
+		id = SPR_development_law
+		icon = GFX_goal_generic_construct_civilian
+		x = 35
+		y = 12
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = SPR_efficiency_factories  focus = SPR_recaudation_plan  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Investment in the Military complex
+	focus = {
+		id = SPR_investment_in_the_military_complex
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 37
+		y = 12
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = SPR_recaudation_plan  focus = SPR_efficiency_factories  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Development the american civil industries
+	focus = {
+		id = SPR_development_the_american_civil_industries
+		icon = GFX_goal_generic_construct_civilian
+		x = 34
+		y = 10
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = SPR_ratify_the_rio_de_janeiro_agreement  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Development in the american military industries
+	focus = {
+		id = SPR_development_in_the_american_military_industries
+		icon = GFX_goal_generic_construct_civilian
+		x = 36
+		y = 10
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = SPR_ratify_the_rio_de_janeiro_agreement  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Efficiency factories
+	focus = {
+		id = SPR_efficiency_factories
+		icon = GFX_goal_generic_production
+		x = 32
+		y = 11
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = { focus = SPR_reinforce_the_free_market  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Recaudation Plan
+	focus = {
+		id = SPR_recaudation_plan
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 38
+		y = 11
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_reinforce_the_proteccionism  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Spanish parliament primacy
+	focus = {
+		id = SPR_spanish_parliament_primacy
+		icon = GFX_goal_generic_demand_territory
+		x = 22
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_centrist_positions  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Increase the Monarchy power
+	focus = {
+		id = SPR_increase_the_monarchy_power
+		icon = GFX_goal_generic_demand_territory
+		x = 30
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_continue_with_the_tradicional_politic  }
+		mutually_exclusive = { focus = SPR_elect_to_prime_minister  }
+	}
+
+	#Spanish Social Democracy
+	focus = {
+		id = SPR_spanish_social_democracy
+		icon = GFX_goal_generic_demand_territory
+		x = 18
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_call_to_general_elections  focus = SPR_elect_to_prime_minister  }
+		mutually_exclusive = { focus = SPR_spanish_liberalism  } mutually_exclusive = { focus = SPR_spanish_conservatism  } mutually_exclusive = { focus = SPR_the_left_autocracy  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Spanish Liberalism
+	focus = {
+		id = SPR_spanish_liberalism
+		icon = GFX_goal_generic_demand_territory
+		x = 23
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_elect_to_prime_minister  }
+		mutually_exclusive = { focus = SPR_spanish_social_democracy  } mutually_exclusive = { focus = SPR_spanish_conservatism  } mutually_exclusive = { focus = SPR_the_left_autocracy  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Spanish Conservatism
+	focus = {
+		id = SPR_spanish_conservatism
+		icon = GFX_goal_generic_demand_territory
+		x = 26
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_elect_to_prime_minister  }
+		mutually_exclusive = { focus = SPR_spanish_liberalism  } mutually_exclusive = { focus = SPR_spanish_social_democracy  } mutually_exclusive = { focus = SPR_the_left_autocracy  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Alliance with Carlism
+	focus = {
+		id = SPR_alliance_with_carlism
+		icon = GFX_focus_spa_no_compromise_on_carlist_ideals
+		x = 32
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_unite_the_all_right  } prerequisite = { focus = SPR_unite_the_monarchist_supports  }
+		mutually_exclusive = { focus = SPR_monarchistconservative_alliance  } mutually_exclusive = { focus = SPR_form_the_republican_front  } mutually_exclusive = { focus = SPR_centrist_positions  } mutually_exclusive = { focus = SPR_gain_the_support_of_moderate_party  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Militarist monarchy
+	focus = {
+		id = SPR_militarist_monarchy
+		icon = GFX_focus_rom_royal_dictatorship
+		x = 30
+		y = 7
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_enforcement_the_carlist_youngs  focus = SPR_spanish_coorporativism  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Gain the support of UGT
+	focus = {
+		id = SPR_gain_the_support_of_ugt
+		icon = GFX_goal_generic_demand_territory
+		x = 12
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_reinforcement_the_rich_taxes  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Centrist positions
+	focus = {
+		id = SPR_centrist_positions
+		icon = GFX_goal_generic_demand_territory
+		x = 22
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_spanish_social_democracy  focus = SPR_spanish_liberalism  }
+		mutually_exclusive = { focus = SPR_form_the_republican_front  } mutually_exclusive = { focus = SPR_gain_the_support_of_moderate_party  } mutually_exclusive = { focus = SPR_alliance_with_carlism  } mutually_exclusive = { focus = SPR_monarchistconservative_alliance  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Monarchist-conservative alliance
+	focus = {
+		id = SPR_monarchistconservative_alliance
+		icon = GFX_goal_generic_demand_territory
+		x = 28
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_spanish_conservatism  focus = SPR_unite_the_monarchist_supports  }
+		mutually_exclusive = { focus = SPR_alliance_with_carlism  } mutually_exclusive = { focus = SPR_gain_the_support_of_moderate_party  } mutually_exclusive = { focus = SPR_centrist_positions  } mutually_exclusive = { focus = SPR_form_the_republican_front  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Defend our economic interest
+	focus = {
+		id = SPR_defend_our_economic_interest
+		icon = GFX_goal_generic_demand_territory
+		x = 22
+		y = 20
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_autodefence_of_the_empire  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#The left autocracy
+	focus = {
+		id = SPR_the_left_autocracy
+		icon = GFX_goal_generic_demand_territory
+		x = 14
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_call_to_general_elections  }
+		mutually_exclusive = { focus = SPR_spanish_social_democracy  } mutually_exclusive = { focus = SPR_spanish_liberalism  } mutually_exclusive = { focus = SPR_spanish_conservatism  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Protofascism
+	focus = {
+		id = SPR_protofascism
+		icon = GFX_goal_generic_demand_territory
+		x = 37
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_the_autocratic_spain  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Gain the support of moderate party
+	focus = {
+		id = SPR_gain_the_support_of_moderate_party
+		icon = GFX_goal_generic_demand_territory
+		x = 24
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_spanish_conservatism  }
+		mutually_exclusive = { focus = SPR_form_the_republican_front  } mutually_exclusive = { focus = SPR_centrist_positions  } mutually_exclusive = { focus = SPR_alliance_with_carlism  } mutually_exclusive = { focus = SPR_monarchistconservative_alliance  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Enforcement the militarist sentiment
+	focus = {
+		id = SPR_enforcement_the_militarist_sentiment
+		icon = GFX_goal_generic_demand_territory
+		x = 30
+		y = 5
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_monarchistconservative_alliance  focus = SPR_alliance_with_carlism  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Enforcement the carlist youngs
+	focus = {
+		id = SPR_enforcement_the_carlist_youngs
+		icon = GFX_goal_generic_demand_territory
+		x = 32
+		y = 6
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_alliance_with_carlism  } prerequisite = { focus = SPR_enforcement_the_militarist_sentiment  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Unite the monarchist supports
+	focus = {
+		id = SPR_unite_the_monarchist_supports
+		icon = GFX_goal_generic_demand_territory
+		x = 30
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_increase_the_monarchy_power  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Agrarian Landowners
+	focus = {
+		id = SPR_agrarian_landowners
+		icon = GFX_goal_generic_demand_territory
+		x = 26
+		y = 7
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_spanish_coorporativism  focus = SPR_preserve_the_economic_and_social_stability  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Expand Red Imperialism
+	focus = {
+		id = SPR_expand_red_imperialism
+		icon = GFX_goal_generic_demand_territory
+		x = 6
+		y = 9
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_the_wild_of_the_people  }
+		mutually_exclusive = { focus = SPR_antimperialist_diplomacy  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Preparate de american military bases
+	focus = {
+		id = SPR_preparate_de_american_military_bases
+		icon = GFX_goal_generic_demand_territory
+		x = 24
+		y = 11
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_impulse_the_revanchism  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Continue with the tradicional politic
+	focus = {
+		id = SPR_continue_with_the_tradicional_politic
+		icon = GFX_goal_generic_demand_territory
+		x = 23
+		y = 0
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		mutually_exclusive = { focus = SPR_enforcement_the_republican_sentiment  } 
+		mutually_exclusive = { focus = SPR_the_autocratic_spain  }
+		completion_reward = {
+			###
+		}
+		allow_branch = {
+			NOT = { has_country_flag = ARG_oculto }
+		}
+	}
+
+	#Military autonomy for colonies
+	focus = {
+		id = SPR_military_autonomy_for_colonies
+		icon = GFX_goal_generic_demand_territory
+		x = 18
+		y = 17
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_autodefence_of_the_empire  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Seek the centralization of empire
+	focus = {
+		id = SPR_seek_the_centralization_of_empire
+		icon = GFX_goal_generic_demand_territory
+		x = 30
+		y = 14
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_military_empire  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Trade empire
+	focus = {
+		id = SPR_trade_empire
+		icon = GFX_goal_generic_demand_territory
+		x = 22
+		y = 9
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_international_realpolitik  focus = SPR_dios_patria_y_rey  }
+		mutually_exclusive = { focus = SPR_military_empire  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Focus in military land forces
+	focus = {
+		id = SPR_focus_in_military_land_forces
+		icon = GFX_goal_generic_demand_territory
+		x = 42
+		y = 5
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_low_cost_of_production_of_weapons  }
+		mutually_exclusive = { focus = SPR_focus_in_military_naval_forces  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Invite to Italy for the Latin Alliance
+	focus = {
+		id = SPR_invite_to_italy_for_the_latin_alliance
+		icon = GFX_goal_generic_demand_territory
+		x = 22
+		y = 22
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_our_alliance  }
+		mutually_exclusive = { focus = SPR_revive_the_two_sicilies_sentiment  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Invite France to the Latin Alliance
+	focus = {
+		id = SPR_invite_france_to_the_latin_alliance
+		icon = GFX_goal_generic_demand_territory
+		x = 22
+		y = 23
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_invite_to_italy_for_the_latin_alliance  }
+		mutually_exclusive = { focus = SPR_revenge_the_french_intervention  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Our alliance
+	focus = {
+		id = SPR_our_alliance
+		icon = GFX_goal_generic_demand_territory
+		x = 22
+		y = 21
+		cost = 35
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_defend_of_strategic_interest  focus = SPR_defend_our_economic_interest  }
+		mutually_exclusive = { focus = SPR_continue_the_germanspanish_alliance  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#War preparatives
+	focus = {
+		id = SPR_war_preparatives
+		icon = GFX_goal_generic_demand_territory
+		x = 44
+		y = 0
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			###
+		}
+		allow_branch = {
+			NOT = { has_country_flag = ARG_oculto }
+		}
+	}
+
+	#Land army priorities
+	focus = {
+		id = SPR_land_army_priorities
+		icon = GFX_goal_generic_demand_territory
+		x = 40
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_war_preparatives  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Navy priorities
+	focus = {
+		id = SPR_navy_priorities
+		icon = GFX_goal_generic_demand_territory
+		x = 48
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_war_preparatives  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Military empire
+	focus = {
+		id = SPR_military_empire
+		icon = GFX_goal_generic_demand_territory
+		x = 30
+		y = 9
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_dios_patria_y_rey  focus = SPR_international_realpolitik  }
+		mutually_exclusive = { focus = SPR_trade_empire  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Claim the mexican north
+	focus = {
+		id = SPR_claim_the_mexican_north
+		icon = GFX_goal_generic_demand_territory
+		x = 25
+		y = 12
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_preparate_de_american_military_bases  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Claim the south asian islands
+	focus = {
+		id = SPR_claim_the_south_asian_islands
+		icon = GFX_goal_generic_demand_territory
+		x = 27
+		y = 12
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_preparate_the_asian_military_bases  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Autodefence of the empire
+	focus = {
+		id = SPR_autodefence_of_the_empire
+		icon = GFX_goal_generic_demand_territory
+		x = 22
+		y = 14
+		cost = 100
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_trade_empire  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Form the Iberian Union
+	focus = {
+		id = SPR_form_the_iberian_union
+		icon = GFX_goal_generic_demand_territory
+		x = 26
+		y = 19
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_integrate_portugal  } prerequisite = { focus = SPR_integrate_aragon_crown  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Affairs in Iberia
+	focus = {
+		id = SPR_affairs_in_iberia
+		icon = GFX_goal_generic_demand_territory
+		x = 26
+		y = 15
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_seek_the_centralization_of_empire  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Supply weapons to Indian rebels
+	focus = {
+		id = SPR_supply_weapons_to_indian_rebels
+		icon = GFX_goal_generic_demand_territory
+		x = 29
+		y = 12
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_preparate_the_asian_military_bases  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Impulse the revanchism
+	focus = {
+		id = SPR_impulse_the_revanchism
+		icon = GFX_goal_generic_demand_territory
+		x = 26
+		y = 10
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_trade_empire  focus = SPR_military_empire  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Preparate the asian military bases
+	focus = {
+		id = SPR_preparate_the_asian_military_bases
+		icon = GFX_goal_generic_demand_territory
+		x = 28
+		y = 11
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_impulse_the_revanchism  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Expand the african claims
+	focus = {
+		id = SPR_expand_the_african_claims
+		icon = GFX_goal_generic_demand_territory
+		x = 26
+		y = 11
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_impulse_the_revanchism  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Revenge the French intervention
+	focus = {
+		id = SPR_revenge_the_french_intervention
+		icon = GFX_goal_generic_demand_territory
+		x = 24
+		y = 23
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_revive_the_two_sicilies_sentiment  }
+		mutually_exclusive = { focus = SPR_invite_france_to_the_latin_alliance  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Claim the caribean territories
+	focus = {
+		id = SPR_claim_the_caribean_territories
+		icon = GFX_goal_generic_demand_territory
+		x = 23
+		y = 12
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_preparate_de_american_military_bases  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Revive the Two Sicilies sentiment
+	focus = {
+		id = SPR_revive_the_two_sicilies_sentiment
+		icon = GFX_goal_generic_demand_territory
+		x = 24
+		y = 22
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_our_alliance  }
+		mutually_exclusive = { focus = SPR_invite_to_italy_for_the_latin_alliance  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#A Iberian Federal Kingdom
+	focus = {
+		id = SPR_a_iberian_federal_kingdom
+		icon = GFX_goal_generic_demand_territory
+		x = 25
+		y = 16
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_affairs_in_iberia  }
+		mutually_exclusive = { focus = SPR_centralize_the_power_in_the_capital  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Centralize the power in the capital
+	focus = {
+		id = SPR_centralize_the_power_in_the_capital
+		icon = GFX_goal_generic_demand_territory
+		x = 27
+		y = 16
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_affairs_in_iberia  }
+		mutually_exclusive = { focus = SPR_a_iberian_federal_kingdom  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Integrate Portugal
+	focus = {
+		id = SPR_integrate_portugal
+		icon = GFX_goal_generic_demand_territory
+		x = 25
+		y = 18
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_revoke_the_provincial_privileges  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Revoke the provincial privileges
+	focus = {
+		id = SPR_revoke_the_provincial_privileges
+		icon = GFX_goal_generic_demand_territory
+		x = 26
+		y = 17
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_a_iberian_federal_kingdom  focus = SPR_centralize_the_power_in_the_capital  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Integrate Aragon crown
+	focus = {
+		id = SPR_integrate_aragon_crown
+		icon = GFX_goal_generic_demand_territory
+		x = 27
+		y = 18
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_revoke_the_provincial_privileges  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Reform de House of Indies
+	focus = {
+		id = SPR_reform_de_house_of_indies
+		icon = GFX_goal_generic_demand_territory
+		x = 16
+		y = 19
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_grant_the_security_in_argentinian_kingdom  } prerequisite = { focus = SPR_grant_the_security_in_new_granada_kingdom  } prerequisite = { focus = SPR_grant_the_security_in_peru_kingdom  } prerequisite = { focus = SPR_grant_the_security_in_new_spain_kingdom  } prerequisite = { focus = SPR_grant_the_security_in_guatemala_kingdom  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Integration of western indies
+	focus = {
+		id = SPR_integration_of_western_indies
+		icon = GFX_goal_generic_demand_territory
+		x = 35
+		y = 15
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_seek_the_centralization_of_empire  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Grant the security in Argentinian Kingdom
+	focus = {
+		id = SPR_grant_the_security_in_argentinian_kingdom
+		icon = GFX_goal_generic_demand_territory
+		x = 12
+		y = 18
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_military_autonomy_for_colonies  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Grant the security in New Granada Kingdom
+	focus = {
+		id = SPR_grant_the_security_in_new_granada_kingdom
+		icon = GFX_goal_generic_demand_territory
+		x = 20
+		y = 18
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_military_autonomy_for_colonies  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Grant the security in Peru Kingdom
+	focus = {
+		id = SPR_grant_the_security_in_peru_kingdom
+		icon = GFX_goal_generic_demand_territory
+		x = 16
+		y = 18
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_military_autonomy_for_colonies  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Grant the security in New Spain Kingdom
+	focus = {
+		id = SPR_grant_the_security_in_new_spain_kingdom
+		icon = GFX_goal_generic_demand_territory
+		x = 14
+		y = 18
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_military_autonomy_for_colonies  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Grant the security in Guatemala Kingdom
+	focus = {
+		id = SPR_grant_the_security_in_guatemala_kingdom
+		icon = GFX_goal_generic_demand_territory
+		x = 18
+		y = 18
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_military_autonomy_for_colonies  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Air priorities
+	focus = {
+		id = SPR_air_priorities
+		icon = GFX_goal_generic_demand_territory
+		x = 44
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_war_preparatives  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Fighters effort
+	focus = {
+		id = SPR_fighters_effort
+		icon = GFX_goal_generic_demand_territory
+		x = 43
+		y = 2
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_air_priorities  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Air support effort
+	focus = {
+		id = SPR_air_support_effort
+		icon = GFX_goal_generic_demand_territory
+		x = 45
+		y = 2
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_air_priorities  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Upgrade the artillery
+	focus = {
+		id = SPR_upgrade_the_artillery
+		icon = GFX_goal_generic_demand_territory
+		x = 41
+		y = 2
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_land_army_priorities  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#New infantry weapons
+	focus = {
+		id = SPR_new_infantry_weapons
+		icon = GFX_goal_generic_demand_territory
+		x = 39
+		y = 2
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_land_army_priorities  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Focus in military naval forces
+	focus = {
+		id = SPR_focus_in_military_naval_forces
+		icon = GFX_goal_generic_demand_territory
+		x = 46
+		y = 5
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_reduce_the_naval_cost  }
+		mutually_exclusive = { focus = SPR_focus_in_military_land_forces  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Air standarization
+	focus = {
+		id = SPR_air_standarization
+		icon = GFX_goal_generic_demand_territory
+		x = 44
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_air_doctrine_research  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Air doctrine research
+	focus = {
+		id = SPR_air_doctrine_research
+		icon = GFX_goal_generic_demand_territory
+		x = 44
+		y = 3
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_fighters_effort  } prerequisite = { focus = SPR_air_support_effort  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Low cost of production of weapons
+	focus = {
+		id = SPR_low_cost_of_production_of_weapons
+		icon = GFX_goal_generic_demand_territory
+		x = 40
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_land_doctrine_teories  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Land doctrine teories
+	focus = {
+		id = SPR_land_doctrine_teories
+		icon = GFX_goal_generic_demand_territory
+		x = 40
+		y = 3
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_new_infantry_weapons  } prerequisite = { focus = SPR_upgrade_the_artillery  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Submarine doctrine research
+	focus = {
+		id = SPR_submarine_doctrine_research
+		icon = GFX_goal_generic_demand_territory
+		x = 47
+		y = 2
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_navy_priorities  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Capital ship doctrine
+	focus = {
+		id = SPR_capital_ship_doctrine
+		icon = GFX_goal_generic_demand_territory
+		x = 49
+		y = 2
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_navy_priorities  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Global naval doctrine
+	focus = {
+		id = SPR_global_naval_doctrine
+		icon = GFX_goal_generic_demand_territory
+		x = 48
+		y = 3
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_submarine_doctrine_research  } prerequisite = { focus = SPR_capital_ship_doctrine  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Reduce the naval cost
+	focus = {
+		id = SPR_reduce_the_naval_cost
+		icon = GFX_goal_generic_demand_territory
+		x = 48
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_global_naval_doctrine  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Take the control of New Spain
+	focus = {
+		id = SPR_take_the_control_of_new_spain
+		icon = GFX_goal_generic_demand_territory
+		x = 39
+		y = 16
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_integration_of_western_indies  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Take the control of Guatemala
+	focus = {
+		id = SPR_take_the_control_of_guatemala
+		icon = GFX_goal_generic_demand_territory
+		x = 37
+		y = 16
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_integration_of_western_indies  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Take the control of New Granada
+	focus = {
+		id = SPR_take_the_control_of_new_granada
+		icon = GFX_goal_generic_demand_territory
+		x = 33
+		y = 16
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_integration_of_western_indies  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Take de control Peru
+	focus = {
+		id = SPR_take_de_control_peru
+		icon = GFX_goal_generic_demand_territory
+		x = 35
+		y = 16
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_integration_of_western_indies  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Take the control of Argentina
+	focus = {
+		id = SPR_take_the_control_of_argentina
+		icon = GFX_goal_generic_demand_territory
+		x = 31
+		y = 16
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_integration_of_western_indies  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Support to peninsular kingdoms
+	focus = {
+		id = SPR_support_to_peninsular_kingdoms
+		icon = GFX_goal_generic_demand_territory
+		x = 14
+		y = 15
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_autodefence_of_the_empire  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Expand de help to Aragon
+	focus = {
+		id = SPR_expand_de_help_to_aragon
+		icon = GFX_goal_generic_demand_territory
+		x = 12
+		y = 16
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_support_to_peninsular_kingdoms  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Expand the help to Portugal
+	focus = {
+		id = SPR_expand_the_help_to_portugal
+		icon = GFX_goal_generic_demand_territory
+		x = 14
+		y = 16
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_support_to_peninsular_kingdoms  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Development Brazil
+	focus = {
+		id = SPR_development_brazil
+		icon = GFX_goal_generic_demand_territory
+		x = 16
+		y = 16
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_support_to_peninsular_kingdoms  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Consolidate and integrate the colonies
+	focus = {
+		id = SPR_consolidate_and_integrate_the_colonies
+		icon = GFX_goal_generic_demand_territory
+		x = 35
+		y = 17
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_take_the_control_of_new_spain  } prerequisite = { focus = SPR_take_the_control_of_guatemala  } prerequisite = { focus = SPR_take_the_control_of_new_granada  } prerequisite = { focus = SPR_take_de_control_peru  } prerequisite = { focus = SPR_take_the_control_of_argentina  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Enforcement the republican sentiment
+	focus = {
+		id = SPR_enforcement_the_republican_sentiment
+		icon = GFX_goal_generic_demand_territory
+		x = 16
+		y = 0
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		mutually_exclusive = { focus = SPR_continue_with_the_tradicional_politic  } mutually_exclusive = { focus = SPR_the_autocratic_spain  }
+		completion_reward = {
+			add_political_power = 100
+		}
+		allow_branch = {
+			NOT = { has_country_flag = ARG_oculto }
+		}
+	}
+
+	#Elect to prime minister
+	focus = {
+		id = SPR_elect_to_prime_minister
+		icon = GFX_goal_generic_demand_territory
+		x = 23
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_continue_with_the_tradicional_politic  }
+		mutually_exclusive = { focus = SPR_increase_the_monarchy_power  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#The autocratic Spain
+	focus = {
+		id = SPR_the_autocratic_spain
+		icon = GFX_goal_generic_demand_territory
+		x = 37
+		y = 0
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		mutually_exclusive = { focus = SPR_enforcement_the_republican_sentiment  } mutually_exclusive = { focus = SPR_continue_with_the_tradicional_politic  }
+		completion_reward = {
+			###
+		}
+		allow_branch = {
+			NOT = { has_country_flag = ARG_oculto }
+		}
+	}
+
+	#Proclaim the Spanish Republic
+	focus = {
+		id = SPR_proclaim_the_spanish_republic
+		icon = GFX_goal_generic_demand_territory
+		x = 18
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_enforcement_the_social_protest  focus = SPR_form_the_republican_front  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Call to general elections
+	focus = {
+		id = SPR_call_to_general_elections
+		icon = GFX_goal_generic_demand_territory
+		x = 16
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_enforcement_the_republican_sentiment  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Enforcement the social protest
+	focus = {
+		id = SPR_enforcement_the_social_protest
+		icon = GFX_goal_generic_demand_territory
+		x = 16
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_reinforcement_the_rich_taxes  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Form the republican Front
+	focus = {
+		id = SPR_form_the_republican_front
+		icon = GFX_goal_generic_demand_territory
+		x = 20
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_spanish_liberalism  focus = SPR_spanish_social_democracy  }
+		mutually_exclusive = { focus = SPR_centrist_positions  } mutually_exclusive = { focus = SPR_gain_the_support_of_moderate_party  } mutually_exclusive = { focus = SPR_alliance_with_carlism  } mutually_exclusive = { focus = SPR_monarchistconservative_alliance  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Promote the welfare state
+	focus = {
+		id = SPR_promote_the_welfare_state
+		icon = GFX_goal_generic_demand_territory
+		x = 18
+		y = 3
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_spanish_social_democracy  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Reinforcement the rich taxes
+	focus = {
+		id = SPR_reinforcement_the_rich_taxes
+		icon = GFX_goal_generic_demand_territory
+		x = 14
+		y = 3
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_the_left_autocracy  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Advance to popular regime
+	focus = {
+		id = SPR_advance_to_popular_regime
+		icon = GFX_goal_generic_demand_territory
+		x = 12
+		y = 6
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_gain_the_support_of_ugt  } prerequisite = { focus = SPR_proclaim_the_spanish_republic  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Democratic sentiment
+	focus = {
+		id = SPR_democratic_sentiment
+		icon = GFX_goal_generic_demand_territory
+		x = 18
+		y = 6
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_proclaim_the_spanish_republic  focus = SPR_spanish_parliament_primacy  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Spanish capitalist economy
+	focus = {
+		id = SPR_spanish_capitalist_economy
+		icon = GFX_goal_generic_demand_territory
+		x = 23
+		y = 6
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_preserve_the_economic_and_social_stability  focus = SPR_spanish_parliament_primacy  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Three power separations
+	focus = {
+		id = SPR_three_power_separations
+		icon = GFX_goal_generic_demand_territory
+		x = 19
+		y = 7
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_democratic_sentiment  }
+	}
+
+	#Civilian laicism
+	focus = {
+		id = SPR_civilian_laicism
+		icon = GFX_goal_generic_demand_territory
+		x = 17
+		y = 7
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_democratic_sentiment  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Popular Milicies
+	focus = {
+		id = SPR_popular_milicies
+		icon = GFX_goal_generic_demand_territory
+		x = 11
+		y = 7
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_advance_to_popular_regime  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Enforcement the secularization
+	focus = {
+		id = SPR_enforcement_the_secularization
+		icon = GFX_goal_generic_demand_territory
+		x = 13
+		y = 7
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_advance_to_popular_regime  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Preserve the economic and social stability
+	focus = {
+		id = SPR_preserve_the_economic_and_social_stability
+		icon = GFX_goal_generic_demand_territory
+		x = 24
+		y = 5
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_gain_the_support_of_moderate_party  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Spanish coorporativism
+	focus = {
+		id = SPR_spanish_coorporativism
+		icon = GFX_goal_generic_demand_territory
+		x = 28
+		y = 6
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_monarchistconservative_alliance  } prerequisite = { focus = SPR_enforcement_the_militarist_sentiment  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Antimperialist diplomacy
+	focus = {
+		id = SPR_antimperialist_diplomacy
+		icon = GFX_goal_generic_demand_territory
+		x = 18
+		y = 9
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_law_and_justice  focus = SPR_the_wild_of_the_people  }
+		mutually_exclusive = { focus = SPR_expand_red_imperialism  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Dios Patria y Rey
+	focus = {
+		id = SPR_dios_patria_y_rey
+		icon = GFX_goal_generic_demand_territory
+		x = 30
+		y = 8
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_militarist_monarchy  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Law and Justice
+	focus = {
+		id = SPR_law_and_justice
+		icon = GFX_goal_generic_demand_territory
+		x = 18
+		y = 8
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_civilian_laicism  } prerequisite = { focus = SPR_three_power_separations  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#The wild of the people
+	focus = {
+		id = SPR_the_wild_of_the_people
+		icon = GFX_goal_generic_demand_territory
+		x = 12
+		y = 8
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_popular_milicies  } prerequisite = { focus = SPR_enforcement_the_secularization  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Enforcement the global decolonization
+	focus = {
+		id = SPR_enforcement_the_global_decolonization
+		icon = GFX_goal_generic_demand_territory
+		x = 12
+		y = 10
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_expand_red_imperialism  } prerequisite = { focus = SPR_antimperialist_diplomacy  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Invite to Greek
+	focus = {
+		id = SPR_invite_to_greek
+		icon = GFX_goal_generic_demand_territory
+		x = 20
+		y = 23
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_secret_alliance_with_romania  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Offer alliance to China
+	focus = {
+		id = SPR_offer_alliance_to_china
+		icon = GFX_goal_generic_demand_territory
+		x = 18
+		y = 22
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_our_alliance  }
+		mutually_exclusive = { focus = SPR_alliance_with_japan  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Alliance with Japan
+	focus = {
+		id = SPR_alliance_with_japan
+		icon = GFX_goal_generic_demand_territory
+		x = 16
+		y = 22
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_our_alliance  }
+		mutually_exclusive = { focus = SPR_offer_alliance_to_china  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Spanish nationalism
+	focus = {
+		id = SPR_spanish_nationalism
+		icon = GFX_goal_generic_demand_territory
+		x = 24
+		y = 7
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_preserve_the_economic_and_social_stability  } prerequisite = { focus = SPR_spanish_capitalist_economy  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#International realpolitik
+	focus = {
+		id = SPR_international_realpolitik
+		icon = GFX_goal_generic_demand_territory
+		x = 22
+		y = 8
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_spanish_nationalism  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Create the Iberophone asociation
+	focus = {
+		id = SPR_create_the_iberophone_asociation
+		icon = GFX_goal_generic_demand_territory
+		x = 19
+		y = 11
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_spanish_decolonization_comite  } prerequisite = { focus = SPR_european_union_sentiment  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Start the independence process
+	focus = {
+		id = SPR_start_the_independence_process
+		icon = GFX_goal_generic_demand_territory
+		x = 18
+		y = 12
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_consolidate_the_iberoamerican_alliances  } prerequisite = { focus = SPR_create_the_iberophone_asociation  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Consolidate the iberoamerican alliances
+	focus = {
+		id = SPR_consolidate_the_iberoamerican_alliances
+		icon = GFX_goal_generic_demand_territory
+		x = 17
+		y = 11
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_spanish_decolonization_comite  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Destroy the British Empire
+	focus = {
+		id = SPR_destroy_the_british_empire
+		icon = GFX_goal_generic_demand_territory
+		x = 11
+		y = 12
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_resistence_against_the_african_colonization  focus = SPR_resistence_against_the_asian_colonization  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Resistence against the african colonization
+	focus = {
+		id = SPR_resistence_against_the_african_colonization
+		icon = GFX_goal_generic_demand_territory
+		x = 13
+		y = 11
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_enforcement_the_global_decolonization  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Resistence against the asian colonization
+	focus = {
+		id = SPR_resistence_against_the_asian_colonization
+		icon = GFX_goal_generic_demand_territory
+		x = 11
+		y = 11
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_enforcement_the_global_decolonization  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#European Union Sentiment
+	focus = {
+		id = SPR_european_union_sentiment
+		icon = GFX_goal_generic_demand_territory
+		x = 20
+		y = 10
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_antimperialist_diplomacy  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Unite Europe
+	focus = {
+		id = SPR_unite_europe
+		icon = GFX_goal_generic_demand_territory
+		x = 20
+		y = 12
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_create_the_iberophone_asociation  } prerequisite = { focus = SPR_promote_the_europeism  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Promote the Europeism
+	focus = {
+		id = SPR_promote_the_europeism
+		icon = GFX_goal_generic_demand_territory
+		x = 21
+		y = 11
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_european_union_sentiment  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Global peace
+	focus = {
+		id = SPR_global_peace
+		icon = GFX_goal_generic_demand_territory
+		x = 19
+		y = 13
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_unite_europe  } prerequisite = { focus = SPR_start_the_independence_process  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Eliminate the french menace
+	focus = {
+		id = SPR_eliminate_the_french_menace
+		icon = GFX_goal_generic_demand_territory
+		x = 13
+		y = 12
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_resistence_against_the_african_colonization  focus = SPR_resistence_against_the_asian_colonization  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Force the neerderlands
+	focus = {
+		id = SPR_force_the_neerderlands
+		icon = GFX_goal_generic_demand_territory
+		x = 9
+		y = 12
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_resistence_against_the_african_colonization  focus = SPR_resistence_against_the_asian_colonization  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Menace Italy
+	focus = {
+		id = SPR_menace_italy
+		icon = GFX_goal_generic_demand_territory
+		x = 15
+		y = 12
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_resistence_against_the_african_colonization  } prerequisite = { focus = SPR_resistence_against_the_asian_colonization  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Destroy the imperialism remanent
+	focus = {
+		id = SPR_destroy_the_imperialism_remanent
+		icon = GFX_goal_generic_demand_territory
+		x = 12
+		y = 13
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_force_the_neerderlands  focus = SPR_destroy_the_british_empire  focus = SPR_menace_italy  focus = SPR_eliminate_the_french_menace  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Export the communism to America
+	focus = {
+		id = SPR_export_the_communism_to_america
+		icon = GFX_goal_generic_demand_territory
+		x = 5
+		y = 10
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_expand_red_imperialism  }
+		completion_reward = {
+			###
+		}
+	}
+
+	#Export the revolution to Europe
+	focus = {
+		id = SPR_export_the_revolution_to_europe
+		icon = GFX_goal_generic_demand_territory
+		x = 7
+		y = 10
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_expand_red_imperialism  }
+		completion_reward = {
+			###
+		}
+	}
+
+}

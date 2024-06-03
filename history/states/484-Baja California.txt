@@ -1,0 +1,35 @@
+
+state={
+	id=484
+	name="STATE_484"
+
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 2
+			air_base = 3
+			1892 = {
+				naval_base = 2
+
+			}
+			12736 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = USA
+		victory_points = {
+			12461 10 
+		}
+
+	}
+
+	provinces={
+		1892 1904 7964 8119 12461 12736 12859 13215 13216 14845 14846 14847 14848 14849 14850 14851 14852 14853 14855 14857 14860 14862 14864 14866 14871 14872 14873 14874 14880 14882 14884 14891 14896 14898 14902 14904 14907 14911 14917 14918 14920 14921 14924 14926 14927 14928 14929 14930 
+	}
+	manpower=108841
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

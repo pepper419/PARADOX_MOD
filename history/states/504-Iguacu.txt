@@ -1,0 +1,29 @@
+
+state={
+	id=504
+	name="STATE_504"
+
+	resources={
+		aluminium=4.000
+		wood = 14
+		grain = 24
+	}
+
+	history={
+		owner = BRA
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = BRA
+
+	}
+
+	provinces={
+		2111 2181 5200 8189 10959 12951 13807 13812 13819 13826 13829 13830 13831 13832 13839 13841 13850 13852 13855 13856 13859 13870 13876 13886 13887 13890 13898 13900 13901 13909 13913 13923 13930 13953 13960 13979 13984 13985 13999 
+	}
+	manpower=229900
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

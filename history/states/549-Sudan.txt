@@ -1,0 +1,25 @@
+
+state={
+	id=549
+	name="STATE_549"
+	manpower = 3694293
+	
+	state_category = town
+	
+	
+	history={
+		victory_points = {
+			2096 1
+		}
+		owner = EGY
+		add_core_of = SUD
+		buildings = {
+			infrastructure = 1
+		}
+
+	}
+
+	provinces={
+		2016 4033 8084 8052 10739 10795 10827 10851 12744
+	}
+}

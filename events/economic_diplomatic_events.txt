@@ -1,0 +1,61 @@
+add_namespace = root_economic_diplomacy
+
+###this event is when a country finances to other and lost part of yours reserves###
+country_event = {	
+	id = root_economic_diplomacy.1
+	title = root_economic_diplomacy.1.t
+	desc = root_economic_diplomacy.1.desc
+	
+	picture = GFX_report_event_fascist_gathering
+	
+	is_triggered_only = yes
+
+	option = {
+		name = root_economic_diplomacy.1.a
+		custom_effect_tooltip = root_money_send_tooltip
+		set_variable = { var = root_send_money_mount_2 value = money_printer_calc_2 }			
+		subtract_from_variable = { var = total_money_reserves value = root_send_money_mount_2 }
+	}
+}
+###
+
+###this event is when a country finances to other and the other accept the ofert###
+country_event = {	
+	id = root_economic_diplomacy.2
+	title = root_economic_diplomacy.2.t
+	desc = root_economic_diplomacy.2.desc
+	
+	picture = GFX_report_event_fascist_gathering
+	
+	is_triggered_only = yes
+
+	option = {
+		name = root_economic_diplomacy.2.a
+		custom_effect_tooltip = root_money_receive_tooltip
+		custom_effect_tooltip = root_inflation_receive_tooltip
+		custom_effect_tooltip = root_devaluation_receive_tooltip
+
+		add_to_variable = { var = total_money_reserves value = root_convert_money_calc_2 }
+		add_to_variable = { var = root_inflation_level value = root_convert_money_calc_1 }
+		add_to_variable = { var = root_devaluation_level value = root_convert_money_calc_3 }
+	}
+}
+###
+
+###this event is when a country finances to other and the other accept the ofert###
+country_event = {	
+	id = root_economic_diplomacy.3
+	title = root_economic_diplomacy.3.t
+	desc = root_economic_diplomacy.3.desc
+	
+	picture = GFX_report_event_fascist_gathering
+	
+	is_triggered_only = yes
+
+	option = {
+		name = root_economic_diplomacy.3.a
+		custom_effect_tooltip = root_money_reject_tooltip
+		add_to_variable = { var = total_money_reserves value = root_send_money_mount_2 }
+	}
+}
+###

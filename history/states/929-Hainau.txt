@@ -1,0 +1,29 @@
+state={
+	id=929
+	name="STATE_929"
+	resources={
+		steel=4.000
+		coal = 24
+	}
+
+	history={
+		owner = HOL
+		add_core_of = HOL
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 2
+		}
+		victory_points = {
+			13081 3
+		}
+
+	}
+
+	provinces={
+		9536 13081
+	}
+	manpower=467353
+	buildings_max_level_factor=1.000
+	state_category=city
+}

@@ -1,0 +1,26 @@
+state={
+	id=927
+	name="STATE_927"
+	resources={
+		steel=40.000
+		coal = 48
+	}
+
+	history={
+		owner = HOL
+		add_core_of = HOL
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 2
+		}
+        victory_points = { 516 30 }
+	}
+
+	provinces={
+		516
+	}
+	manpower=2836479
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+}

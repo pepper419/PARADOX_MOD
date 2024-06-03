@@ -1,0 +1,29 @@
+
+state={
+	id=3
+	name="STATE_3"
+	manpower = 4161500
+
+	state_category = megalopolis
+
+
+	history={
+		owner = SWI
+		victory_points = { 9620 15 }
+		victory_points = { 663 10 }
+		victory_points = { 9638 5 }
+		buildings = {
+			infrastructure = 4
+			arms_factory = 3
+			industrial_complex = 3
+			air_base = 4
+		}
+		add_core_of = SWI
+	}
+
+	provinces={
+		636 661 663 9618 9620 9638 6683 11601 11604 11623
+	}
+
+	local_supplies=0.0 
+}

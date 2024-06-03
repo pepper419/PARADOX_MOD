@@ -1,0 +1,38 @@
+state={
+	id=913
+	name="STATE_913"
+
+	resources={
+		steel = 10
+		grain = 14
+		fish = 22
+	}
+
+	provinces={
+		3772 6788 11891 
+	}
+	history={
+		owner = ITA
+		add_core_of = ITA
+		add_core_of = SPM
+
+		buildings = {
+			infrastructure = 4
+			dockyard = 2
+			6788 = {
+				naval_base = 8
+
+			}
+
+		}
+
+		victory_points = {
+			6788 10 
+		}
+	}
+
+	state_category = large_city
+	manpower=1376895
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

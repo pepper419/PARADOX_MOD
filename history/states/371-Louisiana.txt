@@ -1,0 +1,37 @@
+
+state={
+	id=371
+	name="STATE_371"
+	resources={
+		oil=44.000
+		cotton=20.000
+		grain=20.000
+	}
+
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			air_base = 5
+			7552 = {
+				naval_base = 5
+
+			}
+
+		}
+		add_core_of = USA
+		victory_points = {
+			7552 10 
+		}
+
+	}
+
+	provinces={
+		1528 1559 4507 4535 7552 7555 12313 12398 12401 15672 15676 15678 15679 15682 15687 15689 15692 15693 15696 15699 15704 15705 15708 15714 15715 15718 15725 15728 15730 15731 15732 15734 15735 15738 15741 15743 15744 
+	}
+	manpower=2101592
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=0.000
+}

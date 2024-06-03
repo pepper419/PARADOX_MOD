@@ -1,0 +1,27 @@
+
+state={
+	id=889
+	name="STATE_889"
+	resources={
+		precious_metals=30.000
+		tungsten=2.000
+	}
+
+	history={
+		owner = ZIM
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = ZIM
+
+	}
+
+	provinces={
+		191 734 847 1516 1817 1968 4515 9664 9836 12795 12907 16507 16540 16541 16564 
+	}
+	manpower=708190
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

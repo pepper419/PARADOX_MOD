@@ -1,0 +1,42 @@
+state={
+	id=112
+	name="STATE_112"
+	resources={
+		tungsten=50.000
+		fish = 26
+		fruit = 36
+		grain = 30
+	}
+
+	history={
+		owner = POR
+		victory_points = {
+			11805 20 
+		}
+		victory_points = {
+			924 1 
+		}
+		victory_points = {
+			970 1
+		}
+		buildings = {
+			infrastructure = 4
+			arms_factory = 2
+			industrial_complex = 2
+			air_base = 5
+			dockyard = 2
+			11805 = {
+				naval_base = 8
+			}
+		}
+		add_core_of = POR
+		add_core_of = SPR
+	}
+
+	provinces={
+		924 970 3861 11768 11805 
+	}
+	manpower=2995800
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+}

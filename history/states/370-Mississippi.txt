@@ -1,0 +1,36 @@
+
+state={
+	id=370
+	name="STATE_370"
+	resources={
+		cotton=20.000
+		grain=20.000
+	}
+
+	history={
+		owner = USA
+		victory_points = {
+			4464 1 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			air_base = 3
+			4464 = {
+				naval_base = 4
+
+			}
+
+		}
+		add_core_of = USA
+
+	}
+
+	provinces={
+		1453 4464 4510 4565 4650 7464 7524 7668 10410 10449 10753 11717 12328 12429 15700 15720 15993 15994 15995 15996 15997 15998 15999 16000 16001 16003 16004 16005 16007 16008 16009 16010 16011 16013 16014 16015 16017 16018 16019 16021 16022 16023 16024 16025 16026 16027 16031 16034 16035 16036 16037 
+	}
+	manpower=2009820
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

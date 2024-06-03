@@ -1,0 +1,33 @@
+
+state={
+	id=948
+	name="STATE_948"
+
+	resources={
+		wool = 8
+		grain = 8
+		steel = 14
+		wood = 16
+	}
+
+	history={
+		owner = TDF
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = TDF
+		victory_points = {
+			11009 4 
+		}
+
+	}
+
+	provinces={
+		5209 11009 13635 13636 13637 13638 
+	}
+	manpower=1803364
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

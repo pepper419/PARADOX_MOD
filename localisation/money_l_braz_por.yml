@@ -1,0 +1,260 @@
+﻿l_braz_por:
+ #Money Text and events#
+ MONEY_TOOLTIP_BASE:0 "Você Tem [?dx] Milhões de Dinheiro \n\nVocê Ganha §G [?nmn] §! Milhões de Dinheiro por Dia \n §Glasses§! \n Você Ganha [?tax] de Impostos por Dia \n Receita das Fabricas Civis [?cfff]Milhões por Dia \nComércio (Exportação) [?resourceincome] Milhões por Dia \n Exportações de Borracha [?rubber_export] Milhões por Dia \n Exportações de Crômo [?chromium_export] Milhões por Dia \n Exportação de Tungstênio [?tungsten_export] Milhões por dia \n Exportação de alumínio [?aluminium_export] Milhões por dia \n Exportação de petróleo [?oil_export] Milhões por dia \n Exportação de aço [?steel_export] Milhões por dia \n §RExpensas§! \nGastos militares -[?ms] Milhões por dia \nManutenção de Fabrica Militar -[?nf] Milhões por dia \n Manutenção de Doca -[?navf] Milhões por dia \n taxa para soberano -[?tax_to_overlord] Milhões por dia \nGrande depressão -[?depression] Milhões por dia \n Manutenção do Estado -[?nc] Milhões por dia \n Comércio (Importação) -[?resourceexpenses] Milhões por dia \n Importação de borracha -[?rubber_import] Milhões por dia \n Importação de cromo -[?chromium_import] Milhões por dia \n Importação de tungstênio -[?tungsten_import] Milhões por dia \n Importação de alumínio -[?aluminium_import] Milhões por dia \n Importação de petróleo -[?oil_import] Milhões por dia \n Importação de aço -[?steel_import] Milhões por dia \nInstabilidade econômica -[?nerfeco] Milhões por dia \nCusto de ocupação -[?no] Milhões por dia \nCusto diário da dívida -[?debtexp] Milhões por dia \n\nDívida total [?debttotal] Milhões"
+ MONEY_MAIN:0       "[?dx] M"
+ MONEY_DEBT:0       "§Você tem [?debttotal] de debto§!"
+ moneymod.1.t:0     "Mercado de Ações Global Foi Atualizado"
+ moneymod.1.d:0     "Mercado de ações global foi atualizado.\nIsto vai acontecer todo o ano."
+ moneymod.1.a:0     "Sounds Good"
+ moneymod.2.t:0     "Nós Temos Pouco Dinheiro"
+ moneymod.2.d:0     "Nós Temos Pouco Dinheiro.\nPrecisamos Agir!"
+ moneymod.2.a:0     "Pegar da Economia"
+ moneymod.2.b:0     "Pegar Debtos"
+ moneymod.2.c:0     "Não Fazer Nada"
+ moneymod.5.t:0     "Falência!"
+ moneymod.5.d:0     "Falência!!!.\n Nós perder nossa economia ou nossa visão politica"
+ moneymod.5.a:0     "Economia Quebrou"
+ moneymod.5.b:0     "Ignorar Politicas"
+
+
+ MARK_TOOLTIP:0     "Você possui [?dx] milhão de reichsmark \n  \nVocê ganha §G [?nmn] §! Milhões de reichsmark por dia \n §Gincome§! \nImpostos [?tax] milhões por dia \nReceita de fábricas civis [?cfff] Milhões por dia \nTrade (exportação) [?resourceincome] Milhões por dia \n Exportação de borracha [?rubber_export] Milhões por dia \n Exportação de cromo [?chromium_export] Milhões por dia \n Exportação de tungstênio [?tungsten_export] Milhões por Dia \n exportação de alumínio [?aluminium_export] Milhões por dia \n Exportação de petróleo [?oil_export] Milhões por dia \n Exportação de aço [?steel_export] Milhões por dia \n §RExpensas§! \n Gasto militar -[?ms] Milhões por Dia \nManutenção em Fábrica Militar -[?nf] Milhões por Dia \nNaval Manutenção em Fábrica -[?navf] Milhão por Dia \nTaxa para Overlord -[?tax_to_overlord] Milhão por dia \nGrande Depressão -[?depression] Milhão por dia \nEstado Manutenção -[?nc] Milhões por dia \n Trade (IMPORT) -[?resourceexpenses] Milhões por dia \n Importação de borracha -[?rubber_import] Milhões por dia \n Importação de cromo -[?chromium_import] Milhões por Dia \n Importação de tungstênio -[?tungsten_import] Milhões por dia \n Importação de alumínio -[?aluminium_import] Milhões por dia \n Importação de petróleo -[?oil_import] Milhões por dia \n Importação de aço -[?steel_import] Milhões por dia \n Instabilidade Econômica -[?nerfeco] Milhões por dia \nCusto de ocupação -[?no] Milhões por dia \nCusto diário da dívida -[?debtexp] Milhões por dia \n\nDívida total [?debttotal] Milhões "
+ MONEY_TOOLTIP:0    "[Root.GetMoneyTooltip]"
+ RUBLE_TOOLTIP:0    "Você tem [?dx] milhão de rublos \n \nVocê ganha §G [?nmn] §! Milhões de rublos por dia \n §Ginanças§! \nTributos [?tax] milhões por dia \nReceitas de fábricas civis [?cfff] Milhões por dia \n Comércio (exportação) [?resourceincome] Milhões por dia \n Exportação de borracha [?rubber_export] Milhões por dia \n Exportação de cromo [?chromium_export] Milhões por dia \n Exportação de tungstênio [?tungsten_export] Milhões por Dia \n exportação de alumínio [?aluminium_export] Milhões por dia \n Exportação de petróleo [?oil_export] Milhões por dia \n Exportação de aço [?steel_export] Milhões por dia \n §RExpensas§! \n Gasto militar -[?ms] Milhões por Dia \nManutenção em Fábrica Militar -[?nf] Milhões por Dia \nNaval Manutenção em Fábrica -[?navf] Milhão por Dia \nTaxa para soberano -[?tax_to_overlord] Milhão por dia  nGrande Depressão -[?depression] Milhão por dia \n Manutenção do Estado -[?nc] Milhões por dia \n Comércio (Importação) -[?resourceexpenses] Milhões por dia \n Importação de borracha -[?rubber_import] Milhões por dia \n Importação de cromo -[?chromium_import] Milhões por dia \n Importação de tungstênio -[?tungsten_import] Milhões por dia \n Importação de alumínio -[?aluminium_import] Milhões por dia \n Importação de petróleo -[?oil_import] Milhões por dia \n Importação de aço -[?steel_import] Milhões por dia \nInstabilidade econômica -[?nerfeco] Milhões por dia \nCusto de ocupação -[?no] Milhões por dia \nCusto diário da dívida -[?debtexp] Milhões por dia \n \nDívida total [?debttotal] Milhões "
+ DOLAR_TOOLTIP:0    "Você tem [?dx] milhão de dólares \n \nVocê ganha §G [?nmn] §! Milhões de dólares por dia \n §Glasses§! \nImpostos [?tax] milhões por dia \nReceita de fábricas civis [?cfff] Milhões por dia \n Comércio(exportação) [?resourceincome] Milhões por dia \n Exportação de borracha [?rubber_export] Milhões por dia \n Exportação de cromo [?chromium_export] Milhões por dia \n Exportação de tungstênio [?tungsten_export] Milhões por Dia \n exportação de alumínio [?aluminium_export] Milhões por dia \n Exportação de petróleo [?oil_export] Milhões por dia \n Exportação de aço [?steel_export] Milhões por dia \n §RExpensas§! \n Gastos militares -[?ms] Milhões por Dia \nManutenção de Fábrica Militar -[?nf] Milhões por Dia \nNaval Fábrica de Manutenção -[?navf] Milhão por Dia \nTaxa para soberano -[?tax_to_overlord] Milhão por dia \nGrande Depressão -[?depression] Milhão por dia \n Manutenção do Estado  -[?nc] Milhões por dia \n Comércio (Importação) -[?resourceexpenses] Milhões por dia \n Importação de borracha -[?rubber_import] Milhões por dia \n Importação de cromo -[?chromium_import] Milhões por dia \n Importação de tungstênio -[?tungsten_import] Milhões por dia \n Importação de alumínio  -[?aluminium_import] Milhões por dia \n Oil Import -[?oil_import] Milhões por dia \n Steel Import -[?steel_import] Milhões por dia \nInstabilidade econômica -[?nerfeco] Milhões por dia \nCusto de ocupação -[?no] Milhões por dia \nCusto diário da dívida -[?debtexp] Milhões por dia \n \nDívida total [?debttotal] Milhões "
+ STERLING_TOOLTIP:0 "Você tem [?dx] milhões de libras esterlinas \n \nVocê ganha §G [?nmn] §! Milhões de libras esterlinas por dia \n §Glasses§! \nImpostos [?tax] milhões por dia \nReceitas de fábricas civis [? cfff] Milhões por dia \n Comércio (exportação) [?resourceincome] Milhões por dia \n Exportação de borracha [?rubber_export] Milhões por dia \n Exportação de cromo [?chromium_export] Milhões por dia \n Exportação de tungstênio [?tungsten_export] Milhões por Dia \n exportação de alumínio [?aluminium_export] Milhões por dia \n Exportação de petróleo [?oil_export] Milhões por dia \n Exportação de aço [?steel_export] Milhões por dia \n §RExpensas§! \n Gasto militar -[?ms] Milhões por Dia \nManutenção em Fábrica Militar -[?nf] Milhões por Dia \nNaval Manutenção em Fábrica -[?navf] Milhão por Dia \nTaxa para soberano -[?tax_to_overlord] Milhão por dia \nGrande Depressão -[?depression] Milhão por dia \n Manutenção do Estado -[?nc] Milhões por dia \n Comércio (Importação) -[?resourceexpenses] Milhões por dia \n Importação de borracha -[?rubber_import] Milhões por dia \n Importação de cromo -[?chromium_import] Milhões por dia \n Importação de tungstênio -[?tungsten_import] Milhões por dia \n Importação de alumínio -[?aluminium_import] Milhões por dia \n Importação de petróleo -[?oil_import] Milhões por dia \n Importação de aço -[?steel_import] Milhões por dia \n Instabilidade econômica-[?nerfeco] Milhões por dia \nCusto de ocupação -[?no] Milhões por dia \nCusto diário da dívida -[?debtexp] Milhões por dia \n \nDívida total [?debttotal] Milhões "
+ FRANC_TOOLTIP:0    "Você tem [?dx] milhões de francos \n \nVocê ganha §G [?nmn] §! Milhões de francos por dia \n §Glasses§! \nImpostos [?tax] milhões por dia \nReceita de fábricas civis [ ?cfff] Milhões por dia \n Comércio (exportação) [? resourceincome] Milhões por dia \n Exportação de borracha [?rubber_export] Milhões por dia \n Exportação de cromo [?chromium_export] Milhões por dia \n Exportação de tungstênio [?tungsten_export] Milhões por Dia \n exportação de alumínio [?aluminium_export] Milhões por dia \n Exportação de petróleo [?oil_export] Milhões por dia \n Exportação de aço [?steel_export] Milhões por dia \n §RExpensas§! \n Gasto militar -[?ms] Milhões por Dia \nManutenção em Fábrica Militar -[?nf] Milhões por Dia \nNaval Manutenção em Fábrica -[?navf] Milhão por Dia \nTaxa para soberano -[?tax_to_overlord] Milhão por dia \nGrande Depressão -[?depression] Milhão por dia \n Manutenção do Estado -[?nc] Milhões por dia \n Comércio (Importação) -[?resourceexpenses] Milhões por dia \n Importação de borracha -[?rubber_import] Milhões por dia \n Importação de cromo -[?chromium_import] Milhões por dia \n Importação de tungstênio -[?tungsten_import] Milhões por dia \n Importação de alumínio-[?aluminium_import] Milhões por dia \n Oil Import -[?oil_import] Milhões por dia \n Steel Import -[?steel_import] Milhões por dia \nInstabilidade econômica -[?nerfeco] Milhões por dia \nCusto de ocupação -[?no] Milhões por dia \nCusto diário da dívida -[?debtexp] Milhões por dia \n \nDívida total [?debttotal] Milhões "
+ LIRA_TOOLTIP:0     "Você possui [?dx] milhão de liras \n \nVocê ganha §G [?nmn] §! Milhões de liras por dia \n §Ginanças§! \nImpostos [?tax] milhões por dia \nReceita de fábricas civis [?cfff] Milhões por dia \n Comércio (exportação) [? resourceincome] Milhões por dia \n Exportação de borracha [?rubber_export] Milhões por dia \n Exportação de cromo [?chromium_export] Milhões por dia \n Exportação de tungstênio [?tungsten_export] Milhões por Dia \n exportação de alumínio [?aluminium_export] Milhões por dia \n Exportação de petróleo [?oil_export] Milhões por dia \n Exportação de aço [?steel_export] Milhões por dia \n §RExpensas§! \n Gasto militar -[?ms] Milhões por Dia \nManutenção em Fábrica Militar -[?nf] Milhões por Dia \nNaval Manutenção em Fábrica -[?navf] Milhão por Dia \nTaxa para soberano -[?tax_to_overlord] Milhão por dia \nGrande Depressão -[?depression] Milhão por dia \n Manutenção do Estado -[?nc] Milhões por dia \n Comércio (Importação) -[?resourceexpenses] Milhões por dia \n Importação de borracha -[?rubber_import] Milhões por dia \n Importação de cromo -[?chromium_import] Milhões por dia \n Importação de tungstênio -[?tungsten_import] Milhões por dia \n Importação de alumínio -[?aluminium_import] Milhões por dia \n Importação de petróleo -[?oil_import] Milhões por dia \n Importação de aço -[?steel_import] Milhões por dia \nInstabilidade econômica -[?nerfeco] Milhões por dia \nCusto de ocupação -[?no] Milhões por dia \nCusto diário da dívida -[?debtexp] Milhões por dia \n \nDívida total [?debttotal] Milhões "
+ YEN_TOOLTIP:0      "Você tem [?dx] milhões de ienes \n \nVocê ganha §G [?nmn] §! Milhões de ienes por dia \n §Glasses§! \nImpostos [?tax] Milhões por dia \nReceita de fábricas civis [?cfff] Milhões por dia \n Comércio (exportação) [? resourceincome] Milhões por dia \n Exportação de borracha [?rubber_export] Milhões por dia \n Exportação de cromo [?chromium_export] Milhões por dia \n Exportação de tungstênio [?tungsten_export] Milhões por Dia \n exportação de alumínio [?aluminium_export] Milhões por dia \n Exportação de petróleo [?oil_export] Milhões por dia \n Exportação de aço [?steel_export] Milhões por dia \n §RExpensas§! \n Gastos militares -[?ms] Milhões por Dia \nManutenção de Fábrica Militar -[?nf] Milhões por Dia \nNaval Fábrica de Manutenção -[?navf] Milhão por Dia \nTaxa para soberano -[?tax_to_overlord] Milhão por dia \nGrande Depressão -[?depression] Milhão por dia \n Manutenção do Estado -[?nc] Milhões por dia \n Comércio (Importação) -[?resourceexpenses] Milhões por dia \n Importação de borracha -[?rubber_import] Milhões por dia \n Importação de cromo -[?chromium_import] Milhões por dia \n Importação de tungstênio -[?tungsten_import] Milhões por dia \n Importação de alumínio -[?aluminium_import] Milhões por dia \n Oil Import -[?oil_import] Milhões por dia \n Steel Import -[?steel_import] Milhões por dia \nInstabilidade econômica -[?nerfeco] Milhões por dia \nCusto de ocupação -[?no] Milhões por dia \nCusto diário da dívida -[?debtexp] Milhões por dia \n \nDívida total [?debttotal] Milhões "
+ 
+ 
+ #Loan Decision Options#
+ economic_decision:0            "Opções de Empréstimo!"
+ economic_decision_desc:0       "Current Money $[?dx]. \nPodemos solicitar empréstimos locais ou internacionais para ajudar no desenvolvimento de nosso país, mas precisamos ter cuidado. Algumas decisões nos tornarão dependentes de outros países ou nos forçarão a escolher um lado. Podemos nos tornar um mero fantoche."
+ humanitary_ass1:0        "Empréstimo gratuito pela liga das nações."
+ humanitary_ass1_desc:0   "Podemos solicitar um empréstimo de US $ 100 milhões através da Liga das Nações uma vez com o objetivo de melhorar nossa economia."
+ 
+ 
+ sov_assistance:0           "Empréstimo Único Soviético"
+ sov_assistance_desc:0      "A URSS está disposta a nos dar um empréstimo de US $ 250 milhões para algum acordo político a seu favor. Devemos usá-lo para impulsionar o camarada da nação."
+ league_ass1:0              "Empréstimo da Liga das Nações. (taxa de 10%)"
+ league_ass1_desc:0         "A League Of Nation está sempre disposta a nos emprestar US $ 200 milhões com taxas especiais, desde que continuemos em paz com todas as nações."
+ league_ass2:0              "Empréstimo da Liga das Nações. (taxa de 10%)"
+ league_ass2_desc:0         "A League Of Nation está sempre disposta a nos emprestar US $ 200 milhões com taxas especiais, desde que continuemos em paz com todas as nações."
+ ger_assistance:0           "Empréstimo único alemão"
+ ger_assistance_desc:0      "A Alemanha está disposta a nos dar um empréstimo de US $ 250 milhões por algum acordo político a seu favor. Devemos usá-lo para impulsionar nossa nação, meu Führer"
+ usa_assistance:0           "Empréstimo único nos EUA"
+ usa_assistance_desc:0      "Os EUA estão dispostos a nos dar um empréstimo de US $ 250 milhões por algum acordo político a seu favor. Senhor presidente, devemos aproveitar esta oportunidade"
+ swi_assistance:0           "Empréstimo na Suíça. (taxa de 20%)"
+ swi_assistance_desc:0      "A Suíça está sempre aberta para nos emprestar US $ 150 milhões, mesmo quando suas taxas são altas, elas não têm nenhuma condição especial."
+ ### no traduction##
+ sau_assistance:0           "Empréstimo na Arábia Saudita.(taxa de 20%)"
+ sau_assistance_desc:0      "Arábia Saudita is always willing to give us loan of $100M even when their rates are high they don´t have any special condition."
+ ###################
+ com_assistance:0           "Empréstimo interno ao comunismo. (taxa de 15%)"
+ com_assistance_desc:0      "Enquanto houver membros do comunismo em nosso país, podemos usá-los como desculpa para solicitar um empréstimo internacional de US $ 75 milhões, mas tenha cuidado, pois isso influenciará nosso país"
+ fas_assistance:0           "Empréstimo interno para fascismo. (taxa de 15%)"
+ fas_assistance_desc:0      "Enquanto houver membros do fascismo em nosso país, podemos usá-los como desculpa para solicitar um empréstimo internacional de US $ 75 milhões, mas tenha cuidado, pois isso influenciará nosso país"
+ dem_assistance:0           "Empréstimo democrático interno. (taxa de 15%)"
+ dem_assistance_desc:0      "Enquanto houver membros democráticos em nosso país, podemos usá-los como desculpa para solicitar um empréstimo internacional de US $ 75 milhões, mas tenha cuidado, pois isso influenciará nosso país"
+ neu_assistance:0           "Empréstimo autoritário interno. (taxa de 15%)"
+ neu_assistance_desc:0      "Enquanto houver membros autoritários em nosso país, podemos usá-los como desculpa para solicitar um empréstimo internacional de US $ 75 milhões, mas tenha cuidado, pois isso influenciará nosso país"
+ priv_assistance0:0         "Empréstimo privado. (taxa de 15%)"
+ priv_assistance0_desc:0    "Os investidores privados estão dispostos a nos emprestar US $ 75 milhões com uma taxa normal, mas temos que esperar algum tempo para fazê-lo novamente."
+ priv_assistance1:0         "Empréstimo privado. (taxa de 20%)"
+ priv_assistance1_desc:0    "Os investidores privados estão dispostos a nos emprestar US $ 100 milhões com uma taxa de 20%, mas podemos recuperá-lo mais rapidamente."
+ ####no traduction##
+ usa_puppet:0               "USA Financial Rescue(Puppet)"
+ usa_puppet_desc:0          "USA is willing to give us $350M to resolve our economic crisis with the condition of becoming their puppet. At this time we don´t have many options!"
+ sov_puppet:0               "Soviet Financial Rescue(Puppet)"
+ sov_puppet_desc:0          "the USSR is willing to give us $350M to save our economy from financial collapse but we need to become in their puppet. Comrade we don´t have many options!"
+ ger_puppet:0               "German Financial Rescue(Puppet)"
+ ger_puppet_desc:0          "Germany is willing to give us a rescue of $350M but we have to join their cause. We have to follow the leader to greatness!"
+ #######################
+
+
+
+ #Political Invesment Decisions#
+ political_option:0         "Investimento Político"
+ political_option_desc:0    "Nós podemos usar nossa influência política para forçar algum investimento externo. Isso poder ser usado para desenvolver nossa nação."
+ buy_research_slot:0        "Comprar Espaço de Pesquisa"
+ buy_militar_slot:0         "Comprar Fábrica Militar"
+ buy_civil_slot:0           "Comprar Fábrica Civil"
+ buy_dockyard_slot:0        "Comprar Doca"
+ buy_militaryexp:0          "Comprar 50 de Experiência Militar"
+ buy_airexp:0               "Comprar 50 de Experiência Aérea"
+ buy_navyexp:0              "Comprar 50 de Experiência Naval"
+ buy_steel2:0               "Comprar 2 de Produção de Ferro "
+ buy_oil5:0                 "Comprar 5  de Produção de Petróleo"
+ 
+ #Old Bonus Menu(not used)#
+ political_menu:0       "Political Menu!"
+ polpower:0             "§HBuy temporary And Permanent Bonus§"
+ Politics_Store:0       "Politics Store!"
+ Bonus_Menu:0           "Bonus Menu"
+ buyreserachslot:       "Buy A Research Slot! 500PP!"
+ rs_value:              "500!"
+ buy_army_factory:0     "Buy An Army Factory! 100PP!"
+ af_value:              "100!"
+ buy_civ_factory:       "Buy An Industrial Factory! 100PP!"
+ if_value:              "100!"
+ buy_nav_factory:0       "Buy A Dockyard! 50PP!"
+ xp_value:0              "50!"
+ buy_army_experience:0   "Buy 50 of Army Experience! 50PP!"
+ buy_navy_experience:0   "Buy 50 of Navy Experience! 50PP!"
+ buy_air_experience:0    "Buy 50 of Air Experience! 50PP!"
+ buy_oil:0               "Buy 2 Oil Prod.! 50PP!"
+ buy_steel:0             "Buy 2 Steel Prod.! 20PP!"
+ slot.1.t:0            "Building Slot Full!"
+ 
+ #Currency Reserves Bonus#
+ normal_money:0          "Reservas Monetárias"
+ normal_money_desc:0     "Nosso orçamento está positivo, nós deveriamos ficar de olho nisso e procurar por oportunidades economicas"
+ low_money:0             "Nós Temos um Debto Pequeno"
+ low_money_desc:0        "Nossa nação está sendo afetada por essa pequena crise. Nós deveriamos trabalhar antes que a coisa fique pior"
+ bad_money:0             "Nós Temos um Debto Médio"
+ bad_money_desc:0        "Nosso debto está crescendo e nossa economia está começando a sentir. Nós deveriamos fazer novas politicas econômicas"
+ very_low_money:0        "Nós Temos um Debto Grande"
+ very_low_money_desc:0   "Nós estamos sendo profundamente afetada pelo o debto. Nós precisamos fazer algo antes que uma revolução ocorra"
+ 
+ 
+ #Currency Reserves Bonus(not used)#
+ boost_money:0           "No Debt"
+ boost_money_desc:0      "We have no debt"
+ very_high_money:0       "High Currency Reserves"
+ very_high_money_desc:0  "We have a great amount of currency in our reserves"
+ medium_money:0          "Medium Currency Reserves"
+ medium_money_desc:0     "Our Reserves are good and helpful"
+
+ 
+ #Ideas Bonus#
+ CB_15:0        "Subsídio Médio Na industria de Construção"
+ CB_15_desc:0   "Nós fizemos um investimento médio na área para empurrar nossos projetos"
+ 
+ CB_30:0        "Subsídio Pesado Na industria de Construção"
+ CB_30_desc:0   "Nós fizemos um investimento grande na área para acelerar nossos projetos"
+ 
+ IB_10:0        "Aumentar o Salário dos Pesquisadores"
+ IB_10_desc:0   "Nós aumentamos o salário dos pesquisadores. Eles devem estar mais motivados para trabalhar"
+ 
+ IB_20:0        "Investimento Pesado nos Centros de Pesquisa"
+ IB_20_desc:0   "Nós investimos em equipamentos melhores para melhorar a eficácia dos nossos pesquisadores"
+ 
+ MB_3:0         "Alistamento Médio"
+ MB_3_desc:0    "Nós implementamos um sistema de alistamento para aumentar nossas forças"
+ 
+ MB_7:0         "Alistamento Pesado"
+ MB_7_desc:0    "Nós aumentamos nosso sistema de alistamento para maximizar nossas forças"
+ 
+ GB_3:0         "Investimento Pequeno nos Bens de Consumo"
+ GB_3_desc:0    "Nós subisdiamos um pouco de equipamentos. Fabricas estão melhores"
+ 
+ GB_5:0         "Investimento Pequeno nos Bens de Consumo"
+ GB_5_desc:0    "Nós subisdiamos um pouco de equipamentos.Fabricas estão muito melhores"
+ 
+ MB_10:0        "Investimento Pequeno nas Minas"
+ MB_10_desc:0   "Nós subsidiamos um pedaço pequeno das minas. Nós precisamos de recursos"
+ 
+ MB_20:0        "Investimento Médio nas Minas"
+ MB_20_desc:0   "Nós subsidiamos um pedaço grande das mina .Nós precisamos de recursos o mais rápido possivel. A economia precisa disso!"
+ 
+ JFB_25:0       "Justificação de guerra rápida"
+ JFB_25_desc:0  "Nós aceleramos nossas politicas e podemos invadir mais rápido."
+ 
+ JFB_60:0       "Justificação de guerra mais rápido"
+ JFB_60_desc:0  "Nós removemos do nosso caminho todos os obstáculos que nos impediam de declarar guerra e podemos justificra bem rápido."
+ 
+ 
+ #Ideas On Menu#
+ CB15_200_200:0 "Comprar 15% bônus de construção por 200 dias por $200M!" 
+ 
+ CB30_400_350:0 "Comprar 30% bônus de construção por 400 dias por $350M!"
+ 
+ IB10_200_200:0 "Comprar 10% bônus de investigação por 200 dias por $200M!"
+ 
+ IB20_400_350:0 "Comprar 20% bônus de investigação por 400 dias por $350M!"
+ 
+ MB3_200_150:0  "Comprar 3% bônus de Mão de Obra por 200 dias por $150M!"
+ 
+ MB7_400_250:0  "Comprar 7% bônus de Mão de Obra por 400 dias por $350M!"
+ 
+ GB3_200_200:0  "Comprar -3% bônus de bens de consumo por 200 dias por $200M!"
+ 
+ GB5_400_300:0  "Comprar -5% bônus de bens de consumo por 400 dias por $300M!"
+ 
+ MB10_200_200:0 "Comprar 10% bônus de Mineração por 500 dias por $200M!"
+ 
+ MB20_400_350:0 "Comprar 20% bônus de Mineração por 1000 dias por $350M!"
+ 
+ JFB_25_1:0     "Comprar -25% bônus de velocidade de justificativa de guerra por 200 dias por $150M!"
+ 
+ JFB_60_1:0     "Comprar -60% bônus de velocidade de justificativa de guerra por 400 dias por $300M!"
+ 
+ 
+ #Militar Menu Composition#
+ money_headline_0:0 "Menu de Equipamento e Investimento"
+ current_money:0    "Dinheiro Atual"
+
+ infantry_h_0:0  "10000 Equipamento de infantaria   Stock : [?global.infantrystock]" 
+ infantry_h_1:0  "$200M"
+ infantry_h_2:0  "$70M"
+ 
+
+ support_h_0:0   "1000 Equipamento de suporte  Stock : [?global.supportstock]"
+ support_h_1:0   "$160M"
+ support_h_2:0   "$50M"
+ 
+ artillery_h_0:0 "1000 Artilharia  Stock : [?global.artillerystock]"
+ artillery_h_1:0 "$140M"
+ artillery_h_2:0 "$50M"
+ 
+ motorized_h_0:0 "1000 Motoriazados  Stock : [?global.motorizedstock]"
+ motorized_h_1:0 "$200M"
+ motorized_h_2:0 "$70M"
+ 
+ anti_tank_h_0:0 "1000 Anti Tanques  Stock : [?global.antitankstock]"
+ anti_tank_h_1:0 "$160M"
+ anti_tank_h_2:0 "$56M"
+ 
+ anti_air_h_0:0 "1000 Anti Aéreos   Stock : [?global.antiairstock]"
+ anti_air_h_1:0 "$160M"
+ anti_air_h_2:0 "$56M"
+ 
+ light_tank_headline0:0  "500 Tanques Leves Por $200M   Stock : [?global.lighttankstock]"
+ 
+ medium_tank_headline0:0 "500 Tanques Médios Por $340M Stock : [?global.mediumtankstock]"
+ 
+ heavy_tank_headline0:0  "500 Tanques Pesados Por $500M   Stock : [?global.heavytankstock]"
+ 
+ convoy_headline0:0      "50 Comboios Por $150M       Stock : [?global.convoystock]"
+
+ civil_factory1:0       "Comprar uma Fabrica Civil por $50M"
+ 
+ military_factory1:0    "Comprar uma Fabrica Militar por $100M"
+ 
+ steel_factory:0        "Comprar 8 de Ferro por $50M"
+ 
+ tungsten_factory:0     "Comprar 8 de tungstênio por $50M"
+ 
+ oil_pump:0             "Comprar 8 de Petróleo por $75M"
+ 
+ aluminium_factory:0    "Comprar 8 de Alumínio por $50M"
+ 
+ rubber_pump:0          "Comprar 8 de Borracha por  75M"
+ 
+ chromium_factory:0     "Comprar 8 de Crômo por $75M"
+ 
+ Buy:0      "Comprar"
+ Sell:0     "Vender"
+ 
+ ##########Diplomatic action(send money)###########(traduction pending)
+ 
+ MONEY_DIPLOMATIC_ACTION_TITLE:0 "Sent $300M(30% rate)"
+ MONEY_DIPLOMATIC_ACTION_ACTION_DESC:0 "We can loan money to this nation so it can be used to develop them but the rate is high"
+ MONEY_DIPLO_ACTION_LOC:0 "We are going to send them some money\n so they can develop quickly.\n $210M will be deliver."
+ MONEY_DIPLO_ACTION_RECIEVER_LOC:0 "$210M will be sent to this nation so it can be used to develop that nation."
+ MONEY_DIPLO_ACTION_ACCEPTED_TITLE:0 "They accepted our loan"
+ MONEY_DIPLO_ACTION_ACCEPTED_DESC:0 "They received $210M"
+ MONEY_DIPLO_ACTION_REJECTED_TITLE:0 "They rejected our loan"
+ MONEY_DIPLO_ACTION_REJECTED_DESC:0 "Our money was sent back"
+ base_desire:0 "Base Desire"
+ 

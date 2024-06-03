@@ -1,0 +1,19 @@
+
+state={
+	id=862
+	name="STATE_862"
+
+	history={
+		owner = USA
+		add_core_of = USA
+
+	}
+
+	provinces={
+		1341 1764 7435 7875 10249 10700 12205 12276 18332 18333 18334 18335 18336 18337 18338 18339 18340 18341 18342 18344 18346 18347 18348 18349 18352 18353 18359 18369 
+	}
+	manpower=80000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

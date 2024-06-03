@@ -1,0 +1,42 @@
+
+state={
+	id=506
+	name="STATE_506"
+
+	resources={
+		precious_metals = 10
+		steel = 66
+		tungsten = 62
+	}
+
+	history={
+		owner = ANT
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			air_base = 1
+			12994 = {
+				naval_base = 1
+
+			}
+			5228 = {
+				naval_base = 2
+
+			}
+
+		}
+		add_core_of = ANT
+		victory_points = {
+			12994 4 
+		}
+
+	}
+
+	provinces={
+		5146 5171 12994 13783 13789 13790 13793 13799 13805 13810 
+	}
+	manpower=1283605
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

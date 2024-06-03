@@ -1,0 +1,28 @@
+decisiones_de_guerras_provinciales = {
+	ARG_declare_war_of_unification = {
+		target_root_trigger = {
+			has_completed_focus = ARG_rivalidad_fronteriza
+			has_war = no
+		}
+		targets = { PAR URG CHL PBA JNN MPL BAB ENT CRR MSN STF CDB CHC FRM CHB SLT TCM STE CTM LRJ SJU MND SLU LPM NEQ RNG CBT STC TDF ARU VLP ANT }
+		targets_dynamic = yes
+		target_trigger = {
+			FROM = {
+
+				is_neighbor_of = ROOT
+			}
+		}
+		icon = generic_economy
+		cost = 50
+		war_with_target_on_complete = yes
+
+		days_remove = 10
+
+		complete_effect = {
+			create_wargoal = {
+				target = FROM
+				type = annex_everything
+			}
+		}
+	}
+}

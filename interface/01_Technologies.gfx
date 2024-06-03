@@ -1,0 +1,94 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_basic_banking_system_medium"
+		texturefile = "gfx/interface/technologies/basic_banking_system.dds"
+	}
+	SpriteType = {
+		name = "GFX_banking_trust_system_medium"
+		texturefile = "gfx/interface/technologies/banking_trust_system.dds"
+	}
+	SpriteType = {
+		name = "GFX_banking_credit_system_medium"
+		texturefile = "gfx/interface/technologies/banking_credit_system.dds"
+	}
+	SpriteType = {
+		name = "GFX_international_financial_system_medium"
+		texturefile = "gfx/interface/technologies/international_financial_system.dds"
+	}
+
+	### goodstech ###
+
+
+	SpriteType = {
+		name = "GFX_basic_television_good_medium"
+		texturefile = "gfx/interface/technologies/basic_television_good.dds"
+	}
+	SpriteType = {
+		name = "GFX_improved_television_good_medium"
+		texturefile = "gfx/interface/technologies/basic_television_good.dds"
+	}
+	SpriteType = {
+		name = "GFX_advanced_television_good_medium"
+		texturefile = "gfx/interface/technologies/basic_television_good.dds"
+	}
+
+	###
+
+	SpriteType = {
+		name = "GFX_basic_phone_good_medium"
+		texturefile = "gfx/interface/technologies/basic_television_good.dds"
+	}
+	SpriteType = {
+		name = "GFX_improved_phone_good_medium"
+		texturefile = "gfx/interface/technologies/basic_television_good.dds"
+	}
+	SpriteType = {
+		name = "GFX_advanced_phone_good_medium"
+		texturefile = "gfx/interface/technologies/basic_television_good.dds"
+	}
+
+	###
+
+	SpriteType = {
+		name = "GFX_basic_civil_cars_good_medium"
+		texturefile = "gfx/interface/technologies/basic_television_good.dds"
+	}
+	SpriteType = {
+		name = "GFX_improved_civil_cars_good_medium"
+		texturefile = "gfx/interface/technologies/basic_television_good.dds"
+	}
+	SpriteType = {
+		name = "GFX_advanced_civil_cars_good_medium"
+		texturefile = "gfx/interface/technologies/basic_television_good.dds"
+	}
+
+	###
+
+	SpriteType = {
+		name = "GFX_basic_civilian_radio_good_medium"
+		texturefile = "gfx/interface/technologies/basic_television_good.dds"
+	}
+	SpriteType = {
+		name = "GFX_improved_civilian_radio_good_medium"
+		texturefile = "gfx/interface/technologies/basic_television_good.dds"
+	}
+	SpriteType = {
+		name = "GFX_advanced_civilian_radio_good_medium"
+		texturefile = "gfx/interface/technologies/basic_television_good.dds"
+	}
+
+	###
+
+	SpriteType = {
+		name = "GFX_basic_domestic_machines_good_medium"
+		texturefile = "gfx/interface/technologies/basic_television_good.dds"
+	}
+	SpriteType = {
+		name = "GFX_improved_domestic_machines_good_medium"
+		texturefile = "gfx/interface/technologies/basic_television_good.dds"
+	}
+	SpriteType = {
+		name = "GFX_advanced_domestic_machines_good_medium"
+		texturefile = "gfx/interface/technologies/basic_television_good.dds"
+	}
+}

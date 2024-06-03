@@ -1,0 +1,20 @@
+on_actions = { 
+	on_startup = {
+		effect = {
+			#MEXICAN faction set-up
+			if = {
+				limit = {
+					has_start_date < 1936.1.2
+				}
+				MEX = { 
+					set_country_flag = MEX_factions_unlocked
+					set_variable = { var  = MEX_monarchist_loyalty value = 2 }
+					set_variable = { var  = MEX_republican_loyalty value = -1 }
+					set_variable = { var  = MEX_communist_loyalty value = -1 }
+					set_variable = { var  = MEX_fascist_loyalty value = -2 }
+					MEX_political_instability_update_effect = yes
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,37 @@
+﻿l_spanish:
+ ###Parliament actions###
+
+ SCRIPTED_LOCALISATION_LIBERALISM_SUB_IDEOLOGY:0 "\n          §YPopularidad de Liberales§! §Y[?var_liberalism_popularity]§!"
+ SCRIPTED_LOCALISATION_CONSERVATISM_SUB_IDEOLOGY:0 "\n          §YPopularidad de Conservadores§! §Y[?var_conservatism_popularity]§!"
+ SCRIPTED_LOCALISATION_SOCIALISM_SUB_IDEOLOGY:0 "\n          §YPopularidad de Social-Democrátas§! §Y[?var_socialism_popularity]§!"
+ 
+ SCRIPTED_LOCALISATION_MODERATISM_SUB_IDEOLOGY:0 "\n          §YPopularidad de Moderados§! §Y[?var_moderatism_popularity]§!"
+ SCRIPTED_LOCALISATION_CENTRISM_SUB_IDEOLOGY:0 "\n          §YPopularidad de Centristas§! §Y[?var_centrism_popularity]§!"
+ SCRIPTED_LOCALISATION_OLIGARCHISM_SUB_IDEOLOGY:0 "\n          §YPopularidad de Oligarcas§! §Y[?var_oligarchism_popularity]§!"
+ SCRIPTED_LOCALISATION_DESPOTISM_SUB_IDEOLOGY:0 "\n          §YPopularidad de Despóticos§! §Y[?var_despotism_popularity]§!"
+ SCRIPTED_LOCALISATION_ANARCHISM_SUB_IDEOLOGY:0 "\n          §YPopularidad de Anarquistas§! §Y[?var_anarchism_popularity]§!"
+
+ SCRIPTED_LOCALISATION_MARXISM_SUB_IDEOLOGY:0 "\n          §YPopularidad de Marxistas§! §Y[?var_marxism_popularity]§!"
+ SCRIPTED_LOCALISATION_STALINISM_SUB_IDEOLOGY:0 "\n          §YPopularidad de Stalinistas§! §Y[?var_stalinism_popularity]§!"
+ SCRIPTED_LOCALISATION_ANARCHIST_COMMUNISM_SUB_IDEOLOGY:0 "\n          §YPopularidad de Anarco-comunistas§! §Y[?var_anarchist_communism_popularity]§!"
+ SCRIPTED_LOCALISATION_LENINISM_SUB_IDEOLOGY:0 "\n          §YPopularidad de Leninistas§! §Y[?var_leninism_communism_popularity]§!"
+ SCRIPTED_LOCALISATION_ANTI_REVISIONISM_SUB_IDEOLOGY:0 "\n          §YPopularidad de Anti-revisionistas§! §Y[?var_anti_revisionism_communism_popularity]§!"
+ 
+ SCRIPTED_LOCALISATION_FASCISM_IDEOLOGY_SUB_IDEOLOGY:0 "\n          §YPopularidad de Fascistas§! §Y[?var_fascism_ideology_popularity]§!"
+ SCRIPTED_LOCALISATION_NAZISM_SUB_IDEOLOGY:0 "\n          §YPopularidad de Nazistas§! §Y[?var_nazism_popularity]§!"
+ SCRIPTED_LOCALISATION_GEN_NAZISM_SUB_IDEOLOGY:0 "\n          §YPopularidad de Geno-Nazistas§! §Y[?var_gen_nazism_popularity]§!"
+ SCRIPTED_LOCALISATION_FALANGISM_SUB_IDEOLOGY:0 "\n          §YPopularidad de Falangistas§! §Y[?var_falangism_popularity]§!"
+ SCRIPTED_LOCALISATION_REXISM_SUB_IDEOLOGY:0 "\n          §YPopularidad de Rexistas§! §Y[?var_rexism_popularity]§!"
+
+ default_parliament_decisions_categories:0 "Parlamento"
+
+ default_parliament_decisions_categories_desc:0 "El parlamento defiende los intereses nacionales \n\n     §YPopularidad del grupo democrático§! §Y[?var_democratic_group_popularity]§![root.GetIdeologyLiberalismTooltip][root.GetIdeologyConservatismTooltip][root.GetIdeologySocialismTooltip]\n\n     §YPopularidad del grupo No alineada§! §Y[?var_neutrality_group_popularity]§![root.GetIdeologyModeratismTooltip][root.GetIdeologyCentrismTooltip][root.GetIdeologyOligarchismTooltip][root.GetIdeologyDespotismTooltip][root.GetIdeologyAnarchismTooltip]\n\n     §YPopularidad del grupo Comunista§! §Y[?var_communism_group_popularity]§![root.GetIdeologyMarxismTooltip][root.GetIdeologyStalinismTooltip][root.GetIdeologyAnarchistCommunismTooltip][root.GetIdeologyLeninismTooltip][root.GetIdeologyAntiRevisionismTooltip]\n\n     §YPopularidad del grupo Fascista§! §Y[?var_fascism_group_popularity]§![root.GetIdeologyFascismIdeologyTooltip][root.GetIdeologyNazismTooltip][root.GetIdeologyGenNazismTooltip][root.GetIdeologyFalangismTooltip][root.GetIdeologyRexismTooltip]"
+ 
+ increase_the_democratic_popularity_decision:0 "Incrementar la popularidad Democrática"
+ increase_the_neutrality_popularity_decision:0 "Incrementar la popularidad No-Alineada"
+ increase_the_communism_popularity_decision:0 "Incrementar la popularidad Comunista"
+ increase_the_fascism_popularity_decision:0 "Incrementar la popularidad Fascista"
+ ###
+
+ 
+ 

@@ -1,0 +1,44 @@
+
+state={
+	id=719
+	name="STATE_719"
+	resources={
+		chromium=60.000
+		precious_metals=14.000
+	}
+
+	history={
+		owner = HOL
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			air_base = 1
+			1468 = {
+				naval_base = 2
+
+			}
+			4696 = {
+				naval_base = 2
+
+			}
+
+		}
+		victory_points = {
+			1468 3 
+		}
+		victory_points = {
+			4696 1 
+		}
+		add_core_of = SAF
+		add_core_of = HOL
+
+	}
+
+	provinces={
+		1468 1494 1833 4556 4584 4696 7255 7576 7721 7900 8178 16360 16367 16383 16387 16417 16645 16712 
+	}
+	manpower=3962157
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

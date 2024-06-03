@@ -1,0 +1,32 @@
+
+state={
+	id=372
+	name="STATE_372"
+	resources={
+		aluminium=14.000
+		cotton = 20
+		grain = 20
+	}
+
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+
+		}
+		add_core_of = USA
+		victory_points = {
+			12489 1 
+		}
+
+	}
+
+	provinces={
+		1503 1646 4444 4567 4597 4625 7485 7543 7586 10355 10477 12458 12489 12778 15848 15849 15850 15853 15856 15859 15860 15861 15862 15863 15864 15868 15869 15870 15872 15878 15879 15880 15882 15888 15890 15893 15894 
+	}
+	manpower=1854481
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

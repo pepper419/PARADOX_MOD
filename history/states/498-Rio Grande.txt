@@ -1,0 +1,39 @@
+
+state={
+	id=498
+	name="STATE_498"
+
+	history={
+		owner = BRA
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 6
+			air_base = 2
+			5107 = {
+				naval_base = 3
+
+			}
+			5168 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = BRA
+		
+		victory_points = {
+			5107 3 
+		}
+		victory_points = {
+			5168 5 
+		}
+
+	}
+
+	provinces={
+		1446 1524 2132 2164 2175 2178 2227 5107 5168 5182 7561 8179 8227 10345 10933 10939 10967 10989 10998 12961 14162 14176 14180 14183 14190 14200 14205 14217 14220 14222 14223 14226 14238 14242 14243 14253 14255 14269 14281 14294 14300 
+	}
+	manpower=7746000
+	buildings_max_level_factor=1.000
+	state_category=large_city
+}

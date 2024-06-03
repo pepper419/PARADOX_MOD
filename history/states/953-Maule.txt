@@ -1,0 +1,33 @@
+
+state={
+	id=953
+	name="STATE_953"
+
+	resources={
+		wood = 12
+		grain = 26
+		meat = 20
+	}
+
+	history={
+		owner = CHL
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = CHL
+
+		victory_points = {
+			8229 2
+		}
+
+	}
+
+	provinces={
+		8229 13742 13743 13744 13745 13746 
+	}
+	manpower=832652
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

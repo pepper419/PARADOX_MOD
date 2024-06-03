@@ -1,0 +1,8 @@
+##########here is the list of gfx icons for all the ideas some of them are not been used#
+spriteTypes = {	
+
+	SpriteType = {
+		name = "GFX_idea_advisor_ARG_generic_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_advisor_ARG_generic_1.dds"			
+	}
+}

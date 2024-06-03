@@ -1,0 +1,508 @@
+﻿l_spanish:
+ #Money Text and events#
+ MONEY_TOOLTIP_BASE:0 "Balance §Y[?total_budget_balance]§! Millones Money \n\nIngresamos §G[?total_budget_income] M§! Millones Money \n\n  Impuestos de la población §G[?pops_taxes_income] M§!\n  Impuestos de la industria §G[?industry_taxes_income] M§!\n  Exportación §G[?common_resource_exported] M§! \n\nGastamos §R[?total_budget_expenses] M§! Millones Money \n\n  Fabricas militares §R[?arms_industry_expenses] M§!\n  Astilleros Militares §R[?naval_industry_expenses] M§!\n  Salarios militares §R[?military_wage_expenses] M§!\n  Importaciones §R[?common_resource_imported] M§!"
+ MONEY_MAIN:0 "[?total_money_reserves] M"
+ TOTAL_EXPENSES_TITLE_TEXT:0       "Gastos"
+ TOTAL_EXPENSES_SUM_TEXT:0         "Total -[?allexpenses] M"
+
+ TAX_STATUS_TEXT:0         "Tributario   -[?tax_to_overlord] M"
+ MAIN_DEBT_TEXT:0          "Deuda -[?debtexp]M"
+ M_FACTORY_TEXT:0          "Fabricas Militares   -[?nf] M"
+ M_DOCKYARD_TEXT:0         "Astilleros Navales   -[?navf] M"
+ M_ARMY_TEXT:0             "Mantenimiento Militar   -[?ms] M"
+ MAIN_IMPORTS_TEXT:0       "Importaciones   -[?resourceexpenses] M"
+
+ EXPENSES_HEALTH_TEXT:0          "Sanidad   -[?health_care_cost_rest] M"
+ EXPENSES_EDUCATION_TEXT:0       "Educación   -[?education_cost_rest] M"
+ EXPENSES_PENSIONS_TEXT:0        "Pensiones   -[?pensions_cost_rest] M"
+ EXPENSES_SUBSIDIES_TEXT:0       "Subsidios   -[?subsidies_cost_rest] M"
+
+ TITLE_DEBT_TEXT:0               "Deuda    [?total_debt] M"
+ TOTAL_CONFIDENCE_MAIN_TEXT:0    "Confianza   [?debt_confidence]"
+ TOTAL_DEBT_BONES_TITLE_TEXT:0   "Bonos de Deuda"
+
+ TAXES_LEVEL:0          "[?incometaxes] % impuestos"
+ MONEY_GAIN_TEXT:0      "[?printer] % de masa monetaria"
+ MONEY_DEBT:0           "§Debes [?debttotal] Debt§!"
+ DEBT_MAIN_LEVEL:0     "[?level_debt]# veces que pedis dinero"
+ moneymod.1.t:0         "Mas Armamento Se Ha Agregado Al Deposito Mundial"
+ moneymod.1.d:0         "Deposito Mundial Se Ha Actulizado.\nEsto Se Actualiza Anualmente."
+ moneymod.1.a:0         "Perfecto"
+ moneymod.2.t:0         "Las Reservas Nacionales Estan Bajas"
+ moneymod.2.d:0         "Las Reservas Estan Bajas.\nNecesitamos Actuar!"
+ moneymod.2.a:0         "Debitar La Deuda Usando La Industria"
+ moneymod.2.b:0         "Tomar Deuda"
+ moneymod.2.c:0         "No Hacer Nada"
+ moneymod.5.t:0         "BANCAROTA!!!"
+ moneymod.5.d:0         "ENDEUDAMIENTO TOTAL!!!.\n Perdemos la economia O Nuestra vision politica!"
+ moneymod.5.a:0         "Colapso Economico"
+ moneymod.5.b:0         "Expulsar Politicos"
+ moneymod.6.t:0         "Tienda de Recursos Habilitada"
+ moneymod.6.d:0         "Temporalmente se usara este evento para no causar un fallo del mod."
+ moneymod.6.a:0         "A comprar !"
+ MONEY_TOOLTIP:0        "[Root.GetMoneyTooltip]"
+ #Loan Options#
+ economic_decision:0            "Opciones De Prestamo!"
+ economic_decision_desc:0       "Dinero Actual $[?dx]. Nostros podemos solicitar varios prestamos para desarrollar nuestro pais sin embargo hay que tener mucho cuidado con las tasas de interes para evitar quebrar y para evitar ser muy influeciado de lo contrario nos convertiremos en simples marionetas!"
+ humanitary_assistance:0        "Ayuda Humanitaria De La Liga De Las Naciones"
+ humanitary_assistance_desc:0   "Podemos solicitar una vez una ayuda humanitaria de $100M totalmente gratis para desarrollar nuestra nacion y reducir la pobreza!"
+ sov_assistance:0           "Ayuda Unica Sovietica"
+ sov_assistance_desc:0      "La Union Sovietica esta dispuesta a darnos una donacion de $250M a cambio de ciertas concesiones politicas en nuestra nacion.Debemos utilizarlo para mejorar nuestra nacion camarada!"
+ league_ass1:0              "Prestamo De La Liga De Las Naciones.(10% interes)"
+ league_ass1_desc:0         "La Liga De Las Naciones esta dispuesta a darnos un prestamo de $200M con una tasa de interes baja a cambio de no entrar en guerra con ninguna nacion"
+ league_ass2:0              "Prestamo De La Liga De Las Naciones.(10% interes)"
+ league_ass2_desc:0         "La Liga De Las Naciones esta dispuesta a darnos un prestamo de $200M con una tasa de interes baja para bajar la deuda pero no debemos estar en guerra con ninguna nacion."
+ ger_assistance:0           "Ayuda Unica Alemana"
+ ger_assistance_desc:0      "Alemania esta dispuesta a darnos una donacion de $250M a cambio de ciertas concesiones politicas en nuestra nacion.Debemos utilizarlo para desarrollarnos lo mejor que podamos mi lider!"
+ usa_assistance:0           "Ayuda Unica De Estados Unidos"
+ usa_assistance_desc:0      "Estados Unidos esta dispuesto a darnos una donacion de $250M a cambio de ciertas concesiones politicas en nuestra nacion.Señor Presidente debemos agradecerles y utilizar el dinero de la forma mas eficiente que podamos!"
+ swi_assistance:0           "Prestamo Suizo.(20% Interes)"
+ swi_assistance_desc:0      "Suiza siempre esta dispuesta a ofrecernos un prestamo de $150M aunque sus intereses sean altos no nos exigen ninguna condicion especial"
+ sau_assistance:0           "Prestamo Saudi.(20% Interes)"
+ sau_assistance_desc:0      "Los Arabes siempre estan dispuestos a darnos un prestamo de $150M aunque sus interes sean altos no nos exigen ningun requisito especial"
+ com_assistance:0           "Prestamo De Comunistas.(15% Interes)"
+ com_assistance_desc:0      "Los comunistas de nuestro pais simpre estan dispuestos a prestarnos $75M con una tasa de interes bajo pero siempre con pequeñas concesiones politicas"
+ fas_assistance:0           "Prestamo De Facistas.(15% Interes)"
+ fas_assistance_desc:0      "Los Facistas de nuestro pais simpre estan dispuestos a prestarnos $75M con una tasa de interes bajo pero siempre con pequeñas concesiones politicas"
+ dem_assistance:0           "Prestamo De Los Democraticos.(15% Interes)"
+ dem_assistance_desc:0      "Los Democraticos de nuestro pais simpre estan dispuestos a prestarnos $75M con una tasa de interes bajo pero siempre con pequeñas concesiones politicas"
+ neu_assistance:0           "Prestamo De Los Autoritarios.(15% Interes)"
+ neu_assistance_desc:0      "Los Autoritarios de nuestro pais simpre estan dispuestos a prestarnos $75M con una tasa de interes bajo pero siempre con pequeñas concesiones politicas"
+ priv_assistance0:0         "Prestamo De Inversores Privados.(15% Interes)"
+ priv_assistance0_desc:0    "Los prestamistas nos daran $75M con una razonable tasa de interes pero debemos esperar mas tiempo para volver a elejir esta opcion"
+ priv_assistance1:0         "Prestamo De Inversores Privados.(20% Interes)"
+ priv_assistance1_desc:0    "Los prestamistas nos daran $100M con una tasa de interes mas alta pero podemos elejirla otra vez mas rapido."
+ usa_puppet:0               "Rescate Americano(Volverte un titere)"
+ usa_puppet_desc:0          "Los Americanos estan dispuesto a rescatar nuestra economia con un prestamo de $350M a cambio de volvernos sus titeres. en este punto no tenemos muchas opciones"
+ ger_puppet:0               "Rescate Aleman(Volverte un titere)"
+ ger_puppet_desc:0          "Los Alemanes estan dispuesto a rescatar nuestra economia con un prestamo de $350M a cambio de volvernos sus titeres. en este punto no tenemos muchas opciones"
+ sov_puppet:0               "Rescate Sovietico(Volverte un titere)"
+ sov_puppet_desc:0          "Los Sovieticos estan dispuesto a rescatar nuestra economia con un prestamo de $350M a cambio de volvernos sus titeres. en este punto no tenemos muchas opciones"
+ 
+ 
+ #Political Invesment Decisions#
+ political_option:0         "Inversiones De Poder Politico"
+ political_option_desc:0    "Nosotros podemos utilizar nuestra influencia politica para atraer inversion extrangera lo cual sera muy util en el desarrollo de nuestro pais"
+ buy_research_slot:0        "Comprar Ranura De Investigaciones"
+ buy_militar_slot:0         "Comprar Fabrica Militar"
+ buy_civil_slot:0           "Comprar Fabrica Civil"
+ buy_dockyard_slot:0        "Comprar Astillero"
+ buy_militaryexp:0          "Adquirir 50 De Experiencia Militar"
+ buy_airexp:0               "Adquirir 50 De Experiencia Aerea"
+ buy_navyexp:0              "Adquirir 50 De Experiencia Naval"
+ buy_steel2:0               "Obtener 2 de Produccion De Acero"
+ buy_oil5:0                 "Obtener 5 de Produccion Petrolifica"
+ 
+ 
+ #Old Bonus Menu(not used)#
+ polpower:0             "§HBonos Permanentes E Ideas Temporales§!"
+ Bonus_Menu:0           "Menu De Bonos"
+ Politics_Store:0       "Tienda Politica!"
+ buyreserachslot:0      "Comprar Ranura De Investigacion! 500PP!"
+ rs_value:  "500!"
+ buy_army_factory:0     "Comprar Fabrica De Armas! 100PP!"
+ af_value:  "100!"
+ buy_civ_factory:0      "Comprar Fabrica Civil! 100PP!"
+ if_value:  "100!"
+ buy_nav_factory:0      "Comprar Astillero! 50PP!"
+ xp_value:0  "50!"
+ buy_army_experience:0  "Comprar 50 Exp.Militar! 50PP!"
+ buy_navy_experience:0  "Comprar 50 Exp.Naval! 50PP!"
+ buy_air_experience:0   "Comprar 50 Exp.Aerea! 50PP!"
+ buy_oil:0              "Comprar 2 De Petroleo! 50PP!"
+ buy_steel:0            "Comprar 2 De Acero! 20PP!"
+ slot.1.t:              "Ranuras De Construccion LLenas!"
+ 
+ #Currency Reserves Bonus#
+ normal_money:0          "Reservas Monetarias Positivas"
+ normal_money_desc:0     "Nuestras presupesto es positivo debemos utilizarlo para desarrollar nuestra nacion"
+ low_money:0             "Pequeña Deuda"
+ low_money_desc:0        "Nuestra nacion tiene una pequeña deuda interna. deberiamos ajustar el presupuesto y trabajar en la economia para que no empeore"
+ bad_money:0             "Deuda Mediana"
+ bad_money_desc:0        "Nuestra deuda a crecido considerablemente lo que esta empezando a afectar la estabilidad e industria. debemos empezar a hacer reformas"
+ very_low_money:0        "Gran Deuda"
+ very_low_money_desc:0   "Nuestra deuda ha creido mucho. podriamos enfrentar un colapso economico o una revolucion interna!"
+ problem_with_the_wave:0 "Problemas con el salario"
+ 
+ #Currency Reserves Bonus(not used)#
+ boost_money:0          "No Debt"
+ boost_money_desc:0     "We have no debt"
+ very_high_money:0      "Grandes Reservas Monetarias"
+ very_high_money_desc:0 "Tenemos una gran cantidad de reservas. Lo cual refleja el bienestar de nuestra economia y gente"
+ medium_money:0         "Reservas Monetarias Medianas"
+ medium_money_desc:0    "Nuestras Reservas son mas grandes que el promedio. nuestra economia tiene un gran futuro"
+ low_money:0            "Pequeña Deuda"
+ low_money_desc:0       "Nuestra nacion tiene una pequeña deuda interna. deberiamos ajustar el presupuesto y trabajar en la economia para que no empeore"
+ bad_money:0            "Deuda Mediana"
+ bad_money_desc:0       "Nuestra deuda a crecido considerablemente lo que esta empezando a afectar la estabilidad e industria. debemos empezar a hacer reformas"
+ very_low_money:0       "Gran Deuda"
+ very_low_money_desc:0  "Nuestra deuda ha creido mucho. podriamos enfrentar un colapso economico o una revolucion interna!"
+ 
+ 
+ #Ideas Bonus#
+ CB_15:0        "Subsidio Medio A Empresas De Construccion"
+ CB_15_desc:0   "Hemos hecho una inversion mediana en las empresas de construccion para acelerar nuestros projectos"
+ 
+ CB_30:0        "Gran Subsidio A Empresas De Construccion"
+ CB_30_desc:0   "Hemos hecho una fuerte inversion en construccion industrial, necesitamos esas fabricas lo mas rapido posible!"
+ 
+ IB_10:0        "Salario De Investigadores Aumentado"
+ IB_10_desc:0   "Hemos subido los salarios a todos los trabajadores en el area de investigacion con esto deberian estar mas motivados para trabajar"
+ 
+ IB_20:0        "Fuerte Inversion Universitaria"
+ IB_20_desc:0   "Hemos invertido grandes cantidades de dinero para agilizar el proceso de investigacion y llevar nuestro pais a la grandeza!"
+ 
+ MB_3:0         "Reclutamiento Medio"
+ MB_3_desc:0    "Hemos implementado un pequeño sistema de reclutamiento"
+ 
+ MB_7:0         "Reclutamiento Considerable"
+ MB_7_desc:0    "El sistema de reclutamiento ha sido expandido para llenar nuestras filas"
+ 
+ GB_3:0         "Pequeña Inversion En Fabricas De Consumo"
+ GB_3_desc:0    "Nosotros estamos dando pequeñas ayudas a las empresas de consumo para darles un pequeño respiro"
+ 
+ GB_5:0         "Mediana Inversion En Fabricas De Consumo"
+ GB_5_desc:0    "Nosotros hemos invertido considerablemente en las fabricas de consumo para ayudar al esfuerzo del pais"
+ 
+ MB_10:0        "Pequeño Subsidio En Mineria"
+ MB_10_desc:0   "Nosotros Hemos mejorado el salario en el sector minero para que nuestros trabajadores sean mas productivos"
+ 
+ MB_20:0        "Subsidio Medio En Mineria"
+ MB_20_desc:0   "Hemos Ampliado el horas de trabajo y aumentado la inversion en localizar nuevas fuentes de recursos. Nuestro pais lo necesita urgentemente!" 
+ 
+ 
+ #Ideas On Menu#
+ CB15_200_200:0 "Comprar 15% Bono De Construccion por 200 dias por $20000M!" 
+ 
+ CB30_400_350:0 "Comprar 30% Bono De Construccion por 400 dias por $40000M!"
+ 
+ IB10_200_200:0 "Comprar 10% Bono De Investigacion por 200 dias por $15000M!"
+ 
+ IB20_400_350:0 "Comprar 20% Bono De Investigacion por 400 dias por $30000M!"
+ 
+ MB3_200_150:0  "Comprar 3% Poblacion Reclutable por 200 dias por $3000M!"
+ 
+ MB7_400_250:0  "Comprar 7% Poblacion Reclutable por 400 dias por $7000M!"
+ 
+ GB3_200_200:0  "Comprar -3% Bienes De Consumo por 200 dias por $30000M!"
+ 
+ GB5_400_300:0  "Comprar -5% Bienes De Consumo por 400 dias por $50000M!"
+ 
+ MB10_200_200:0 "Comprar 10% Bono De Recoleccion por 500 dias por $10000M!"
+ 
+ MB20_400_350:0 "Comprar 20% Bono De Recoleccion por 1000 dias por $20000M!" 
+ 
+ JFB_25_1:0     "Comprar -25% Tiempo De Justificacion 200 dias por $6000M!"
+ 
+ JFB_60_1:0     "Comprar -60% Tiempo De Justificacion 400 dias por $12000M!"
+
+ ROOT_taxes_modifier:0 "Nivel de Impuestos"
+ ROOT_taxes_modifier_desc:0   "El nivel de nuestros impuestos nos muestra ciertos efectos secundarios de la recaudación."
+ ROOT_debt_market:0 "Confianza Financiera"
+ ROOT_debt_market_desc:0   "La Confianza sirve para que nuestros inversores privados accedan a fondos de deuda"
+ dynamic_modifier_ROOT_inflation:0 "Inflacion"
+ ROOT_taxes_modifier_desc:0   "El nivel de inflacion nos muestra ciertos efectos causados por la suba de precios."
+  
+ 
+ #Militar Menu Composition#
+ money_headline_0:0 "Menu De Equipamiento Y Bonos"
+ current_money:0    "Dinero Actual"
+ 
+ infantry_h_0:0 "Comprar 5000 Armas De Infanteria"  
+ infantry_h_1:0 "$ [?infantry_equipment_bar_cost] M" 
+ infantry_h_2:0 "$ [?infantry_equipment_bar_cost] M"
+
+ support_h_0:0   "Comprar 500 Equipo De Apoyo"
+ support_h_1:0   "$ [?support_equipment_bar_cost] M"
+ support_h_2:0   "$ [?support_equipment_bar_cost] M"
+ 
+ artillery_h_0:0 "Comprar 500 Piezas De Artilleria"
+ artillery_h_1:0 "$ [?artillery_equipment_bar_cost] M"
+ artillery_h_2:0 "$ [?artillery_equipment_bar_cost] M"
+ 
+ motorized_h_0:0 "Comprar 1000 Equipo Motorizado"
+ motorized_h_1:0 "$ [?motorized_equipment_bar_cost] M"
+ motorized_h_2:0 "$ [?motorized_equipment_bar_cost] M"
+ 
+ anti_tank_h_0:0 "Comprar 500 Piezas Antitanque"
+ anti_tank_h_1:0 "$ [?anti_tank_equipment_bar_cost] M"
+ anti_tank_h_2:0 "$ [?anti_tank_equipment_bar_cost] M"
+ 
+ anti_air_h_0:0 "Comprar 500 Piezas Antiareas"
+ anti_air_h_1:0 "$ [?anti_air_equipment_bar_cost] M"
+ anti_air_h_2:0 "$ [?anti_air_equipment_bar_cost] M"
+ 
+ light_tank_headline0:0     "200 Tanques Ligeros Por $ [?light_tank_equipment_bar_cost] M"
+ 
+ medium_tank_headline0:0    "100 Tanques Medianos Por $ [?medium_tank_equipment_bar_cost] M"
+    
+ heavy_tank_headline0:0     "50 Tanques Pesados Por $ [?heavy_tank_equipment_bar_cost] M"
+ 
+ convoy_headline0:0         "50 Convoys Por $[?convoy_equipment_bar_cost] M"
+ 
+ civil_factory1:0      "Comprar Fabrica Civil Por $ [?civ_factory_bar_cost] M"
+ 
+ military_factory1:0   "Comprar Fabrica Militar Por $ [?mil_factory_bar_cost] M"
+ 
+ steel_factory:0       "Comprar 4 De Acero Por $ [?steel_factory_bar_cost] M"
+ 
+ tungsten_factory:0    "Comprar 4 De Tungsteno Por $ [?tungsten_factory_bar_cost] M"
+ 
+ oil_pump:0            "Comprar 4 De Petroleo Por $ [?oil_factory_bar_cost] M"
+ 
+ aluminium_factory:0   "Comprar 4 De Aluminio Por $ [?aluminium_factory_bar_cost] M"
+ 
+ rubber_pump:0         "Comprar 4 De Caucho Por $ [?rubber_factory_bar_cost] M"
+ 
+ chromium_factory:0    "Comprar 4 De Cromo Por $ [?chromium_factory_bar_cost] M"
+ 
+ Buy:0      "Comprar"
+ Sell:0     "Vender"
+ 
+ 
+ 
+
+ ###Diplomatic action(send money)###
+
+ OFFER_FINANCING_DIPLOMATIC_ACTION_TITLE:0 "Ofrecer financiamiento"
+ OFFER_FINANCING_DIPLOMATIC_ACTION_ACTION_DESC:0 "Hay que ayudar a nuestros aliados por eso les enviamos un regalito"
+ 
+ OFFER_FINANCING_DIPLOMATIC_ACTION_LOC:0 "Nuestra economia genera §G[?root.total_budget_income] M§! en un dia, si le damos el §R[?root.root_printer] %§! de nuestro §BPIB§! le estaremos dando §Y[?root.money_printer_calc_2] M§! de dinero."
+ OFFER_FINANCING_DIPLOMATIC_ACTION_RECIEVER_LOC:0 "ID de pais §Y[?root.country_num_id]§! Nos Han ofrecido §Y[?root.root_send_money_mount_2] M§! de dinero a nosotros (ID de pais §Y[?country_num_id]§!). \n§REsto causara un aumento de la inflacion§!"
+
+ OFFER_FINANCING_DIPLOMATIC_ACTION_ACCEPTED_TITLE:0 "Han aceptado nuestra ayuda"
+ OFFER_FINANCING_DIPLOMATIC_ACTION_ACCEPTED_DESC:0 "Hemos enviado una ayuda de §Y[?root_send_money_mount] M§!"
+
+ OFFER_FINANCING_DIPLOMATIC_ACTION_REJECTED_TITLE:0 "Se han negado a aceptar nuestra ayuda economica"
+ OFFER_FINANCING_DIPLOMATIC_ACTION_REJECTED_DESC:0 "Nos han devuelto los §Y[?root.root_send_money_mount] M§! que enviamos."
+
+ BUY_FOREIGN_CURRENCIES_DIPLOMATIC_ACTION_TITLE:0 "Comprar divisas extranjeras"
+ BUY_FOREIGN_CURRENCIES_DIPLOMATIC_ACTION_ACTION_DESC:0 "Hay que ayudar a nuestros aliados por eso les enviamos un regalito"
+ 
+ BUY_FOREIGN_CURRENCIES_DIPLOMATIC_ACTION_LOC:0 "Comprar divisas extranjeras"
+ BUY_FOREIGN_CURRENCIES_DIPLOMATIC_ACTION_RECIEVER_LOC:0 "Compraremos divisas de su economia para llenar nuestras arcas de esa moneda"
+
+ BUY_FOREIGN_CURRENCIES_DIPLOMATIC_ACTION_ACCEPTED_TITLE:0 "Han aceptado nuestra ayuda"
+ BUY_FOREIGN_CURRENCIES_DIPLOMATIC_ACTION_ACCEPTED_DESC:0 "Es evidente que necesitan nuestra ayuda para lidiar con posibles peoblemas economicos"
+
+ BUY_FOREIGN_CURRENCIES_DIPLOMATIC_ACTION_REJECTED_TITLE:0 "Se han negado"
+ BUY_FOREIGN_CURRENCIES_DIPLOMATIC_ACTION_REJECTED_DESC:0 "Tendran sus motivos de equilibro macro economico para rechazar esta propuesta"
+ 
+ base_desire:0 "Base Desire"
+
+ trigger_offer_financing_diplomatic_action_tooltip:0 "Mas de §Y[?money_printer_calc_2] M§! de §YDinero§! para enviar esta propuesta."
+
+
+ ###
+
+
+
+
+ ###diplomatic events localisation###
+ root_economic_diplomacy.1.t:0         "Enviar dinero de nuestras reservas"
+ root_economic_diplomacy.1.desc:0         "Para enviar financiamiento necesitamos enviar una cierta cantidad de dinero de nuestras reservas para nuestro socio."
+ root_economic_diplomacy.1.a:0         "Procedan"
+ root_economic_diplomacy.2.t:0         "Nos envian ayuda economica"
+ root_economic_diplomacy.2.desc:0         "Al aceptar la propuesta nos ofrecen una cierta cantidad de dinero como ayuda a nuestro pais."
+ root_economic_diplomacy.2.a:0         "Procedan"
+ root_economic_diplomacy.3.t:0         "Nos regresan el dinero"
+ root_economic_diplomacy.3.desc:0         "Al no aceptar nuestra propuesta nos han entregado el dinero enviado."
+ root_economic_diplomacy.3.a:0         "Procedan"
+ ###
+
+ ###diplomatic custom effects localisation###
+ root_money_send_tooltip:0 "Enviar §R[?root.root_send_money_mount] M§! de dinero de nuestras reservas de §Y[?root.total_money_reserves] M§! de dinero"
+ root_money_receive_tooltip:0 "Recibimos §G[?root.root_send_money_mount_1] M§! de dinero para nuestras reservas de §Y[?root.total_money_reserves] M§! de dinero"
+ root_money_reject_tooltip:0 "Regresean §G[?root.root_send_money_mount] M§! de dinero para nuestras reservas de §Y[?root.total_money_reserves] M§! de dinero"
+ ###
+
+
+
+ ###Taxes Control Actions###
+
+ root_taxes_control_decisions:0 "Control de Impuestos"
+ root_taxes_control_decisions_desc:0 "La politica economica es vital para el mantenimiento del estado, mediante esta el estado puede conseguir los fondos para llevar a cabo diferentes fines, ya sean buenos o malos. \n\n     §YNivel de impuestos a la poblacion§! §G[?pops_taxes_level] %§! \n     §YNivel de impuestos a la industria§! §G[?industry_taxes_level] %§! \n"
+ root_increase_the_population_taxes_decision:0 "Aumentar los Impuestos a la poblacion"
+ root_increase_the_industry_taxes_decision:0 "Aumentar los Impuestos a la Industria"
+ root_lower_the_population_taxes_decision:0 "Bajar los Impuestos a la poblacion"
+ root_lower_the_industry_taxes_decision:0 "Bajar los Impuestos a la industria"
+ ### 
+ 
+ ###Central Bank Actions###
+
+ root_central_bank_decisions:0 "Banco Central"
+ root_central_bank_decisions_desc:0 "El Banco Central es la institución encargada de regular la economía de un país y modifica sus decisiones en función de los intereses nacionales. \n\n     §YInflacion§! §R[?root_inflation_level] %§! \n     §YTipo de interes§! §R[?root_printer] %§!\n     §YDepreciacion§! §R[?root_devaluation_level] %§! \n     §YConfianza financiera §! §G[?root_debt_confidence] %§!\n     §YApreciacion §! §G[?root_apreciation_level] %§!\n     §YDeuda interna total§! §R[?root_total_inner_debt]§!\n     §YDeuda externa total§! §R[?root_total_foreign_debt]§!\n     §Yid del pais§! §R[?country_num_id]§!\n\n     §YBienes de consumo del pais§! §G[?consumer_goods_for_people]§!\n     §YEfficiencia industrial§! §G[?modifier@industrial_capacity_factory]§!\n"
+ print_money_1:0 "Imprimir Dinero"
+ increase_interest_rates_1:0 "Aumentar los tipos de interes"
+ lower_interest_rates_1:0 "Bajar los tipos de interes"
+ easy_credit_1:0 "Credito Facil"
+ war_credit_1:0 "Credito de Guerra"
+ foreigt_investment_slot_1:0 "Inversiones Extranjeras"
+ lower_the_inflation_1:0 "Bajar la Inflacion"
+ generate_financial_confidence_1:0 "Generar confianza financiera"
+ generate_money_apreciation_1:0 "Generar apreciacion de la moneda"
+ reduce_money_depreciation_1:0 "Reducir la deprecion de la moneda"
+ monetary_stabilization_plan:0 "Plan de Estabilizacion Monetaria"
+ inner_debt_1:0 "Deuda Interna"
+ international_debt_1:0 "Deuda Internacional"
+ open_the_central_bank:0 "Abrir el banco central"
+ close_the_central_bank:0 "Cerrar el banco central"
+ ###
+
+ ###Central Bank Triggers###
+ trigger_increase_interest_rates_1_tt:0 "Tipo de interes no es mayor o igual a §Y100 %§!"
+ trigger_lower_interest_rates_1_tt:0 "Tipo de interes no es igual o menor a §Y1 %§!"
+ trigger_easy_credit_tt:0 "Mas de §Y[?porcentage_of_economy_2] M§!"
+ trigger_easy_credit_depreciation_tt:0 "Mas de §Y[?porcentage_of_economy_2] M§!"
+ trigger_easy_credit_apreciation_tt:0 "Mas de §Y[?porcentage_of_economy_2] M§!"
+ trigger_war_credit_tt:0 "Mas de §Y[?porcentage_of_economy_2] M§!"
+ trigger_generate_financial_confidence_1_tt:0 "Confianza financiera no es mayor o igual §Y100 %§!"
+ ###
+
+ ###Central Bank Effect###
+ porcentage_of_economy_subtract_tooltip:0 "Quita de las reservas §R[?porcentage_of_economy_2] M§!"
+ porcentage_of_economy_devaluation_tooltip:0 "Aumenta la depreciación en §R[?porcentage_of_economy_2] %§!"
+ porcentage_of_economy_apreciation_tooltip:0 "Aumenta la apreciación §G[?porcentage_of_economy_2] %§!"
+ porcentage_of_economy_increase_inflation_one_tooltip:0 "Aumenta la inflación en §R1 %§!"
+ porcentage_of_economy_lower_inflation_one_tooltip:0 "Baja la inflación en §G1 %§!"
+ increase_debt_confidence_five_tooltip:0 "Aumenta la Confianza Financiera en §G5 %§!" 
+ lower_debt_confidence_five_tooltip:0 "Baja la Confianza Financiera en §R5 %§!"
+ ###
+
+ ###Economic reforms actions###
+ root_economic_reforms_decisions:0 "Reformas economicas"
+ ###
+
+ ##########Market###########
+ ROOT_market_and_state:0 "Mercado y Estado"
+ ROOT_market_and_state_desc:0 "Adoptar alguna political presupuestaria nos ayudara a manejar mejor nuestro dinero."
+ health_care_system_category:0 "Sistema de Salud"
+ private_health_care_system:0 "Salud Privada"
+ basic_health_care_system:0 "Salud Basica"
+ minium_health_care_system:0 "Salud Minima"
+ moderate_health_care_system:0 "Salud Moderada" 
+ good_health_care_system:0 "Salud Buena"
+
+ ###Static modifier for modifier.txt###
+ 
+ modifier_budget_cost:0 "Costo presupuestario"
+ modifier_max_of_pops_taxes:0 "Máximo de Impuestos a la población"
+ modifier_min_of_pops_taxes:0 "Mínimo de Impuestos a la población"
+ modifier_max_of_industry_taxes:0 "Máximo de Impuestos a la industria"
+ modifier_min_of_industry_taxes:0 "Mínimo de Impuestos a la industria"
+ modifier_taxes_efficiency:0 "Eficiencia Impositiva"
+ modifier_inflation_level:0 "Nivel de Inflacion actual"
+ modifier_tax_multiplier:0 "Multiplicador de Impuestos"
+ modifier_budget_money:0 "Dinero Ganado"
+
+ ### 
+ 
+  ###Money market for buy other foreign exchange###
+  #  root_money_market_decisions:0 "Mercado de divisas extranjeras"
+  #  root_money_market_decisions_desc:0 "El mercado de divisas es una comparativa entre lass monedas de los paises, que establece el precios de estas, por cuando intercambiamos las monedas, por ende todas ellas tienen que mantener la confienza de este mercado en sus monedas. \n\n §YComprando el 1% de §!§YGanancias totales §!§G[?total_budget_income] M§!\n\n §YPrecios§ \n\n §BUSD§!   §YDep§! §R[?usa.root_devaluation_level] %§!   §YApr§! §G[?usa.root_apreciation_level] %§!   §YReservas§! §G[?total_dolar_reserves] M§! \n §BGBP§!   §YDep§! §R[?eng.root_devaluation_level] %§!   §YApr§! §G[?eng.root_apreciation_level] %§!   §YReservas§! §G[?total_sterling_reserves] M§! \n §BDMK§!   §YDep§! §R[?ger.root_devaluation_level] %§!   §YApr§! §G[?ger.root_apreciation_level] %§!   §YReservas§! §G[?total_mark_reserves] M§! \n §BFRF§!   §YDep§! §R[?fra.root_devaluation_level] %§!   §YApr§! §G[?fra.root_apreciation_level] %§!   §YReservas§! §G[?total_frank_reserves] M§! \n §BRUB§!   §YDep§! §R[?sov.root_devaluation_level] %§!   §YApr§! §G[?sov.root_apreciation_level] %§!   §YReservas§! §G[?total_ruble_reserves] M§! \n §BITL§!   §YDep§! §R[?ita.root_devaluation_level] %§!   §YApr§! §G[?ita.root_apreciation_level] %§!   §YReservas§! §G[?total_lira_reserves] M§! \n §BJPY§!   §YDep§! §R[?jap.root_devaluation_level] %§!   §YApr§! §G[?jap.root_apreciation_level] %§!   §YReservas§! §G[?total_yen_reserves] M§! \n §BCNY§!   §YDep§! §R[?chi.root_devaluation_level] %§!   §YApr§! §G[?chi.root_apreciation_level] %§!   §YReservas§! §G[?total_yuan_reserves] M§! \n §BINR§!   §YDep§! §R[?raj.root_devaluation_level] %§!   §YApr§! §G[?raj.root_apreciation_level] %§!   §YReservas§! §G[?total_rupee_reserves] M§! \n §BARS§!   §YDep§! §R[?arg.root_devaluation_level] %§!   §YApr§! §G[?arg.root_apreciation_level] %§!   §YReservas§! §G[?total_argentinian_peso_reserves] M§! \n §BBRL§!   §YDep§! §R[?bra.root_devaluation_level] %§!   §YApr§! §G[?bra.root_apreciation_level] %§!   §YReservas§! §G[?total_brazilian_real_reserves] M§! \n §BMXN§!   §YDep§! §R[?mex.root_devaluation_level] %§!   §YApr§! §G[?mex.root_apreciation_level] %§!   §YReservas§! §G[?total_mexican_peso_reserves] M§! \n §BESP§!   §YDep§! §R[?spr.root_devaluation_level] %§!   §YApr§! §G[?spr.root_apreciation_level] %§!   §YReservas§! §G[?total_spanish_peseta_reserves] M§! \n"
+  
+  #  root_buy_dolar_for_reserves_decision:0 "Comprar Dolares americanos"
+  #  root_sell_dolar_of_reserves_decision:0 "Vender Dolares americanos"
+  #  root_buy_sterling_for_reserves_decision:0 "Comprar Libras Esterlinas"
+  #  root_sell_sterling_of_reserves_decision:0 "Vender Libras Esterlinas"
+  #  root_buy_mark_for_reserves_decision:0 "Comprar Marcos alemanes"
+  #  root_sell_mark_of_reserves_decision:0 "Vender Marcos alemanes"
+  #  root_buy_frank_for_reserves_decision:0 "Comprar Francos franceses"
+  #  root_sell_frank_of_reserves_decision:0 "Vender Francos franceses"
+  #  root_buy_ruble_for_reserves_decision:0 "Comprar Rublos sovieticos"
+  #  root_sell_ruble_of_reserves_decision:0 "Vender Rublos sovieticos"
+  #  root_buy_lira_for_reserves_decision:0 "Comprar Liras italianas"
+  #  root_sell_lira_of_reserves_decision:0 "Vender Liras italianas"
+  #  root_buy_yen_for_reserves_decision:0 "Comprar Yenes japoneses"
+  #  root_sell_yen_of_reserves_decision:0 "Vender Yenes japoneses"
+  #  root_buy_yuan_for_reserves_decision:0 "Comprar Yuanes chinos"
+  #  root_sell_yuan_of_reserves_decision:0 "Vender Yuanes chinos"
+  #  root_buy_rupee_for_reserves_decision:0 "Comprar Rupias indias"
+  #  root_sell_rupee_of_reserves_decision:0 "Vender Rupias Indias"
+  #  root_buy_argentinian_peso_for_reserves_decision:0 "Comprar Pesos argentinos"
+  #  root_sell_argentinian_peso_of_reserves_decision:0 "Vender Pesos argentinos"
+  #  root_buy_brazilian_real_for_reserves_decision:0 "Comprar Reales brasileros"
+  #  root_sell_brazilian_real_of_reserves_decision:0 "Vender Reales brasileros"
+  #  root_buy_mexican_peso_for_reserves_decision:0 "Comprar Pesos mexicanos"
+  #  root_sell_mexican_peso_of_reserves_decision:0 "Vender Pesos mexicanos"
+  #  root_buy_spanish_peseta_for_reserves_decision:0 "Comprar Pesetas españolas"
+  #  root_sell_spanish_peseta_of_reserves_decision:0 "Vender Pesetas españolas"
+  ###
+
+ ###effects###
+
+ money_for_printer_tooltip:0 "Imprimir §G[?money_printer_calc_2] M§! de moneda"
+
+ increase_devaluation_tooltip:0 "Depreciacion aumenta §R[?root.root_dep_apr_calculation] %§!"
+ lower_devaluation_tooltip:0 "Depreciacion baja §G[?root.root_dep_apr_calculation] %§!"
+ increase_apreciation_tooltip:0 "Apreciacion aumenta §G[?root.root_dep_apr_calculation] %§!"
+ lower_apreciation_tooltip:0 "Apreciacion baja §R[?root.root_dep-apr_calculation] %§!"
+
+ inflation_increase_tooltip:0 "Inflacion aumenta §R[?root.root_printer] %§!"
+ inflation_lower_tooltip:0 "Inflacion baja §G[?root.root_printer] %§!"
+
+ increase_interest_rates_tooltip:0 "Tipo de interes aumenta §R1 %§!"
+ lower_interest_rates_tooltip:0 "Tipo de interes baja §G1 %§!"
+ 
+ root_money_receive_tooltip:0 "Reservas aumenta §G[?root_convert_money_calc_1] %§!"
+ root_inflation_receive_tooltip:0 "Inflacion aumenta §R[?root_convert_money_calc_1] %§!"
+ root_devaluation_receive_tooltip:0 "Depreciacion aumenta §R[?root_convert_money_calc_3] %§!"
+
+#  root_buy_dolar_tooltip:0 "Comprar §G[?root_sell_dolar_price] M§! de §YDolares Americanos§! por §R[?root_buy_dolar_price] M§! de §YMoney§!"
+#  root_sell_dolar_tooltip:0 "Vender §R[?root_sell_dolar_price] M§! de §YDolares Americanos§! por §G[?root_buy_dolar_price] M§! de §YMoney§!"
+#  root_buy_sterling_tooltip:0 "Comprar §G[?root_sell_sterling_price] M§! de §YLibras Esterlinas§! por §R[?root_buy_sterling_price] M§! de §YMoney§!"
+#  root_sell_sterling_tooltip:0 "Vender §R[?root_sell_sterling_price] M§! de §YLibras Esterlinas§! por §G[?root_buy_sterling_price] M§! de §YMoney§!"
+#  root_buy_mark_tooltip:0 "Comprar §G[?root_sell_mark_price] M§! de §YMarcos§! por §R[?root_buy_mark_price] M§! de §YMoney§!" 
+#  root_sell_mark_tooltip:0 "Vender §R[?root_sell_mark_price] M§! de §YMarcos§! por §G[?root_buy_mark_price] M§! de §YMoney§!"
+#  root_buy_frank_tooltip:0 "Comprar §G[?root_sell_frank_price] M§! de §YFrancos§! por §R[?root_buy_frank_price] M§! de §YMoney§!" 
+#  root_sell_frank_tooltip:0 "Vender §R[?root_sell_frank_price] M§! de §YFrancos§! por §G[?root_buy_frank_price] M§! de §YMoney§!"
+#  root_buy_ruble_tooltip:0 "Comprar §G[?root_sell_ruble_price] M§! de §YRublos§! por §R[?root_buy_ruble_price] M§! de §YMoney§!" 
+#  root_sell_ruble_tooltip:0 "Vender §R[?root_sell_ruble_price] M§! de §YRublos§! por §G[?root_buy_ruble_price] M§! de §YMoney§!"
+#  root_buy_lira_tooltip:0 "Comprar §G[?root_sell_lira_price] M§! de §YLiras§! por §R[?root_buy_lira_price] M§! de §YMoney§!" 
+#  root_sell_lira_tooltip:0 "Vender §R[?root_sell_lira_price] M§! de §YLiras§! por §G[?root_buy_lira_price] M§! de §YMoney§!"
+#  root_buy_yen_tooltip:0 "Comprar §G[?root_sell_yen_price] M§! de §YYenes§! por §R[?root_buy_yen_price] M§! de §YMoney§!" 
+#  root_sell_yen_tooltip:0 "Vender §R[?root_sell_yen_price] M§! de §YYenes§! por §G[?root_buy_yen_price] M§! de §YMoney§!"
+#  root_buy_yuan_tooltip:0 "Comprar §G[?root_sell_yuan_price] M§! de §YYuanes§! por §R[?root_buy_yuan_price] M§! de §YMoney§!" 
+#  root_sell_yuan_tooltip:0 "Vender §R[?root_sell_yuan_price] M§! de §YYuanes§! por §G[?root_buy_yuan_price] M§! de §YMoney§!"
+#  root_buy_rupee_tooltip:0 "Comprar §G[?root_sell_rupee_price] M§! de §YRupias§! por §R[?root_buy_rupee_price] M§! de §YMoney§!" 
+#  root_sell_rupee_tooltip:0 "Vender §R[?root_sell_rupee_price] M§! de §YRupias§! por §G[?root_buy_rupee_price] M§! de §YMoney§!"
+#  root_buy_argentinian_peso_tooltip:0 "Comprar §G[?root_sell_argentinian_peso_price] M§! de §YPesos Argentinos§! por §R[?root_buy_argentinian_peso_price] M§! de §YMoney§!" 
+#  root_sell_argentinian_peso_tooltip:0 "Vender §R[?root_sell_argentinian_peso_price] M§! de §YPesos Argentinos§! por §G[?root_buy_argentinian_peso_price] M§! de §YMoney§!"
+#  root_buy_brazilian_real_tooltip:0 "Comprar §G[?root_sell_brazilian_real_price] M§! de §YReales Brasileros§! por §R[?root_buy_brazilian_real_price] M§! de §YMoney§!"
+#  root_sell_brazilian_real_tooltip:0 "Vender §R[?root_sell_brazilian_real_price] M§! de §YReales Brasileros§! por §G[?root_buy_brazilian_real_price] M§! de §YMoney§!"
+#  root_buy_mexican_peso_tooltip:0 "Comprar §G[?root_sell_mexican_peso_price] M§! de §YPesos Mexicanos§! por §R[?root_buy_mexican_peso_price] M§! de §YMoney§!"
+#  root_sell_mexican_peso_tooltip:0 "Vender §R[?root_sell_mexican_peso_price] M§! de §YPesos Mexicanos§! por §G[?root_buy_mexican_peso_price] M§! de §YMoney§!"
+#  root_buy_spanish_peseta_tooltip:0 "Comprar §G[?root_sell_spanish_peseta_price] M§! de §YPesetas Españolas§! por §R[?root_buy_spanish_peseta_price] M§! de §YMoney§!"
+#  root_sell_spanish_peseta_tooltip:0 "Vender §R[?root_sell_spanish_peseta_price] M§! de §YPesetas Españolas§! por §G[?root_buy_spanish_peseta_price] M§! de §YMoney§!"
+
+#  trigger_buy_dolar_for_reserves_tooltip:0 "Mas de §R[?root_buy_dolar_price] M§! de §YMoney§! para comprar §G[?root_sell_dolar_price] M§! de §YDolares Americanos§!"
+#  trigger_sell_dolar_of_reserves_tooltip:0 "Mas de §R[?root_sell_dolar_price] M§! de §YDolares Americanos§! para comprar §G[?root_buy_dolar_price] M§! de §YMoney§!" 
+#  trigger_buy_sterling_for_reserves_tooltip:0 "Mas de §R[?root_buy_sterling_price] M§! de §YMoney§! para comprar §G[?root_sell_sterling_price] M§! de §YLibras Esterlinas§!"
+#  trigger_sell_sterling_of_reserves_tooltip:0 "Mas de §R[?root_sell_sterling_price] M§! de §YLibras Esterlinas§! para comprar §G[?root_buy_sterling_price] M§! de §YMoney§!"
+#  trigger_buy_mark_for_reserves_tooltip:0 "Mas de §R[?root_buy_mark_price] M§! de §YMoney§! para comprar §G[?root_sell_mark_price] M§! de §YMarcos§!"
+#  trigger_sell_mark_of_reserves_tooltip:0 "Mas de §R[?root_sell_mark_price] M§! de §YMarcos§! para comprar §G[?root_buy_mark_price] M§! de §YMoney§!" 
+#  trigger_buy_frank_for_reserves_tooltip:0 "Mas de §R[?root_buy_frank_price] M§! de §YMoney§! para comprar §G[?root_sell_frank_price] M§! de §YFrancos§!"
+#  trigger_sell_frank_of_reserves_tooltip:0 "Mas de §R[?root_sell_frank_price] M§! de §YFrancos§! para comprar §G[?root_buy_frank_price] M§! de §YMoney§!"
+#  trigger_buy_ruble_for_reserves_tooltip:0 "Mas de §R[?root_buy_ruble_price] M§! de §YMoney§! para comprar §G[?root_sell_ruble_price] M§! de §YRublos§!"
+#  trigger_sell_ruble_of_reserves_tooltip:0 "Mas de §R[?root_sell_ruble_price] M§! de §YRublos§! para comprar §G[?root_buy_ruble_price] M§! de §YMoney§!"
+#  trigger_buy_lira_for_reserves_tooltip:0 "Mas de §R[?root_buy_lira_price] M§! de §YMoney§! para comprar §G[?root_sell_lira_price] M§! de §YLiras§!"
+#  trigger_sell_lira_of_reserves_tooltip:0 "Mas de §R[?root_sell_lira_price] M§! de §YLiras§! para comprar §G[?root_buy_lira_price] M§! de §YMoney§!"
+#  trigger_buy_yen_for_reserves_tooltip:0 "Mas de §R[?root_buy_yen_price] M§! de §YMoney§! para comprar §G[?root_sell_yen_price] M§! de §YYenes§!"
+#  trigger_sell_yen_of_reserves_tooltip:0 "Mas de §R[?root_sell_yen_price] M§! de §YYenes§! para comprar §G[?root_buy_yen_price] M§! de §YMoney§!"
+#  trigger_buy_yuan_for_reserves_tooltip:0 "Mas de §R[?root_buy_yuan_price] M§! de §YMoney§! para comprar §G[?root_sell_yuan_price] M§! de §YYuanes§!"
+#  trigger_sell_yuan_of_reserves_tooltip:0 "Mas de §R[?root_sell_yuan_price] M§! de §YYuanes§! para comprar §G[?root_buy_yuan_price] M§! de §YMoney§!"
+#  trigger_buy_rupee_for_reserves_tooltip:0 "Mas de §R[?root_buy_rupee_price] M§! de §YMoney§! para comprar §G[?root_sell_rupee_price] M§! de §YRupias§!"
+#  trigger_sell_rupee_of_reserves_tooltip:0 "Mas de §R[?root_sell_rupee_price] M§! de §YRupias§! para comprar §G[?root_buy_rupee_price] M§! de §YMoney§!"
+#  trigger_buy_argentinian_peso_for_reserves_tooltip:0 "Mas de §R[?root_buy_argentinian_peso_price] M§! de §YMoney§! para comprar §G[?root_sell_argentinian_peso_price] M§! de §YPesos Argentinos§!"
+#  trigger_sell_argentinian_peso_of_reserves_tooltip:0 "Mas de §R[?root_sell_argentinian_peso_price] M§! de §YPesos Argentinos§! para comprar §G[?root_buy_argentinian_peso_price] M§! de §YMoney§!"
+#  trigger_buy_brazilian_real_for_reserves_tooltip:0 "Mas de §R[?root_buy_brazilian_real_price] M§! de §YMoney§! para comprar §G[?root_sell_brazilian_real_price] M§! de §YReales Brasileros§!"
+#  trigger_sell_brazilian_real_of_reserves_tooltip:0 "Mas de §R[?root_sell_brazilian_real_price] M§! de §YReales Brasileros§! para comprar §G[?root_buy_brazilian_real_price] M§! de §YMoney§!"
+#  trigger_buy_mexican_peso_for_reserves_tooltip:0 "Mas de §R[?root_buy_mexican_peso_price] M§! de §YMoney§! para comprar §G[?root_sell_mexican_peso_price] M§! de §YPesos Mexicanos§!"
+#  trigger_sell_mexican_peso_of_reserves_tooltip:0 "Mas de §R[?root_sell_mexican_peso_price] M§! de §YPesos Mexicanos§! para comprar §G[?root_buy_mexican_peso_price] M§! de §YMoney§!" 
+#  trigger_buy_spanish_peseta_for_reserves_tooltip:0 "Mas de §R[?root_buy_spanish_peseta_price] M§! de §YMoney§! para comprar §G[?root_sell_spanish_peseta_price] M§! de §YPesetas Españolas§!"
+#  trigger_sell_spanish_peseta_of_reserves_tooltip:0 "Mas de §R[?root_sell_spanish_peseta_price] M§! de §YPesetas Españolas§! para comprar §G[?root_buy_spanish_peseta_price] M§! de §YMoney§!"
+
+ ###
+
+ 
+ 

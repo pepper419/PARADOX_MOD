@@ -1,0 +1,41 @@
+
+state={
+	id=312
+	name="STATE_312"
+	resources={
+		chromium=1.000
+		fruit = 20
+	}
+
+	history={
+		owner = GUA
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 2
+			air_base = 1
+			12865 = {
+				naval_base = 1
+
+			}
+			8017 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = GUA
+		victory_points = {
+			12865 3 
+		}
+
+	}
+
+	provinces={
+		2031 8017 12865 14540 14541 14542 14544 14545 14547 14551 14552 15786 15795 15797 15798 15803 15806 15807 15808 15809 15811 15814 15815 15816 15817 15818 15819 
+	}
+	manpower=859761
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

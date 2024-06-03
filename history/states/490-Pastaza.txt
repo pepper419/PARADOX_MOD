@@ -1,0 +1,29 @@
+
+state={
+	id=490
+	name="STATE_490"
+
+	resources={
+		wood = 26
+	}
+
+	history={
+		owner = COL
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			air_base = 1
+
+		}
+		add_core_of = COL
+		add_core_of = ECU
+
+	}
+
+	provinces={
+		8149 10942 12869 14264 14265 14270 14274 14277 14286 14287 14291 14292 14295 14298 14301 14303 14306 14309 14311 14325 14338 14247 
+	}
+	manpower=70020
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

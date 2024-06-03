@@ -1,0 +1,26 @@
+
+state={
+	id=683
+	name="STATE_683"
+	resources={
+		aluminium=7.000
+	}
+
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = USA
+
+	}
+
+	provinces={
+		2947 8962 10721 13188 13190 13191 19115 19116 19117 19118 19125 19128 19132 19133 19135 19141 19142 19143 19144 19147 19150 19153 19155 19157 19160 19162 19166 19167 19168 19170 19174 
+	}
+	manpower=46135
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

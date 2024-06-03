@@ -1,0 +1,40 @@
+
+state={
+	id=510
+	name="STATE_510"
+	resources={
+		grain = 42
+		meat = 26
+		wood = 26
+	}
+
+	history={
+		owner = STF
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 4
+			air_base = 1
+			arms_factory = 1
+
+		}
+		victory_points = {
+			7500 4 
+		}
+		victory_points = {
+			5163 4 
+		}
+		victory_points = {
+			13346 4 
+		}
+		add_core_of = STF
+
+	}
+
+	provinces={
+		2172 5163 7500 8208 13000 13285 13286 13291 13294 13302 13306 13312 13313 13320 13326 13332 13335 13341 13346 13349 13351 13352 13359 13360 13363 13370 
+	}
+	manpower=3497169
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
+}

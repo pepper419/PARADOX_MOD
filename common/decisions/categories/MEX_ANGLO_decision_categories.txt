@@ -1,0 +1,13 @@
+###################################
+#### MEXICAN INTERNAL FACTIONS ####
+###################################
+MEX_faction_management_category = {
+	priority = 9
+	icon = gre_faction_management
+
+	scripted_gui = gre_internal_factions_decision_ui
+
+	allowed = {
+		original_tag = MEX
+	}
+}

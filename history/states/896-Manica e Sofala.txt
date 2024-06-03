@@ -1,0 +1,23 @@
+
+state={
+	id=896
+	name="STATE_896"
+
+	history={
+		owner = POR
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = MZB
+
+	}
+
+	provinces={
+		702 2120 5155 9673 9693 9801 12935 12950 16191 16506 16565 16860 
+	}
+	manpower=92400
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

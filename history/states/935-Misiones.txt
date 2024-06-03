@@ -1,0 +1,32 @@
+
+state={
+	id=935
+	name="STATE_935"
+
+	resources={
+		grain = 10
+		wood = 26
+		rubber = 14
+	}
+
+	history={
+		owner = MSN
+		buildings = {
+			infrastructure = 2
+
+		}
+		victory_points = {
+			11007 4 
+		}
+		add_core_of = MSN
+
+	}
+
+	provinces={
+		1585 1598 11007 13364 13366 13367 13368 13374 13376 13380 13383 13384 13385 13386 13389 13390 13395 
+	}
+	manpower=1847363
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

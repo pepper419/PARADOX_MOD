@@ -1,0 +1,22 @@
+state={
+	id=799
+	name="STATE_799"
+	provinces={
+		12029 
+	}
+	manpower = 234379
+	
+	state_category = town
+
+	history= {
+		owner = IRQ
+		add_core_of = SYR
+		add_core_of = TUR
+		victory_points = {
+			12029 1
+		}
+		buildings = {
+			infrastructure = 2
+		}
+	}
+}

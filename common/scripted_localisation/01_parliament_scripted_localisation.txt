@@ -1,0 +1,143 @@
+defined_text = { 
+	name = GetIdeologyLiberalismTooltip
+	
+	text = {
+		localization_key = SCRIPTED_LOCALISATION_LIBERALISM_SUB_IDEOLOGY
+	}
+}
+defined_text = { 
+	name = GetIdeologyConservatismTooltip
+	
+	text = {
+		localization_key = SCRIPTED_LOCALISATION_CONSERVATISM_SUB_IDEOLOGY
+	}
+}
+defined_text = { 
+	name = GetIdeologySocialismTooltip
+	
+	text = {
+		localization_key = SCRIPTED_LOCALISATION_SOCIALISM_SUB_IDEOLOGY
+	}
+}
+
+
+
+
+defined_text = { 
+	name = GetIdeologyModeratismTooltip
+	
+	text = {
+		localization_key = SCRIPTED_LOCALISATION_MODERATISM_SUB_IDEOLOGY
+	}
+}
+defined_text = { 
+	name = GetIdeologyCentrismTooltip
+	
+	text = {
+		localization_key = SCRIPTED_LOCALISATION_CENTRISM_SUB_IDEOLOGY
+	}
+}
+defined_text = { 
+	name = GetIdeologyOligarchismTooltip
+	
+	text = {
+		localization_key = SCRIPTED_LOCALISATION_OLIGARCHISM_SUB_IDEOLOGY
+	}
+}
+defined_text = { 
+	name = GetIdeologyDespotismTooltip
+	
+	text = {
+		localization_key = SCRIPTED_LOCALISATION_DESPOTISM_SUB_IDEOLOGY
+	}
+}
+defined_text = { 
+	name = GetIdeologyAnarchismTooltip
+	
+	text = {
+		localization_key = SCRIPTED_LOCALISATION_ANARCHISM_SUB_IDEOLOGY
+	}
+}
+
+
+
+defined_text = { 
+	name = GetIdeologyMarxismTooltip
+	
+	text = {
+		localization_key = SCRIPTED_LOCALISATION_MARXISM_SUB_IDEOLOGY
+	}
+}
+defined_text = { 
+	name = GetIdeologyStalinismTooltip
+	
+	text = {
+		localization_key = SCRIPTED_LOCALISATION_STALINISM_SUB_IDEOLOGY
+	}
+}
+defined_text = { 
+	name = GetIdeologyAnarchistCommunismTooltip
+	
+	text = {
+		localization_key = SCRIPTED_LOCALISATION_MARXISM_SUB_IDEOLOGY
+	}
+}
+defined_text = { 
+	name = GetIdeologyLeninismTooltip
+	
+	text = {
+		localization_key = SCRIPTED_LOCALISATION_LENINISM_SUB_IDEOLOGY
+	}
+}
+defined_text = { 
+	name = GetIdeologyAntiRevisionismTooltip
+	
+	text = {
+		localization_key = SCRIPTED_LOCALISATION_ANTI_REVISIONISM_SUB_IDEOLOGY
+	}
+}
+
+
+
+defined_text = { 
+	name = GetIdeologyFascismIdeologyTooltip
+	
+	text = {
+		localization_key = SCRIPTED_LOCALISATION_FASCISM_IDEOLOGY_SUB_IDEOLOGY
+	}
+}
+defined_text = { 
+	name = GetIdeologyGenNazismTooltip
+	
+	text = {
+		trigger = {
+			original_tag = GER
+	    }
+		localization_key = SCRIPTED_LOCALISATION_GEN_NAZISM_SUB_IDEOLOGY
+	}
+}
+defined_text = { 
+	name = GetIdeologyNazismTooltip
+	
+	text = {
+        trigger = {
+			original_tag = GER
+	    }
+
+		localization_key = SCRIPTED_LOCALISATION_NAZISM_SUB_IDEOLOGY
+	}
+}
+defined_text = { 
+	name = GetIdeologyFalangismTooltip
+	
+	text = {
+		localization_key = SCRIPTED_LOCALISATION_FALANGISM_SUB_IDEOLOGY
+	}
+}
+defined_text = { 
+	name = GetIdeologyRexismTooltip
+	
+	text = {
+		localization_key = SCRIPTED_LOCALISATION_REXISM_SUB_IDEOLOGY
+	}
+}

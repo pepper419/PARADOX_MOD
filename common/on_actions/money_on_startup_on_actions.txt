@@ -1,0 +1,114 @@
+on_actions = {
+	on_startup = {
+		effect = {     
+            every_country = {
+                set_technology = {
+                    basic_television_good = 1
+                    basic_phone_good = 1
+                    basic_civil_cars_good = 1
+                    basic_civilian_radio_good = 1
+                    basic_domestic_machines_good = 1
+                }
+            }                    
+            every_country = {                             
+                set_variable = { var = root_apreciation_points value = 5 }
+                set_variable = { var = root_devaluation_points value = 50 }
+
+                set_variable = { var = total_dolar_reserves value = 0 }
+                set_variable = { var = total_sterling_reserves value = 0 }
+                set_variable = { var = total_mark_reserves value = 0 }
+                set_variable = { var = total_frank_reserves value = 0 }
+                set_variable = { var = total_ruble_reserves value = 0 }
+                set_variable = { var = total_lira_reserves value = 0 }
+                set_variable = { var = total_yen_reserves value = 0 }
+                set_variable = { var = total_yuan_reserves value = 0 }
+                set_variable = { var = total_rupee_reserves value = 0 }
+                set_variable = { var = total_argentinian_peso_reserves value = 0 }
+                set_variable = { var = total_brazilian_real_reserves value = 0 }
+                set_variable = { var = total_mexican_peso_reserves value = 0 }
+                set_variable = { var = total_spanish_peseta_reserves value = 0 }
+
+            }
+            every_country = {
+                ###countries id for the arrays###
+                set_variable = { var = country_num_id value = THIS.id }
+                ###
+
+                ###Declaration of variable of apreciation or depreciation###
+                set_variable = { var = root_devaluation_level value = 250 }
+                set_variable = { var = root_apreciation_level value = 0 }
+                ###
+                if = {
+                    limit = {
+                        NOT = {
+                            has_variable = pops_taxes_level
+                            has_variable = industry_taxes_level
+                            has_variable = total_budget_balance
+                            has_variable = total_money_reserves
+
+                            has_variable = root_inflation_level
+                            has_variable = root_printer
+                        }
+                    }
+
+                    set_variable = { var = pops_taxes_level value = 20 }
+                    set_variable = { var = industry_taxes_level value = 20 }
+                    set_variable = { var = total_budget_balance value = 0 }
+                    set_variable = { var = total_money_reserves value = 0 }
+
+                    
+                    set_variable = { var = root_inflation_level value = 0 }
+                    set_variable = { var = root_printer value = 5 }
+
+                    clamp_variable = {
+                        var = root_printer
+                        min = 1
+                        max = 100
+                    }
+                    clamp_variable = {
+                        var = root_debt_confidence
+                        min = 0
+                        max = 100
+                    }
+
+                }
+            }
+            every_country = {
+                ###static variable###
+                
+
+                set_variable = { var = pops_taxes_level value = 20 }
+                set_variable = { var = industry_taxes_level value = 20 }
+                set_variable = { var = total_budget_balance value = 0 }
+                set_variable = { var = total_money_reserves value = 0 }
+
+                set_variable = { var = root_printer value = 5 }
+                set_variable = { var = root_debt_confidence value = 20 }
+                set_variable = { var = root_total_inner_debt value = 0 }
+                set_variable = { var = root_total_foreign_debt value = 0 }
+
+                ###
+
+                ###limit the variables values###
+
+                clamp_variable = {
+                    var = root_printer
+                    min = 1
+                    max = 100
+                }
+
+                round_variable = root_printer
+
+                clamp_variable = {
+                    var = root_debt_confidence
+                    min = 0
+                    max = 100
+                }
+
+                round_variable = root_debt_confidence
+
+                ###
+            }
+        }
+	}
+}

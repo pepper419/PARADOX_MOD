@@ -1,0 +1,35 @@
+
+state={
+	id=301
+	name="STATE_301"
+	resources={
+		grain = 26
+		meat = 16
+		wood = 36
+		rubber = 8
+	}
+
+	history={
+		owner = PAR
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 3
+			air_base = 1
+
+		}
+		add_core_of = PAR
+		victory_points = {
+			2152 10 
+		}
+
+	}
+
+	provinces={
+		2152 2173 2194 8224 11023 12901 13387 13388 13391 13392 13393 13394 13396 13397 13398 13399 13400 13401 13402 13403 13404 13405 13406 13407 13408 13409 13410 13411 13412 13413 
+	}
+	manpower=3890100
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+	local_supplies=0.000
+}

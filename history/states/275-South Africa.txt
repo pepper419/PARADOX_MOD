@@ -1,0 +1,35 @@
+
+state={
+	id=275
+	name="STATE_275"
+	resources={
+		steel=5.000
+		chromium=53.000
+		precious_metals=26.000
+	}
+
+	history={
+		owner = HOL
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 5
+			air_base = 3
+
+		}
+		victory_points = {
+			10400 10 
+		}
+		add_core_of = SAF
+		add_core_of = HOL
+
+	}
+
+	provinces={
+		1688 2171 2213 3513 5106 5217 5231 10327 10400 10566 10668 12064 12648 16378 16401 16424 16429 16431 16432 16438 16444 16460 16649 16655 
+	}
+	manpower=3680363
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=0.000
+}

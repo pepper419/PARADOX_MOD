@@ -1,0 +1,32 @@
+
+state={
+	id=507
+	name="STATE_507"
+
+	resources={
+		wool = 14
+		wood = 14
+		steel = 28
+	}
+
+	history={
+		owner = STC
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = STC
+		victory_points = {
+			5201 4 
+		}
+
+	}
+
+	provinces={
+		5201 5215 8198 8218 13640 13642 13645 13652 14732 14733 14734 
+	}
+	manpower=368693
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

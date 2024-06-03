@@ -1,0 +1,35 @@
+state={
+	id=916
+	name="STATE_916"
+
+	resources={
+		fruit = 20
+		fish = 10
+		grain = 20
+	}
+
+	provinces={
+		963 3923 3966 6831 
+	}
+	history={
+		victory_points = {
+			6831 1
+		}
+		owner = ITA
+		add_core_of = ITA
+		add_core_of = TTS
+		buildings = {
+			infrastructure = 3
+			6831 = {
+				naval_base = 1
+
+			}
+
+		}
+	}
+
+	state_category = town
+	manpower=279473
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

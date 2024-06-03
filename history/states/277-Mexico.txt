@@ -1,0 +1,37 @@
+
+state={
+	id=277
+	name="STATE_277"
+	resources={
+		steel=62.000
+		precious_metals=68.000
+		coal=28.000
+	}
+
+	history={
+		owner = MEX
+		buildings = {
+			infrastructure = 3
+			arms_factory = 2
+			industrial_complex = 4
+			air_base = 3
+
+		}
+		add_core_of = MEX
+		victory_points = {
+			1965 25 
+		}
+		victory_points = {
+			2008 10 
+		}
+
+	}
+
+	provinces={
+		1965 2008 2011 7913 12755 14618 14621 14630 14636 14638 14649 14650 14655 14656 14657 14659 14662 14665 14667 14672 14675 14678 14680 14687 14689 
+	}
+	manpower=3424403
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=0.000
+}

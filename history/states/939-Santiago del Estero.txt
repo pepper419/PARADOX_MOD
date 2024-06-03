@@ -1,0 +1,33 @@
+
+state={
+	id=939
+	name="STATE_939"
+
+	resources={
+		wood = 24
+		meat = 12
+		grain = 38
+	}
+
+	history={
+		owner = STE
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = STE
+
+		victory_points = {
+			5143 4 
+		}
+
+	}
+
+	provinces={
+		5143 8255 13458 13459 13460 13464 13477 
+	}
+	manpower= 1356344
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

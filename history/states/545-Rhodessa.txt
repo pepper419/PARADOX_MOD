@@ -1,0 +1,29 @@
+
+state={
+	id=545
+	name="STATE_545"
+	resources={
+		precious_metals=26.000
+	}
+
+	history={
+		owner = ZIM
+		buildings = {
+			infrastructure = 1
+
+		}
+		victory_points = {
+			10929 1 
+		}
+		add_core_of = ZIM
+
+	}
+
+	provinces={
+		1615 1874 2151 2216 3747 4851 7842 10916 10929 14977 14984 15005 15013 15021 15052 15064 16794 
+	}
+	manpower=1171336
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
+}

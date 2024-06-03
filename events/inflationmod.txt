@@ -1,0 +1,18 @@
+add_namespace = economymod
+country_event = { 
+	id = economymod.1
+	title = economymod.1.t
+	desc = economymod.1.d
+	picture = report_event_equipment
+    fire_only_once = no
+    major = no
+    is_triggered_only = yes
+
+	option = {
+		name = economymod.1.a
+		add_to_variable = { var = inflation_level value = -1 }
+		ai_chance = { factor = 100 }
+		
+	}
+
+}

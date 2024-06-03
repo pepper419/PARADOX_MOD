@@ -1,0 +1,42 @@
+
+state={
+	id=305
+	name="STATE_305"
+	resources={
+		oil=12.000
+		precious_metals = 14
+		fruit = 14
+		steel = 26
+	}
+
+	history={
+		owner = COL
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 4
+			air_base = 1
+			8252 = {
+				naval_base = 4
+
+			}
+
+		}
+		add_core_of = COL
+		add_core_of = ECU
+		victory_points = {
+			12798 5 
+		}
+		victory_points = {
+			8252 1 
+		}
+
+	}
+
+	provinces={
+		5051 5120 8047 8075 8231 8252 10888 11020 12798 14267 14293 14297 14308 14314 14322 14323 14332 14335 14339 14341 14343 14344 14348 14356 14360 15392
+	}
+	manpower=2000000
+	buildings_max_level_factor=1.000
+	state_category=large_city
+}

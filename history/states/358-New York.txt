@@ -1,0 +1,41 @@
+
+state={
+	id=358
+	name="STATE_358"
+	resources={
+		steel=13.000
+		coal=62.000
+	}
+
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 4
+			arms_factory = 2
+			industrial_complex = 7
+			dockyard = 3
+			air_base = 10
+			3878 = {
+				naval_base = 6
+
+			}
+
+		}
+		add_core_of = USA
+		victory_points = {
+			3878 30.0 
+		}
+		victory_points = {
+			11654 3 
+		}
+
+	}
+
+	provinces={
+		598 706 859 1436 3602 3702 3733 3806 3878 3894 6707 6717 6778 6795 6911 6916 9708 9754 9774 10381 11650 11654 11660 11662 11665 13157 16509 16510 16511 16512 16520 16524 16538 16539 16542 16544 16545 16548 16550 16553 16559 16560 16563 16569 16574 16578 16581 16582 16587 16592 16596 16600 16601 16609 16614 16615 16622 16625 16634 16644 16654 16664 16666 16674 16684 16687 16694 16697 16698 16702 16707 16708 
+	}
+	manpower=12588061
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+	local_supplies=0.000
+}

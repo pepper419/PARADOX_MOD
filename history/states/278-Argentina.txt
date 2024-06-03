@@ -1,0 +1,43 @@
+
+state={
+	id=278
+	name="STATE_278"
+	resources={
+		grain=36.000
+		meat=26.000
+	}
+
+	history={
+		owner = PBA
+		buildings = {
+			infrastructure = 4
+			arms_factory = 2
+			industrial_complex = 5
+			dockyard = 1
+			air_base = 4
+			12364 = {
+				naval_base = 7
+				bunker = 1
+				coastal_bunker = 1
+
+			}
+			
+
+		}
+		add_core_of = PBA
+		victory_points = {
+			12364 20 
+		}
+		victory_points = {
+			13447 10
+		}
+	}
+
+	provinces={
+		3498 10402 12155 12351 12364 13284 13288 13446 13447 13450 13452 14416 
+	}
+	manpower=14596366
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+	local_supplies=0.000
+}

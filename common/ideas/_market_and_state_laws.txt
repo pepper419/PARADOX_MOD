@@ -1,0 +1,459 @@
+ideas = {
+	
+	health_care_system_category = {
+	    law = yes
+	    use_list_view = yes
+	    
+	    private_health_care_system = {
+
+			allowed = {
+				always = yes
+			}
+		
+			cost = 150
+			removal_cost = -1
+			
+			modifier = {
+			    monthly_population = 0.0
+			    modifier_budget_cost = 0.0				
+			}
+			default = yes
+
+			cancel_if_invalid = no
+	    }
+	    
+	    basic_health_care_system = {
+
+			allowed = {
+				always = yes
+			}
+		
+			cost = 150
+			removal_cost = -1
+			
+			modifier = {
+			    monthly_population = 0.50
+			    modifier_budget_cost = 0.05
+			}
+			
+			cancel_if_invalid = no
+	    }
+
+	    minium_health_care_system = {
+
+			allowed = {
+				always = yes
+			}
+		
+			cost = 150
+			removal_cost = -1
+			
+			modifier = {
+			    monthly_population = 1.00	
+			    modifier_budget_cost = 0.10		
+			}
+			
+			cancel_if_invalid = no
+	    }
+
+	    moderate_health_care_system = {
+
+			allowed = {
+				always = yes
+			}
+		
+			cost = 150
+			removal_cost = -1
+			
+			modifier = {
+			    monthly_population = 1.50
+			    modifier_budget_cost = 0.20		
+			}
+			
+			cancel_if_invalid = no
+	    }
+
+	    good_health_care_system = {
+
+			allowed = {
+				always = yes
+			}
+		
+			cost = 150
+			removal_cost = -1
+			
+			modifier = {
+			    monthly_population = 2.00
+			    modifier_budget_cost = 0.40			
+			}
+			
+			cancel_if_invalid = no
+	    }
+	}
+
+	education_system = {
+	    law = yes
+	    use_list_view = yes
+	    
+	    private_education_system = {
+		
+			cost = 20
+			removal_cost = -1
+			
+			modifier = {
+			    research_speed_factor = 0.00
+			    modifier_budget_cost = 0.00				
+			}
+			
+			default = yes
+			
+			cancel_if_invalid = no
+	    }
+	    
+	    basic_education_system = {
+		
+			cost = 20
+			removal_cost = -1
+			
+			modifier = {
+			    research_speed_factor = 0.02 
+			    modifier_budget_cost = 0.05				
+			}
+			
+			cancel_if_invalid = no
+	    }
+
+	    minium_education_system = {
+		
+			cost = 20
+			removal_cost = -1
+			
+			modifier = {
+			    research_speed_factor = 0.04
+			    modifier_budget_cost = 0.10			
+			}
+			
+			cancel_if_invalid = no
+	    }
+
+	    moderate_education_system = {
+		
+			cost = 20
+			removal_cost = -1
+			
+			modifier = {
+			    research_speed_factor = 0.06
+			    modifier_budget_cost = 0.20			
+			}
+			
+			cancel_if_invalid = no
+	    }
+
+	    good_education_system = {
+		
+			cost = 20
+			removal_cost = -1
+			
+			modifier = {
+			    research_speed_factor = 0.08
+			    modifier_budget_cost = 0.40			
+			}
+			
+			cancel_if_invalid = no
+	    }
+	}
+
+	pensions_system = {
+	    law = yes
+	    use_list_view = yes
+	    
+	    no_pensions_system = {
+		
+			cost = 20
+			removal_cost = -1
+			
+			modifier = {
+			    stability_weekly = 0.000
+			    modifier_budget_cost = 0.0				
+			}
+			
+			default = yes
+			
+			cancel_if_invalid = no
+	    }
+	    
+	    basic_pensions_system = {
+		
+			cost = 20
+			removal_cost = -1
+			
+			modifier = {
+			    stability_weekly = 0.001
+			    modifier_budget_cost = 0.05				
+			}
+			
+			cancel_if_invalid = no
+	    }
+
+	    minium_pensions_system = {
+		
+			cost = 20
+			removal_cost = -1
+			
+			modifier = {
+			    stability_weekly = 0.002
+			    modifier_budget_cost = 0.10			
+			}
+			
+			cancel_if_invalid = no
+	    }
+
+	    moderate_pensions_system = {
+		
+			cost = 20
+			removal_cost = -1
+			
+			modifier = {
+			    stability_weekly = 0.003
+			    modifier_budget_cost = 0.20			
+			}
+			
+			cancel_if_invalid = no
+	    }
+
+	    good_pensions_system = {
+		
+			cost = 20
+			removal_cost = -1
+			
+			modifier = {
+			    stability_weekly = 0.004
+			    modifier_budget_cost = 0.40			
+			}
+			
+			cancel_if_invalid = no
+	    }
+	}
+
+	subsidies_system = {
+	    law = yes
+	    use_list_view = yes
+	    
+	    no_subsidies_system = {
+		
+			cost = 20
+			removal_cost = -1
+			
+			modifier = {
+			    war_support_weekly = 0.000	
+			    modifier_budget_cost = 0.0			
+			}
+			
+			default = yes
+			
+			cancel_if_invalid = no
+	    }
+	    
+	    basic_subsidies_system = {
+		
+			cost = 20
+			removal_cost = -1
+			
+			modifier = {
+			    war_support_weekly = 0.001 	
+			    modifier_budget_cost = 0.05			
+			}
+			
+			cancel_if_invalid = no
+	    }
+
+	    minium_subsidies_system = {
+		
+			cost = 20
+			removal_cost = -1
+			
+			modifier = {
+			    war_support_weekly = 0.002	
+			    modifier_budget_cost = 0.10		
+			}
+			
+			cancel_if_invalid = no
+	    }
+
+	    moderate_subsidies_system = {
+		
+			cost = 20
+			removal_cost = -1
+			
+			modifier = {
+			    war_support_weekly = 0.003
+			    modifier_budget_cost = 0.20			
+			}
+			
+			cancel_if_invalid = no
+	    }
+
+	    good_subsidies_system = {
+		
+			cost = 20
+			removal_cost = -1
+			
+			modifier = {
+			    war_support_weekly = 0.004	
+			    modifier_budget_cost = 0.40		
+			}
+			
+			cancel_if_invalid = no
+	    }
+	}
+
+	union_system = {
+	    law = yes
+	    use_list_view = yes
+	    
+	    no_union_system = {
+		
+			cost = 20
+			removal_cost = -1
+			
+			modifier = {
+			    stability_factor = -0.00			
+			}
+			
+			default = yes
+			
+			cancel_if_invalid = no
+	    }
+	    
+	    basic_union_system = {
+		
+			cost = 20
+			removal_cost = -1
+			
+			modifier = {
+			    stability_factor = -0.05 				
+			}
+			
+			cancel_if_invalid = no
+	    }
+
+	    minium_union_system = {
+		
+			cost = 20
+			removal_cost = -1
+			
+			modifier = {
+			    stability_factor = -0.10			
+			}
+			
+			cancel_if_invalid = no
+	    }
+
+	    moderate_union_system = {
+		
+			cost = 20
+			removal_cost = -1
+			
+			modifier = {
+			    stability_factor = -0.15			
+			}
+			
+			cancel_if_invalid = no
+	    }
+
+	    good_union_system = {
+		
+			cost = 20
+			removal_cost = -1
+			
+			modifier = {
+			    stability_factor = -0.20			
+			}
+			
+			cancel_if_invalid = no
+	    }
+	}
+
+	working_market_system = {
+	    law = yes
+	    use_list_view = yes
+	    
+	    not_regulated_working_market_system = {
+		
+			cost = 20
+			removal_cost = -1
+			
+			modifier = {
+			    production_speed_buildings_factor = 0.30
+				stability_factor = -0.05
+				consumer_goods_factor = 0.05
+				modifier_tax_multiplier = 25
+			}
+			
+			default = yes
+			
+			cancel_if_invalid = no
+	    }
+	    
+	    basic_regulated_working_market_system = {
+		
+			cost = 20
+			removal_cost = -1
+			
+			modifier = {
+			    production_speed_buildings_factor = 0.20
+			    stability_factor = 0.05
+				consumer_goods_factor = 0.10
+				modifier_tax_multiplier = 20
+			}
+			
+			cancel_if_invalid = no
+	    }
+
+	    moderate_regulated_working_market_system = {
+		
+			cost = 20
+			removal_cost = -1
+			
+			modifier = {
+			    production_speed_buildings_factor = 0.15
+			    stability_factor = 0.15
+				consumer_goods_factor = 0.15
+				modifier_tax_multiplier = 15
+			}
+			
+			cancel_if_invalid = no
+	    }
+
+	    regulated_working_market_system = {
+		
+			cost = 20
+			removal_cost = -1
+			
+			modifier = {
+			    production_speed_buildings_factor = 0.10
+			    stability_factor = 0.20
+				consumer_goods_factor = 0.20
+				modifier_tax_multiplier = 10
+			}
+			
+			cancel_if_invalid = no
+	    }
+
+	    ultra_regulated_working_market_system = {
+		
+			cost = 20
+			removal_cost = -1
+			
+			modifier = {
+			    production_speed_buildings_factor = 0.05
+			    stability_factor = 0.25
+				consumer_goods_factor = 0.25
+				modifier_tax_multiplier = 5
+			}
+			
+			cancel_if_invalid = no
+	    }
+	}
+
+}

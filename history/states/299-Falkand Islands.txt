@@ -1,0 +1,23 @@
+state= {
+	id=299
+	name="STATE_299"
+	manpower=42463
+
+	resources = {
+		fish = 24
+	}
+	
+	state_category = town
+	
+	history= 	{
+		owner = TDF
+		buildings = {
+			infrastructure = 2
+			12960 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = TDF
+	}
+	provinces= { 12960 }
+}

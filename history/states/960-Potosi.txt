@@ -1,0 +1,27 @@
+
+state={
+	id=960
+	name="STATE_960"
+
+	resources={
+		precious_metals = 26
+	}
+
+	history={
+		owner = PRU
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = PRU
+
+	}
+
+	provinces={
+		2174 13803 13813 13825 13833 13837 13847 13862 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

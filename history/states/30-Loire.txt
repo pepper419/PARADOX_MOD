@@ -1,0 +1,35 @@
+
+state={
+	id=30
+	name="STATE_30"
+	manpower = 1388400
+
+	resources={
+		grain = 20
+		meat = 10
+	}
+
+	state_category = megalopolis
+
+	history={
+		owner = FRA
+		victory_points = {
+			11465 5
+		}
+		victory_points = {
+			3671 10 
+		}
+		
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			dockyard = 1
+			air_base = 2
+		}
+		add_core_of = FRA
+	}
+
+	provinces={
+		503 527 3495 3509 3523 3671 9492 9478 9867 11463 11465 11613 11616 
+	}
+}

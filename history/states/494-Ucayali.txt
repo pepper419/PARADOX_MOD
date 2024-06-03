@@ -1,0 +1,28 @@
+
+state={
+	id=494
+	name="STATE_494"
+
+	resources={
+		precious_metals = 12
+		wood = 34
+	}
+
+	history={
+		owner = PRU
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = PRU
+		
+	}
+
+	provinces={
+		2212 2226 5166 8160 8191 10940 14010 14029 14037 14047 14052 14055 14061 14062 14064 14068 14072 14077 14080 14087 14088 14089 14099 14102 14105 14108 14111 14119 14121 14122 14125 14126 14127 14131 14132 14137 14138 14142 14143 14153 14154 14155 14158 14159 14168 14170 14171 14173 14178 14187 14191 14192 14196 14211 
+	}
+	manpower=735826
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

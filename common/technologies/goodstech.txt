@@ -1,0 +1,465 @@
+technologies = {
+    @1890 = 0
+	@1906 = 2
+	@1910 = 4
+	@1912 = 6
+	@1914 = 8
+	@1916 = 10
+	@1918 = 12
+	@1920 = 14
+	@1922 = 16
+	@1924 = 18
+	@1936 = 20
+
+	basic_television_good = {
+	
+		production_factory_max_efficiency_factor = 0.1
+		
+		research_cost = 1.5
+		start_year = 1918
+
+        path = {
+			leads_to_tech = improved_television_good
+			research_cost_coeff = 1
+		}
+
+		enable_equipments = {
+			televisions_1_good_equipment
+		}
+
+		folder = {
+			name = goodstech_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		categories = {
+			industry
+		}
+	}
+
+	improved_television_good = {
+	
+		production_factory_max_efficiency_factor = 0.1
+		
+		research_cost = 1.5
+		start_year = 1936
+
+        path = {
+			leads_to_tech = advanced_television_good 
+			research_cost_coeff = 1
+		}
+
+		enable_equipments = {
+			televisions_2_good_equipment
+		}
+
+		folder = {
+			name = goodstech_folder
+			position = { x = 0 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		categories = {
+			industry
+		}
+	}
+
+	advanced_television_good = {
+	
+		production_factory_max_efficiency_factor = 0.1
+		
+		research_cost = 1.5
+		start_year = 1954
+
+        path = {
+			research_cost_coeff = 1
+		}
+
+		enable_equipments = {
+			televisions_3_good_equipment
+		}
+
+		folder = {
+			name = goodstech_folder
+			position = { x = 0 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		categories = {
+			industry
+		}
+	}
+
+	#######################################
+
+	basic_phone_good = {
+	
+		production_factory_max_efficiency_factor = 0.1
+		
+		research_cost = 1.5
+		start_year = 1918
+
+        path = {
+			leads_to_tech = improved_phone_good
+			research_cost_coeff = 1
+		}
+
+		enable_equipments = {
+			phone_1_good_equipment
+		}
+
+		folder = {
+			name = goodstech_folder
+			position = { x = 2 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		categories = {
+			industry
+		}
+	}
+
+	improved_phone_good = {
+	
+		production_factory_max_efficiency_factor = 0.1
+		
+		research_cost = 1.5
+		start_year = 1936
+
+        path = {
+			leads_to_tech = advanced_phone_good 
+			research_cost_coeff = 1
+		}
+
+		enable_equipments = {
+			phone_2_good_equipment
+		}
+
+		folder = {
+			name = goodstech_folder
+			position = { x = 2 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		categories = {
+			industry
+		}
+	}
+
+	advanced_phone_good = {
+	
+		production_factory_max_efficiency_factor = 0.1
+		
+		research_cost = 1.5
+		start_year = 1954
+
+        path = {
+			research_cost_coeff = 1
+		}
+
+		enable_equipments = {
+			phone_3_good_equipment
+		}
+
+		folder = {
+			name = goodstech_folder
+			position = { x = 2 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		categories = {
+			industry
+		}
+	}
+
+	#######################################
+
+	basic_civil_cars_good = {
+	
+		production_factory_max_efficiency_factor = 0.1
+		
+		research_cost = 1.5
+		start_year = 1918
+
+        path = {
+			leads_to_tech = improved_civil_cars_good
+			research_cost_coeff = 1
+		}
+
+		enable_equipments = {
+			civil_cars_1_good_equipment
+		}
+
+		folder = {
+			name = goodstech_folder
+			position = { x = 4 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		categories = {
+			industry
+		}
+	}
+
+	improved_civil_cars_good = {
+	
+		production_factory_max_efficiency_factor = 0.1
+		
+		research_cost = 1.5
+		start_year = 1936
+
+        path = {
+			leads_to_tech = advanced_civil_cars_good 
+			research_cost_coeff = 1
+		}
+
+		enable_equipments = {
+			civil_cars_2_good_equipment
+		}
+
+		folder = {
+			name = goodstech_folder
+			position = { x = 4 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		categories = {
+			industry
+		}
+	}
+
+	advanced_civil_cars_good = {
+	
+		production_factory_max_efficiency_factor = 0.1
+		
+		research_cost = 1.5
+		start_year = 1954
+
+        path = {
+			research_cost_coeff = 1
+		}
+
+		enable_equipments = {
+			civil_cars_3_good_equipment
+		}
+
+		folder = {
+			name = goodstech_folder
+			position = { x = 4 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		categories = {
+			industry
+		}
+	}
+	#######################################
+
+	basic_civilian_radio_good = {
+	
+		production_factory_max_efficiency_factor = 0.1
+		
+		research_cost = 1.5
+		start_year = 1918
+
+        path = {
+			leads_to_tech = improved_civilian_radio_good
+			research_cost_coeff = 1
+		}
+
+		enable_equipments = {
+			civilian_radio_1_good_equipment
+		}
+
+		folder = {
+			name = goodstech_folder
+			position = { x = 6 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		categories = {
+			industry
+		}
+	}
+
+	improved_civilian_radio_good = {
+	
+		production_factory_max_efficiency_factor = 0.1
+		
+		research_cost = 1.5
+		start_year = 1936
+
+        path = {
+			leads_to_tech = advanced_civilian_radio_good 
+			research_cost_coeff = 1
+		}
+
+		enable_equipments = {
+			civilian_radio_2_good_equipment
+		}
+
+		folder = {
+			name = goodstech_folder
+			position = { x = 6 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		categories = {
+			industry
+		}
+	}
+
+	advanced_civilian_radio_good = {
+	
+		production_factory_max_efficiency_factor = 0.1
+		
+		research_cost = 1.5
+		start_year = 1954
+
+        path = {
+			research_cost_coeff = 1
+		}
+
+		enable_equipments = {
+			civilian_radio_3_good_equipment
+		}
+
+		folder = {
+			name = goodstech_folder
+			position = { x = 6 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		categories = {
+			industry
+		}
+	}	
+	
+	#######################################
+
+	basic_domestic_machines_good = {
+	
+		production_factory_max_efficiency_factor = 0.1
+		
+		research_cost = 1.5
+		start_year = 1918
+
+        path = {
+			leads_to_tech = improved_domestic_machines_good
+			research_cost_coeff = 1
+		}
+
+		enable_equipments = {
+			domestic_machines_1_good_equipment
+		}
+
+		folder = {
+			name = goodstech_folder
+			position = { x = 8 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		categories = {
+			industry
+		}
+	}
+
+	improved_domestic_machines_good = {
+	
+		production_factory_max_efficiency_factor = 0.1
+		
+		research_cost = 1.5
+		start_year = 1936
+
+        path = {
+			leads_to_tech = advanced_domestic_machines_good 
+			research_cost_coeff = 1
+		}
+
+		enable_equipments = {
+			domestic_machines_2_good_equipment
+		}
+
+		folder = {
+			name = goodstech_folder
+			position = { x = 8 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		categories = {
+			industry
+		}
+	}
+
+	advanced_domestic_machines_good = {
+	
+		production_factory_max_efficiency_factor = 0.1
+		
+		research_cost = 1.5
+		start_year = 1954
+
+        path = {
+			research_cost_coeff = 1
+		}
+
+		enable_equipments = {
+			domestic_machines_3_good_equipment
+		}
+
+		folder = {
+			name = goodstech_folder
+			position = { x = 8 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		categories = {
+			industry
+		}
+	}
+}

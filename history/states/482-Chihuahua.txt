@@ -1,0 +1,33 @@
+
+state={
+	id=482
+	name="STATE_482"
+	resources={
+		steel=162.000
+		coal=38.000
+	}
+
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = USA
+		victory_points = {
+			8097 10 
+		}
+		victory_points = {
+			10830 10 
+		}
+
+	}
+
+	provinces={
+		2037 4898 7935 8097 10809 10830 12745 12827 12850 12897 14854 14856 14858 14859 14861 14863 14865 14867 14868 14869 14870 14875 14876 14877 14878 14879 14881 14883 14885 14886 14887 14888 14889 14890 14892 14893 14894 14895 14897 14899 14900 14901 14903 14905 14906 14908 14909 14910 14912 14913 14914 14915 14916 14919 14922 14923 14925 
+	}
+	manpower=520751
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

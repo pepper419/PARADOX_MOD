@@ -1,0 +1,193 @@
+scripted_gui = {
+  new_scripted_gui = {
+    window_name = "economic_politics_button_container"
+    context_type = player_context
+
+    visible = {
+		always = no
+    }
+
+    effects = {
+        economic_politics_icon_click = {
+        }   
+    }
+
+    triggers = {
+    }
+
+    dynamic_lists = {
+	}
+
+    properties = {
+    }
+
+    ai_enabled = {
+		always = yes
+    }
+
+    ai_test_interval = 290  # The higher, the long it takes the ai to do actions
+	ai_test_variance = 0.5
+
+    ai_check = {
+    }
+
+    ai_check_scope = {
+    }
+
+    ai_weights = {
+    }
+  } 
+  new_scripted_gui_1 = {
+    window_name = "economic_politics_container"
+    context_type = player_context
+
+    visible = {
+        always = no
+    }
+
+    effects = {  
+        exitbutton_click = {
+        }
+        add_incometaxes_button_click = {
+            add_to_variable = { var = incometaxes value = 1 }
+        }
+        sub_incometaxes_button_click = {
+            subtract_from_variable = { var = incometaxes value = 1 }
+        }
+
+        add_printer_button_click = {
+            add_to_variable = { var = printer value = 1 }
+        }
+        sub_printer_button_click = {
+            subtract_from_variable = { var = printer value = 1 }
+        }
+
+        add_level_debt_button_click = {
+            add_to_variable = { var = level_debt value = 1 }
+        }
+        sub_level_debt_button_click = {
+            subtract_from_variable = { var = level_debt value = 1 }
+        }
+
+        add_debt_button_click = {
+            set_variable = { PIB_cost_2 = PIB_cost }
+            set_variable = { PIB_cost_unit = PIB_cost_2 }
+            add_to_variable = { var = dx  value = PIB_cost_unit }
+            add_to_variable = { var = total_debt value = PIB_cost_unit }
+            subtract_from_variable = { var = debt_confidence value = 1 }
+        }
+        sub_debt_button_click = {
+            set_variable = { PIB_cost_1 = PIB_cost }
+            set_variable = { PIB_cost_unit = PIB_cost_1 }
+            subtract_from_variable = { var = dx value = PIB_cost_unit }
+            subtract_from_variable = { var = total_debt value = PIB_cost_unit } 
+        }
+    }
+
+    triggers = {
+        add_incometaxes_button_click_enabled = {
+            check_variable = { incometaxes < 100 }
+        }
+        sub_incometaxes_button_click_enabled = {
+            check_variable = { incometaxes > -0 }
+        }
+
+        add_printer_button_click_enabled = {
+            check_variable = { printer < 100 }
+        }
+        sub_printer_button_click_enabled = {
+            check_variable = { printer > -0 }
+        }
+
+        add_level_debt_button_click_enabled = {
+            check_variable = { printer < 100 }
+        }
+        sub_level_debt_button_click_enabled = {
+            check_variable = { printer > -0 }
+        }
+
+        add_debt_button_click_enabled = { 
+            check_variable = { debt_confidence > 0 }    
+        }
+        sub_debt_button_click_enabled = {
+            NOT = { check_variable = { total_debt < 0 } }        
+        }
+    }
+
+    dynamic_lists = {
+    }
+
+    properties = {
+    }
+
+    ai_enabled = {
+        always = yes
+    }
+
+    ai_test_interval = 290  # The higher, the long it takes the ai to do actions
+    ai_test_variance = 0.5
+
+    ai_check = {
+    }
+
+    ai_check_scope = {
+    }
+
+    ai_weights = {
+        add_incometaxes_button_click = {
+            ai_will_do = {
+                factor = 10
+                modifier = {
+                    check_variable = { dx < 400 }
+                    add = 5
+                }
+                modifier = {
+                    check_variable = { dx < 200 }
+                    add = 10
+                }
+                modifier = {
+                    check_variable = { dx < 100 }
+                    add = 20
+                }
+                modifier = {
+                    check_variable = { dx < 50 }
+                    add = 40
+                }
+                modifier = {
+                    check_variable = { dx < 25 }
+                    add = 80
+                }
+            }
+        }
+
+        sub_incometaxes_button_click = {
+            ai_will_do = {
+                factor = 5
+                modifier = {
+                    check_variable = { dx > 1600 }
+                    add = 50
+                }
+                modifier = {
+                    check_variable = { dx > 800 }
+                    add = 40
+                }
+                modifier = {
+                    check_variable = { dx > 400 }
+                    add = 30
+                }
+            }
+        }
+
+        add_printer_button_click = {
+            ai_will_do = {
+                factor = 0
+            }
+        }
+        sub_printer_button_click = {
+            ai_will_do = {
+                factor = 0
+            }
+        }
+    }
+  }
+}

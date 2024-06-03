@@ -1,0 +1,32 @@
+
+state={
+	id=947
+	name="STATE_947"
+
+	resources={
+		wool = 38
+		grain = 16
+	}
+
+	history={
+		owner = STC
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = STC
+
+		victory_points = {
+			5173 4 
+		}
+
+	}
+
+	provinces={
+		5173 12946 12952 13639 13641 13643 13644 13646 13647 13648 13649 13650 13651 13653 13654 13655 13656 13657 13658 13659 13660 13664 14735 
+	}
+	manpower=726374
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

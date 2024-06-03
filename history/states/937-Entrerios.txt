@@ -1,0 +1,31 @@
+
+state={
+	id=937
+	name="STATE_937"
+
+	resources={
+		grain = 28
+		meat = 36
+	}
+
+	history={
+		owner = ENT
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = ENT
+		victory_points = {
+			1449 4 
+		}
+
+	}
+
+	provinces={
+		1449 10515 10943 12453 13292 13295 13297 13299 13300 13304 13307 13308 13314 13315 13317 13323 13328 13338 
+	}
+	manpower=2345865
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

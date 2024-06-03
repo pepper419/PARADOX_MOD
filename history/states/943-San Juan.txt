@@ -1,0 +1,33 @@
+
+state={
+	id=943
+	name="STATE_943"
+
+	resources={
+		coal = 22
+		steel = 26
+		meat = 16
+	}
+
+	history={
+		owner = SJU
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = SJU
+
+		victory_points = {
+			10964 4
+		}
+
+	}
+
+	provinces={
+		2179 10964 12928 13621 13623 13625 13626 13627 13628 13629 13633 13753 13757 13760 
+	}
+	manpower=224736
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

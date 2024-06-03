@@ -1,0 +1,52 @@
+on_actions = {
+    on_daily = {
+        
+        effect = {
+            FRA = {
+                #set_variable = { var = var_liberalism_popularity_in_group value = 20 }
+                #set_variable = { var = var_conservatism_popularity_in_group value = 10 }
+                #set_variable = { var = var_socialism_popularity_in_group value = 70 }
+
+                set_variable = { var = var_liberalism_popularity value = 14 }
+                set_variable = { var = var_conservatism_popularity value = 6 }
+                set_variable = { var = var_socialism_popularity value = 44 }
+                
+                set_variable = { var = var_moderatism_popularity value = 10 }
+                set_variable = { var = var_centrism_popularity value = 0 }
+                set_variable = { var = var_oligarchism_popularity value = 0 }
+                set_variable = { var = var_despotism_popularity value = 5 }
+                set_variable = { var = var_anarchism_popularity value = 0 }
+                
+
+                set_variable = { var = var_marxism_popularity value = 10 }
+                set_variable = { var = var_stalinism_popularity value = 5 }
+                set_variable = { var = var_anarchist_communism_popularity value = 5 }
+                set_variable = { var = var_leninism_popularity value = 0 }
+                set_variable = { var = var_anti_revisionism_popularity value = 0 }
+                
+                set_variable = { var = var_fascism_ideology_popularity value = 1 }
+                set_variable = { var = var_nazism_popularity value = 0 }
+                set_variable = { var = var_gen_nazism_popularity value = 0 }
+                set_variable = { var = var_falangism_popularity value = 0 }
+                set_variable = { var = var_rexism_popularity value = 0 }
+            }
+			set_variable = { var = var_democratic_group_popularity value = party_popularity@democratic }
+            set_variable = { var = var_neutrality_group_popularity value = party_popularity@neutrality }
+            set_variable = { var = var_communism_group_popularity value = party_popularity@communism }
+            set_variable = { var = var_fascism_group_popularity value = party_popularity@fascism }
+
+            multiply_variable = { var = var_democratic_group_popularity value = 100 }
+            multiply_variable = { var = var_neutrality_group_popularity value = 100 }
+            multiply_variable = { var = var_communism_group_popularity value = 100 }
+            multiply_variable = { var = var_fascism_group_popularity value = 100 }
+
+            #set_temp_variable = { var = var_democratic_group_initial_calc value = var_democratic_group_popularity }
+
+            ###FRA = socialismo 44, conservadurismo 6, liberales 14
+            ###FRA = moderados 3, centristas 3, despoticos 3, oligarcas 3, anarquistas 3
+            ###FRA = marxistas 10, stalinistas 4, anarco comunismo 2, leninistas 4
+            ###FRA = fascism_ideology 1
+
+        }
+    }
+}

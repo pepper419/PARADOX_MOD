@@ -1,0 +1,20 @@
+add_namespace = root_money_rebelion
+
+country_event = {
+	
+	id = root_money_rebelion.1
+	title = root_money_rebelion.1.t
+	desc = root_money_rebelion.1.desc
+	
+	picture = GFX_report_event_fascist_gathering
+	
+	is_triggered_only = yes
+
+	trigger = {
+	    check_variable = { incometaxes > 25 }    
+	}
+
+	option = {
+	    add_ideas = ROOT_money_strikes_1
+	}
+}

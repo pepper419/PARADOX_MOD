@@ -1,0 +1,33 @@
+
+state={
+	id=509
+	name="STATE_509"
+	resources={
+		tungsten=35.000
+		steel=6.000
+		wood = 38
+	}
+
+	history={
+		owner = CHC
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+
+		}
+		add_core_of = CHC
+
+		victory_points = {
+			2106 4 
+		}
+
+	}
+
+	provinces={
+		2106 2208 5213 8169 10986 13462 13463 13466 13469 13470 13471 13474 13475 13483 13484 13489 13490 13492 13503 13504 13512 13514 
+	}
+	manpower=1704241
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

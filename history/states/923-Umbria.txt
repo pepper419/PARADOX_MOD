@@ -1,0 +1,28 @@
+state={
+	id=923
+	name="STATE_923"
+
+	resources={
+		grain = 16
+	}
+	provinces={
+		967 3885 6926 11861 
+	}
+	history={
+		victory_points = {
+			3885 1
+		}
+		owner = ITA
+		add_core_of = ITA
+		add_core_of = PAP
+		buildings = {
+			infrastructure = 3
+
+		}
+	}
+
+	state_category = town	
+	manpower=1783984
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

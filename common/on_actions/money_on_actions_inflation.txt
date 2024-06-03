@@ -1,0 +1,25 @@
+on_actions = {
+    on_daily = {
+        effect = {
+            clamp_variable = {
+                var = inflation_level
+                min = 0
+                max = 200
+            }
+
+            set_variable = { ROOT_inflation_division_1 = 400 }
+            set_variable = { ROOT_inflation_division_2 = 4 }
+            set_variable = { ROOT_inflation_division_3 = inflation_level }
+            divide_variable = { ROOT_inflation_division_3 = ROOT_inflation_division_1 }
+            multiply_variable = { ROOT_inflation_division_3 = ROOT_inflation_division_2 }
+            set_variable = { ROOT_inflation_division_4 = ROOT_inflation_division_3 }
+
+            set_variable = { ROOT_inflation_division_5 = inflation_level }
+            divide_variable = { ROOT_inflation_division_5 = 200 }
+
+            subtract_from_variable = { ROOT_inflation_division_5 = ROOT_inflation_division_4 }
+
+            set_variable = { ROOT_inflation_modifier = ROOT_inflation_division_5 }
+        }
+    }
+}

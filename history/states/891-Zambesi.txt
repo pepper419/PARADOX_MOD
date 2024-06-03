@@ -1,0 +1,27 @@
+
+state={
+	id=891
+	name="STATE_891"
+	resources={
+		rubber=1.000
+		wood=18.000
+	}
+
+	history={
+		owner = POR
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = ANG
+
+	}
+
+	provinces={
+		1552 2126 3925 4735 6943 8054 10504 15008 15694 16016 16061 16063 16072 16084 
+	}
+	manpower=640000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

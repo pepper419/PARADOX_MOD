@@ -1,0 +1,23 @@
+state={
+	id=912
+	name="STATE_912"
+	provinces={
+		628 3657 9613 
+	}
+	history={
+		victory_points = {
+			9613 1
+		}
+		owner = ITA
+		add_core_of = ITA
+		buildings = {
+			infrastructure = 3
+
+		}
+	}
+
+	state_category = town
+	manpower=574946
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -1,0 +1,107 @@
+#	Example:
+#
+#	example_effect = {
+#		add_political_power = 66
+#		add_popularity = {
+#			ideology = fascism
+#			popularity = 0.33
+#		}
+#	}
+#
+#
+#	In a script file:
+#
+#	effect = {
+#		example_effect = yes
+#	}
+#
+
+#####################################
+### emergency_factory_conversion ####
+#####################################
+
+#This is going to give misleading and ugly tooltips. Making it nice will take effort. TODO_WTT_CD make nice or ignore and remove comment. Easiest solution is just making a custom tooltip that says "5 civilian factories will be converted to military factories" and ignore telling the player the states where it will happen.
+
+root_calculate_the_buy_and_sell_of_money = {
+	set_temp_variable = { var = exchange_rate_calc_3 value = root_apreciation_level }
+	set_temp_variable = { var = exchange_rate_calc_4 value = root_devaluation_level }
+	set_temp_variable = { var = exchange_rate_calc_5 value = 1 }
+	set_temp_variable = { var = exchange_rate_calc_6 value = 1 }
+
+	set_temp_variable = { var = exchange_rate_calc_7 value = 1 }
+	multiply_temp_variable = { var = exchange_rate_calc_7 value = exchange_rate_calc_1 }
+	divide_temp_variable = { var = exchange_rate_calc_7 value = one_hundred }
+	set_temp_variable = { var = exchange_rate_calc_8 value = exchange_rate_calc_7 }
+
+	set_temp_variable = { var = exchange_rate_calc_9 value = 1 }
+	multiply_temp_variable = { var = exchange_rate_calc_9 value = exchange_rate_calc_4 }
+	divide_temp_variable = { var = exchange_rate_calc_9 value = one_hundred }
+	set_temp_variable = { var = exchange_rate_calc_10 value = exchange_rate_calc_9 }
+
+	add_to_temp_variable = { var = exchange_rate_calc_5 value = exchange_rate_calc_8 }
+	add_to_temp_variable = { var = exchange_rate_calc_5 value = exchange_rate_calc_10 }
+
+	set_temp_variable = { var = exchange_rate_calc_11 value = 1 }
+	multiply_temp_variable = { var = exchange_rate_calc_11 value = exchange_rate_calc_2 }
+	divide_temp_variable = { var = exchange_rate_calc_11 value = one_hundred }
+	set_temp_variable = { var = exchange_rate_calc_12 value = exchange_rate_calc_11 }
+
+	set_temp_variable = { var = exchange_rate_calc_13 value = 1 }
+	multiply_temp_variable = { var = exchange_rate_calc_13 value = exchange_rate_calc_3 }
+	divide_temp_variable = { var = exchange_rate_calc_13 value = one_hundred }
+	set_temp_variable = { var = exchange_rate_calc_14 value = exchange_rate_calc_13 }
+
+	add_to_temp_variable = { var = exchange_rate_calc_6 value = exchange_rate_calc_12 }
+	add_to_temp_variable = { var = exchange_rate_calc_6 value = exchange_rate_calc_14 }
+
+	set_temp_variable = { var = exchange_rate_calc_15 value = exchange_rate_calc_5 }
+	set_temp_variable = { var = exchange_rate_calc_16 value = exchange_rate_calc_6 }
+
+	set_temp_variable = { var = exchange_rate_calc_17 value = exchange_rate_calc_5 }
+	set_temp_variable = { var = exchange_rate_calc_18 value = exchange_rate_calc_6 }
+
+
+	divide_temp_variable = { var = exchange_rate_calc_15 value = exchange_rate_calc_16 }
+	divide_temp_variable = { var = exchange_rate_calc_18 value = exchange_rate_calc_17 }
+
+	set_temp_variable = { var = exchange_rate_calc_19 value = exchange_rate_calc_15 }
+	set_temp_variable = { var = exchange_rate_calc_20 value = exchange_rate_calc_18 }
+
+	set_temp_variable = { var = exchange_rate_calc_diplomacy_1 value = exchange_rate_calc_19 }
+	set_temp_variable = { var = exchange_rate_calc_diplomacy_2 value = exchange_rate_calc_20 }
+	multiply_temp_variable = { var = exchange_rate_calc_diplomacy_1 value = root.root_printer }
+    multiply_temp_variable = { var = exchange_rate_calc_diplomacy_2 value = root.root_printer }
+	set_temp_variable = { var = exchange_rate_calc_diplomacy_3 value = exchange_rate_calc_diplomacy_1 }
+	set_temp_variable = { var = exchange_rate_calc_diplomacy_4 value = exchange_rate_calc_diplomacy_2 }
+
+	multiply_temp_variable = { var = exchange_rate_calc_19 value = root.money_printer_calc_2 }
+    multiply_temp_variable = { var = exchange_rate_calc_20 value = root.money_printer_calc_2 }
+
+	set_temp_variable = { var = exchange_rate_calc_21 value = exchange_rate_calc_19 } #buy
+	set_temp_variable = { var = exchange_rate_calc_22 value = exchange_rate_calc_20 } #sell
+}
+
+diplomatic_scripted_effect_1 = {
+	set_variable = { var = root_send_money_mount_1 value = root.money_printer_calc_2 } 	
+	root = { add_political_power = -50 }
+	root = {  
+		set_variable = { var = root_send_money_mount_2 value = money_printer_calc_2 } 
+		#country_event = root_economic_diplomacy.1 
+		subtract_from_variable = { var = total_money_reserves value = root_send_money_mount_2 }
+	}
+}
+
+diplomatic_scripted_effect_2 = {
+	add_political_power = 50
+	#country_event = root_economic_diplomacy.2
+	this = { add_to_variable = { var = total_money_reserves value = root_send_money_mount_1 } }
+}
+
+diplomatic_scripted_effect_3 = {
+	root = { add_political_power = 50 }
+	root = {
+		#country_event = root_economic_diplomacy.3
+		add_to_variable = { var = total_money_reserves value = root_send_money_mount_2 }
+	}
+}
+

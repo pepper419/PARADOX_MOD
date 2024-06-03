@@ -1,0 +1,33 @@
+
+state={
+	id=954
+	name="STATE_954"
+
+	resources={
+		wood = 10
+		grain = 18
+		meat = 8
+	}
+
+	history={
+		owner = VLP
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = VLP
+
+		victory_points = {
+			8222 4 
+		}
+
+	}
+
+	provinces={
+		5191 8222 13747 13748 
+	}
+	manpower=1234637
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

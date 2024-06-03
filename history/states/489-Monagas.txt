@@ -1,0 +1,35 @@
+
+state={
+	id=489
+	name="STATE_489"
+	resources={
+		oil=40.000
+		fruit = 14
+	}
+
+	history={
+		owner = COL
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			1944 = {
+				naval_base = 5
+
+			}
+
+		}
+		add_core_of = COL
+		add_core_of = VEN
+		victory_points = {
+			1944 1 
+		}
+
+	}
+
+	provinces={
+		1944 1997 2052 4526 5088 10855 12772 14468 14499 14503 14504 14505 14511 14517 14518 14521 14522 14523 14525 14528 14529 14530 14531 
+	}
+	manpower=1576373
+	buildings_max_level_factor=1.000
+	state_category=city
+}

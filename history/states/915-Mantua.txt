@@ -1,0 +1,29 @@
+state={
+	id=915
+	name="STATE_915"
+
+	resources={
+		grain = 36
+		cotton = 22
+	}
+	
+	provinces={
+		773 3776 
+	}
+	history={
+		victory_points = {
+			3776 1
+		}
+		owner = ITA
+		add_core_of = ITA
+		buildings = {
+			infrastructure = 4
+
+		}
+	}
+
+	state_category = large_town
+	manpower=639487
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -1,0 +1,38 @@
+
+state={
+	id=936
+	name="STATE_936"
+
+	resources={
+		grain = 84
+		meat = 56
+		steel = 26
+		chromium = 12
+		tungsten = 14
+	}
+
+	history={
+		owner = CDB
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = CDB
+
+		victory_points = {
+			12942 10 
+		}
+		victory_points = {
+			10985 4 
+		}
+
+	}
+
+	provinces={
+		5184 10975 10985 12942 13282 13283 13287 13289 13290 13293 13298 13301 13303 13309 13310 13316 13321 13322 13325 13330 13331 13339 13340 
+	}
+	manpower=4789332
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+	local_supplies=0.000
+}

@@ -1,0 +1,39 @@
+
+state={
+	id=474
+	name="STATE_474"
+
+	resources={
+		wood = 22
+	}
+
+	history={
+		owner = GUA
+		buildings = {
+			infrastructure = 1
+			air_base = 1
+			4904 = {
+				naval_base = 2
+
+			}
+			4965 = {
+				naval_base = 3
+
+			}
+
+		}
+		add_core_of = GUA
+		victory_points = {
+			4904 1 
+		}
+
+	}
+
+	provinces={
+		4904 4965 12715 14600 14601 14602 14603 14610 14615 14616 14624 14625 14632 14642 14645 14652 14653 14664 14669 14671 14673 14681 
+	}
+	manpower=440289
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

@@ -1,0 +1,28 @@
+add_namespace = test_mod
+
+country_event = {
+	
+	id = test_mod.1
+	title = "Country Flags" #test_mod.1.t
+	desc = "testing of focus tree" #test_mod.1.desc
+	
+	picture = GFX_report_event_fascist_gathering
+	
+	is_triggered_only = yes
+
+	trigger = {
+	    always = no 
+	}
+
+	option = {
+		name = "add Country Flag ARG_oculto"
+	    set_country_flag = ARG_oculto
+		mark_focus_tree_layout_dirty = yes
+	}
+
+	option = {
+		name = "Remove Country Flag ARG_oculto"
+	    clr_country_flag = ARG_oculto
+		mark_focus_tree_layout_dirty = yes
+	}
+}

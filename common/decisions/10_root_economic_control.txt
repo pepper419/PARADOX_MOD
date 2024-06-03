@@ -1,0 +1,842 @@
+root_taxes_control_decisions = {
+	root_increase_the_population_taxes_decision = {
+
+		icon = hol_attract_foreign_investors
+
+		available = {
+			has_stability > 0.0
+			NOT = { check_variable = { inflation_level > 200 } }
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+
+		modifier = {
+			#
+		}
+
+		days_remove = 0
+		days_re_enable = 0
+
+		cost = 50
+
+		complete_effect = {           
+		    add_to_variable = { var = pops_taxes_level value = 5 }
+		}
+
+		remove_effect = {}
+
+		ai_will_do = {
+			base = 10
+			modifier = {
+				add = 10
+				has_stability > 0.2
+			}
+			modifier = {
+				add = 1
+				check_variable = { total_money_reserves < 0.300 }
+				factor = 30
+			}
+			modifier = {
+				check_variable = { total_money_reserves < 0.200 }
+				factor = 60
+			}
+			modifier = {
+				check_variable = { total_money_reserves < 0.100 }
+				factor = 90
+			}
+			modifier = {
+				check_variable = { total_money_reserves < 0.050 }
+				factor = 100
+			}
+		}
+	}
+	root_increase_the_industry_taxes_decision = {
+
+		icon = hol_attract_foreign_investors
+
+		available = {
+			has_stability > 0.0
+			NOT = { check_variable = { inflation_level > 200 } }
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+
+		modifier = {
+			#
+		}
+
+		days_remove = 0
+		days_re_enable = 0
+
+		cost = 50
+
+		complete_effect = {           
+		    add_to_variable = { var = industry_taxes_level value = 5 }
+		}
+
+		remove_effect = {}
+
+		ai_will_do = {
+			base = 10
+			modifier = {
+				add = 10
+				has_stability > 0.2
+			}
+			modifier = {
+				add = 1
+				check_variable = { total_money_reserves < 0.300 }
+				factor = 30
+			}
+			modifier = {
+				check_variable = { total_money_reserves < 0.200 }
+				factor = 60
+			}
+			modifier = {
+				check_variable = { total_money_reserves < 0.100 }
+				factor = 90
+			}
+			modifier = {
+				check_variable = { total_money_reserves < 0.050 }
+				factor = 100
+			}
+		}
+	}
+	root_lower_the_population_taxes_decision = {
+
+		icon = hol_attract_foreign_investors
+
+		available = {
+			has_stability > 0.0
+			NOT = { check_variable = { inflation_level > 200 } }
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+
+		modifier = {
+			#
+		}
+
+		days_remove = 0
+		days_re_enable = 0
+
+		cost = 50
+
+		complete_effect = {           
+		    subtract_from_variable = { var = pops_taxes_level value = 5 }
+		}
+
+		remove_effect = {}
+
+		ai_will_do = {
+			base = 10
+			modifier = {
+				add = 10
+				has_stability > 0.2
+			}
+			modifier = {
+				add = 1
+				check_variable = { total_money_reserves < 0.300 }
+				factor = 30
+			}
+			modifier = {
+				check_variable = { total_money_reserves < 0.200 }
+				factor = 60
+			}
+			modifier = {
+				check_variable = { total_money_reserves < 0.100 }
+				factor = 90
+			}
+			modifier = {
+				check_variable = { total_money_reserves < 0.050 }
+				factor = 100
+			}
+		}
+	}
+	root_lower_the_industry_taxes_decision = {
+
+		icon = hol_attract_foreign_investors
+
+		available = {
+			has_stability > 0.0
+			NOT = { check_variable = { inflation_level > 200 } }
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+
+		modifier = {
+			#
+		}
+
+		days_remove = 0
+		days_re_enable = 0
+
+		cost = 50
+
+		complete_effect = {           
+		    subtract_from_variable = { var = industry_taxes_level value = 5 }
+		}
+
+		remove_effect = {}
+
+		ai_will_do = {
+			base = 10
+			modifier = {
+				add = 10
+				has_stability > 0.2
+			}
+			modifier = {
+				add = 1
+				check_variable = { total_money_reserves < 0.300 }
+				factor = 30
+			}
+			modifier = {
+				check_variable = { total_money_reserves < 0.200 }
+				factor = 60
+			}
+			modifier = {
+				check_variable = { total_money_reserves < 0.100 }
+				factor = 90
+			}
+			modifier = {
+				check_variable = { total_money_reserves < 0.050 }
+				factor = 100
+			}
+		}
+	}
+}
+
+###Central Bank decisions###
+root_central_bank_decisions = {
+    print_money_1 = {
+
+		icon = hol_attract_foreign_investors
+
+		available = {
+			has_stability > 0.0
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+
+		modifier = {
+			#
+		}
+
+		days_remove = 0
+		days_re_enable = 0
+
+		cost = 5
+
+		complete_effect = {           
+		    add_to_variable = { var = total_money_reserves value = money_printer_calc_2 }
+			add_to_variable = { var = root_devaluation_level value = money_printer_calc_2 }
+			add_to_variable = { var = root_inflation_level value = root_printer }
+
+			custom_effect_tooltip = money_for_printer_tooltip
+			custom_effect_tooltip = inflation_increase_tooltip
+			custom_effect_tooltip = increase_devaluation_tooltip
+		}
+
+		remove_effect = {}
+
+		ai_will_do = {
+			base = 10
+			modifier = {
+				add = 10
+				has_stability > 0.2
+			}
+			modifier = {
+				add = 1
+				check_variable = { total_money_reserves < 0.300 }
+				factor = 30
+			}
+			modifier = {
+				check_variable = { total_money_reserves < 0.200 }
+				factor = 60
+			}
+			modifier = {
+				check_variable = { total_money_reserves < 0.100 }
+				factor = 90
+			}
+			modifier = {
+				check_variable = { total_money_reserves < 0.050 }
+				factor = 100
+			}
+		}
+	}
+
+    increase_interest_rates_1 = {
+
+        icon = hol_attract_foreign_investors
+
+		available = {
+			has_stability > 0.5
+			custom_trigger_tooltip = {
+				tooltip = trigger_increase_interest_rates_1_tt	
+				NOT = {
+					OR = {
+						check_variable = { root_printer = 100 }
+						check_variable = { root_printer > 100 }
+					}					
+				}					
+			}
+		}
+
+		visible = {
+		}
+
+		fire_only_once = no
+
+		modifier = {
+	    }
+
+		days_remove = 0
+		days_re_enable = 0
+
+		cost = 5
+
+		complete_effect = {
+			add_to_variable = { var = root_printer value = 1 }
+
+			custom_effect_tooltip = increase_interest_rates_tooltip
+		}
+
+		ai_will_do = {
+			base = 0
+	    }
+	}
+
+    lower_interest_rates_1 = {
+
+        icon = hol_attract_foreign_investors
+
+		available = {
+			has_stability > 0.5
+			custom_trigger_tooltip = {
+				tooltip = trigger_lower_interest_rates_1_tt	
+				NOT = {
+					OR = {
+						check_variable = { root_printer = 1 }
+						check_variable = { root_printer < 1 }
+					}
+				}					
+			}
+		}
+
+		visible = {
+		}
+
+		fire_only_once = no
+
+		modifier = {
+	    }
+
+		days_remove = 0
+		days_re_enable = 0
+
+		cost = 5
+
+		complete_effect = {
+			subtract_from_variable = { var = root_printer value = 1 }
+				
+			custom_effect_tooltip = lower_interest_rates_tooltip
+		}
+
+		ai_will_do = {
+			base = 0
+	    }
+	}
+
+	easy_credit_1 = {
+
+		icon = hol_attract_foreign_investors
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = trigger_easy_credit_tt	
+				NOT = {
+					OR = {
+						check_variable = { total_money_reserves = porcentage_of_economy_2 }
+						check_variable = { total_money_reserves < porcentage_of_economy_2 }
+					}
+				}					
+			}
+		}
+
+		visible = {
+		    always = yes
+		}
+
+		fire_only_once = no
+
+		modifier = {
+			production_speed_industrial_complex_factor = 0.20
+			stability_weekly = 0.001
+			consumer_goods_factor = 0.05
+	    }
+
+		days_remove = 70
+		days_re_enable = 35
+
+		cost = 50
+
+		complete_effect = {
+			subtract_from_variable = { var = total_money_reserves value = porcentage_of_economy_2 }
+			add_to_variable = { var = root_devaluation_level value = porcentage_of_economy_2 }
+			add_to_variable = { var = root_apreciation_level value = porcentage_of_economy_2 }
+			add_to_variable = { var = root_inflation_level value = 1 }
+            
+			custom_effect_tooltip = porcentage_of_economy_subtract_tooltip
+			custom_effect_tooltip = porcentage_of_economy_devaluation_tooltip
+			custom_effect_tooltip = porcentage_of_economy_apreciation_tooltip
+			custom_effect_tooltip = porcentage_of_economy_increase_inflation_one_tooltip
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+    }
+
+	war_credit_1 = {
+
+		icon = hol_attract_foreign_investors
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = trigger_war_credit_tt	
+				NOT = {
+					OR = {
+						check_variable = { total_money_reserves = porcentage_of_economy_2 }
+						check_variable = { total_money_reserves < porcentage_of_economy_2 }
+					}
+				}					
+			}
+		}
+
+		visible = {
+		    always = yes
+		}
+
+		fire_only_once = no
+
+		modifier = {
+			production_speed_arms_factory_factor = 0.20
+			war_support_weekly = 0.001
+			consumer_goods_factor = 0.05
+	    }
+
+		days_remove = 70
+		days_re_enable = 35
+
+		cost = 50
+
+		complete_effect = {
+            subtract_from_variable = { var = total_money_reserves value = porcentage_of_economy_2 }
+			add_to_variable = { var = root_devaluation_level value = porcentage_of_economy_2 }
+			add_to_variable = { var = root_apreciation_level value = porcentage_of_economy_2 }
+			add_to_variable = { var = root_inflation_level value = 1 }
+
+			custom_effect_tooltip = porcentage_of_economy_subtract_tooltip
+			custom_effect_tooltip = porcentage_of_economy_devaluation_tooltip
+			custom_effect_tooltip = porcentage_of_economy_apreciation_tooltip
+			custom_effect_tooltip = porcentage_of_economy_increase_inflation_one_tooltip
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+    }
+    
+    foreigt_investment_slot_1 = {
+
+    	icon = hol_attract_foreign_investors
+
+        allowed = {
+        }
+
+        cost = 50
+        fire_only_once = no
+
+        available = {
+            has_stability > 0.5
+        }
+
+        visible = {
+			always = yes
+		}
+
+        complete_effect = {
+		}
+		ai_will_do = {
+			base = 0
+		}
+    }
+
+    lower_the_inflation_1 = {
+
+        icon = generic_economy
+
+		available = {
+			has_stability > 0.25
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+
+		modifier = {
+	    }
+
+		days_remove = 0
+		days_re_enable = 0
+
+		cost = 20
+
+		complete_effect = {
+			subtract_from_variable = { var = root_inflation_level value = 1 }
+
+			custom_effect_tooltip = porcentage_of_economy_lower_inflation_one_tooltip
+		}
+
+		ai_will_do = {
+			base = 0
+	    }
+	}
+
+	generate_financial_confidence_1 = {
+
+        icon = generic_economy
+
+		available = {
+			has_stability > 0.25
+			custom_trigger_tooltip = {
+				tooltip = trigger_generate_financial_confidence_1_tt
+				OR = {
+					check_variable = { root_debt_confidence = 100 }
+					check_variable = { root_debt_confidence < 100 }
+				}					
+			}
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+
+		modifier = {
+	    }
+
+		days_remove = 35
+		days_re_enable = 35
+
+		cost = 100
+
+		complete_effect = {
+			add_to_variable = { var = root_debt_confidence value = 5 }
+            
+			custom_effect_tooltip = increase_debt_confidence_five_tooltip
+		}
+
+		ai_will_do = {
+			base = 0
+	    }
+	}
+
+	generate_money_apreciation_1 = {
+
+        icon = generic_economy
+
+		available = {
+			has_stability > 0.25
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+
+		modifier = {
+	    }
+
+		days_remove = 35
+		days_re_enable = 35
+
+		cost = 75
+
+		complete_effect = {
+		}
+
+		ai_will_do = {
+			base = 0
+	    }
+	}
+
+	reduce_money_depreciation_1 = {
+
+        icon = generic_economy
+
+		available = {
+			has_stability > 0.25
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+
+		modifier = {
+	    }
+
+		days_remove = 35
+		days_re_enable = 35
+
+		cost = 25
+
+		complete_effect = {
+		}
+
+		ai_will_do = {
+			base = 0
+	    }
+	}
+
+	inner_debt_1 = {
+
+		icon = hol_attract_foreign_investors
+
+		available = {
+			has_stability > 0.25
+		}
+
+		visible = {
+			NOT = { has_government = communism }
+		}
+
+		fire_only_once = no
+
+		modifier = {
+		}
+
+		days_remove = 70
+		days_re_enable = 35
+
+		cost = 10
+
+		complete_effect = {
+        }
+
+        remove_effect = {
+        }
+
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+    international_debt_1 = {
+
+		icon = hol_attract_foreign_investors
+
+		available = {
+		    has_stability > 0.5
+		    NOT = { check_variable = { inflation_level > 200 } }
+	    }
+
+		visible = {
+		}
+
+		fire_only_once = no
+
+		modifier = {
+		}
+
+		days_remove = 70
+		days_re_enable = 35
+
+		cost = 20
+
+		complete_effect = { 
+        }
+
+		ai_will_do = {
+			base = 2
+			modifier = {
+				add = 1
+				has_stability > 0.6
+			}
+			modifier = {
+				add = 1
+				check_variable = { total_money_reserves < 50 }
+			}
+			modifier = {
+				factor = 10
+				check_variable = { total_money_reserves < 30 }
+			}
+			modifier = {
+				factor = 20
+				check_variable = { total_money_reserves < 20 }
+			}
+		}
+    }
+
+	
+}
+
+root_economic_reforms_decisions = {
+	monetary_stabilization_plan = {
+
+		icon = hol_attract_foreign_investors
+
+		available = {
+			has_stability < 0.0
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+
+		modifier = {
+	    }
+
+		days_remove = 140
+		days_re_enable = 0
+
+		cost = 400
+
+		complete_effect = {
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+    }
+	open_the_central_bank = {
+
+		icon = hol_attract_foreign_investors
+
+		available = {
+			has_stability < 0.0
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+
+		modifier = {
+	    }
+
+		days_remove = 60
+		days_re_enable = 0
+
+		cost = 50
+
+		complete_effect = {
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+    }
+
+	close_the_central_bank = {
+
+		icon = hol_attract_foreign_investors
+
+		available = {
+			has_stability < 0.0
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+
+		modifier = {
+	    }
+
+		days_remove = 90
+		days_re_enable = 0
+
+		cost = 200
+
+		complete_effect = {
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+    }	
+}
+
+root_economic_diplomatic_support_decisions = {
+	diplomacy_economic_support = {
+
+		icon = hol_attract_foreign_investors
+
+		available = {
+			has_stability < 0.0
+		}
+
+		target_root_trigger = {
+		}
+		targets = {
+		}
+		targets_dynamic = yes
+
+		target_trigger = {
+			FROM = {
+				has_country_flag = from_economic_support_flag
+			}
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+
+		modifier = {
+	    }
+
+		days_remove = 140
+		days_re_enable = 0
+
+		cost = 10
+
+		complete_effect = {
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+    }	
+}

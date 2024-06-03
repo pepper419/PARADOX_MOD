@@ -1,0 +1,36 @@
+
+state={
+	id=318
+	name="STATE_318"
+	resources={
+		chromium=2.000
+	}
+
+	history={
+		owner = SPR
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 2
+			air_base = 1
+			4641 = {
+				naval_base = 3
+
+			}
+
+		}
+		add_core_of = DOM
+		victory_points = {
+			4641 5 
+		}
+
+	}
+
+	provinces={
+		1594 1635 4641 15345 15346 15350 15351 15353 15354 15359 15364 15365 15369 15371 15375 15376 15379 15381 15385 15387 15390 15391
+	}
+	manpower=2380000
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

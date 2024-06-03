@@ -1,0 +1,27 @@
+
+state={
+	id=934
+	name="STATE_934"
+	resources={
+		steel=4.000
+	}
+
+	history={
+		owner = FRA
+		add_core_of = FRA
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 2
+		}
+
+	}
+
+	provinces={
+		764 3764 6975 9736 
+	}
+	manpower=1865034
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

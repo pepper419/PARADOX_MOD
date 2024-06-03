@@ -1,0 +1,153 @@
+default_parliament_decisions_categories = {
+	increase_the_democratic_popularity_decision = {
+
+		icon = generic_speech
+
+		available = {
+			has_government = democratic
+		}
+
+		visible = {
+			has_government = democratic
+		}
+
+		fire_only_once = no
+
+		modifier = {
+			#
+		}
+
+		days_remove = 0
+		days_re_enable = 0
+
+		cost = 50
+
+		complete_effect = {           
+		    #
+		}
+
+		remove_effect = {}
+
+		ai_will_do = {
+			base = 10
+			modifier = {
+				add = 10
+				has_stability > 0.2
+			}
+		}
+	}
+
+	increase_the_neutrality_popularity_decision = {
+
+		icon = generic_speech
+
+		available = {
+			has_government = democratic
+		}
+
+		visible = {
+			has_government = democratic
+		}
+
+		fire_only_once = no
+
+		modifier = {
+			#
+		}
+
+		days_remove = 0
+		days_re_enable = 0
+
+		cost = 50
+
+		complete_effect = {           
+		    #
+		}
+
+		remove_effect = {}
+
+		ai_will_do = {
+			base = 10
+			modifier = {
+				add = 10
+				has_stability > 0.2
+			}
+		}
+	}
+
+	increase_the_communism_popularity_decision = {
+
+		icon = generic_speech
+
+		available = {
+			has_government = democratic
+		}
+
+		visible = {
+			has_government = democratic
+		}
+
+		fire_only_once = no
+
+		modifier = {
+			#
+		}
+
+		days_remove = 0
+		days_re_enable = 0
+
+		cost = 50
+
+		complete_effect = {           
+		    #
+		}
+
+		remove_effect = {}
+
+		ai_will_do = {
+			base = 10
+			modifier = {
+				add = 10
+				has_stability > 0.2
+			}
+		}
+	}
+
+	increase_the_fascism_popularity_decision = {
+
+		icon = generic_speech
+
+		available = {
+			has_government = democratic
+		}
+
+		visible = {
+			has_government = democratic
+		}
+
+		fire_only_once = no
+
+		modifier = {
+			#
+		}
+
+		days_remove = 0
+		days_re_enable = 0
+
+		cost = 50
+
+		complete_effect = {           
+		    #
+		}
+
+		remove_effect = {}
+
+		ai_will_do = {
+			base = 10
+			modifier = {
+				add = 10
+				has_stability > 0.2
+			}
+		}
+	}
+}

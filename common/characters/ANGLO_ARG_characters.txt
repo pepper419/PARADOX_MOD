@@ -1,0 +1,44 @@
+characters = {
+	ARG_daniel_mansilla = {
+		name = "Daniel Mansilla"
+		portraits={
+			army = {
+				large = "gfx/leaders/ARG/portrait_ARG_daniel_mansilla.png"
+				small = GFX_idea_advisor_ARG_generic_1
+			}
+		}
+		country_leader = {
+			ideology = centrism
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+	ARG_manuel_carles = {
+		name = "Manuel Carles"
+		portraits={
+			army = {
+				large = "gfx/leaders/ARG/portrait_ARG_manuel_carles.png"
+				small = GFX_idea_advisor_ARG_generic_1
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+	ARG_arturo_frondizi = {
+		name = "Arturo Frondizi"
+		portraits={
+			army = {
+				large = "gfx/leaders/ARG/portrait_ARG_arturo_frondizi.png"
+				small = GFX_idea_advisor_ARG_generic_1
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+}	

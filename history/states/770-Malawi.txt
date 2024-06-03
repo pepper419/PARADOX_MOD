@@ -1,0 +1,29 @@
+
+state={
+	id=770
+	name="STATE_770"
+	resources={
+		precious_metals=8.000
+	}
+
+	history={
+		owner = ZIM
+		add_core_of = ZIM
+		victory_points = {
+			12986 1 
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+
+	}
+
+	provinces={
+		2255 3710 12908 12986 13209 16508 16866 
+	}
+	manpower=1603975
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

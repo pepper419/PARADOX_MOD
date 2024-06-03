@@ -1,0 +1,33 @@
+
+state={
+	id=951
+	name="STATE_951"
+
+	resources={
+		wood = 18
+		grain = 22
+		meat = 10
+	}
+
+	history={
+		owner = ARU
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = ARU
+
+		victory_points = {
+			5169 4
+		}
+
+	}
+
+	provinces={
+		5169 12954 13734 13735 13736 15061
+	}
+	manpower=345373
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

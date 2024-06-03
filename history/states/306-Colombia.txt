@@ -1,0 +1,33 @@
+
+state={
+	id=306
+	name="STATE_306"
+
+	resources={
+		precious_metals = 52
+		steel = 36
+	}
+
+	history={
+		owner = COL
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 5
+			air_base = 2
+
+		}
+		add_core_of = COL
+		victory_points = {
+			10747 10 
+		}
+
+	}
+
+	provinces={
+		2079 7936 7991 7993 10747 10790 10846 14366 14372 14373 14382 14384 14388 14389 14390 14398 14399 14403 14406 14423 14429 14433 14439 14440 14454 14457 14458 14476 
+	}
+	manpower=4953049
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+}

@@ -1,0 +1,35 @@
+
+state={
+	id=930
+	name="STATE_930"
+	resources={
+		steel=4.000
+		grain = 14
+	}
+
+	history={
+		owner = HOL
+		add_core_of = HOL
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 2
+			dockyard = 1
+
+			6598 = {
+				naval_base = 8
+			}
+
+		}
+		victory_points = { 6598 30 }
+        victory_points = { 13068 1 }
+	}
+
+	provinces={
+		6598 11419 13068 
+	}
+	manpower=2767456
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
+}

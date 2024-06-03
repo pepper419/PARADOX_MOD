@@ -1,0 +1,38 @@
+
+state={
+	id=181
+	name="STATE_181"
+	manpower = 1964700
+	
+	state_category = metropolis
+	
+	resources={
+		tungsten=150 # was: 300
+		fruit = 24
+		wool = 18
+		fish = 30
+	}
+
+	history={
+		owner = POR
+		victory_points = {
+			9787 1
+		}
+		victory_points = {
+			6996 1
+		}
+		victory_points = {
+			3798 1 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+		}
+		add_core_of = POR
+		add_core_of = SPR
+	}
+
+	provinces={
+		799 845 889 938 3798 3969 6818 6924 6996 9787 11885 
+	}
+}

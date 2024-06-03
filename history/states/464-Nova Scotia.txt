@@ -1,0 +1,32 @@
+
+state={
+	id=464
+	name="STATE_464"
+
+	history={
+		owner = USA
+		victory_points = {
+			7361 3 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			air_base = 3
+			7361 = {
+				naval_base = 4
+
+			}
+
+		}
+		add_core_of = USA
+
+	}
+
+	provinces={
+		1354 4360 4430 4623 7304 7361 7644 10244 17636 17637 17638 17639 17640 17641 17642 17643 17644 17645 17651 17652 17656 17658 17659 17661 17662 17665 17672 17676 17684 17691 17693 17739
+	}
+	manpower=490912
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

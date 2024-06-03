@@ -1,0 +1,32 @@
+state={
+	id=909
+	name="STATE_909"
+	provinces={
+		969 6661 11568 11587 
+	}
+
+	resources={
+		grain = 16
+		cotton = 12
+		coal = 24
+		steel = 32
+	}
+
+    history={
+		victory_points = {
+			11568 1
+		}
+		owner = ITA
+		add_core_of = ITA
+		buildings = {
+			infrastructure = 4
+
+		}
+	}
+
+	state_category = large_town
+
+	manpower=1337484
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

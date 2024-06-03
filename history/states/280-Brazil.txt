@@ -1,0 +1,26 @@
+
+state={
+	id=280
+	name="STATE_280"
+
+	resources={
+		aluminium=4.000
+		rubber = 76
+		wood = 52
+	}
+
+	history={
+		owner = BRA
+		buildings = {
+			infrastructure = 0
+		}
+		add_core_of = BRA
+	}
+
+	provinces={
+		2142 2147 2204 8175 11010 12939 14002 14007 14025 14030 14032 14053 14065 14086 14093 14096 14106 14109 14114 14133 14134 14146 13988 13942
+	}
+	manpower=120000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

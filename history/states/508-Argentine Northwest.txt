@@ -1,0 +1,33 @@
+
+state={
+	id=508
+	name="STATE_508"
+
+	resources={
+		meat = 8
+		grain = 14
+		steel = 42
+	}
+
+	history={
+		owner = TCM
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		add_core_of = TCM
+		victory_points = {
+			8216 10 
+		}
+
+	}
+
+	provinces={
+		8216 13772 13774 13776 13781 
+	}
+	manpower=3781311
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

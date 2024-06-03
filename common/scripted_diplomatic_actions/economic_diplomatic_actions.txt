@@ -1,0 +1,192 @@
+scripted_diplomatic_actions = {
+	# test_base_diplomatic_action = {
+	# 	icon = 16
+	# 	allowed = {
+	# 		#
+	# 	}
+
+	# 	visible = {
+	# 		#
+	# 	}
+
+	# 	selectable = {
+	# 		#
+		
+	# 	}
+
+	# 	can_be_accepted = {
+	# 		#
+	# 	}
+
+	# 	can_be_sent = {
+	# 		#
+	# 	}
+
+	# 	cost = 0
+
+	# 	requires_acceptance = no
+	# 	show_acceptance_on_action_button = yes
+
+	# 	send_description = MONEY_DIPLO_ACTION_LOC
+	# 	receive_description = MONEY_DIPLO_ACTION_RECIEVER_LOC
+	# 	accept_title = MONEY_DIPLO_ACTION_ACCEPTED_TITLE
+	# 	accept_description = MONEY_DIPLO_ACTION_ACCEPTED_DESC
+	# 	reject_title = MONEY_DIPLO_ACTION_REJECTED_TITLE
+	# 	reject_description = MONEY_DIPLO_ACTION_REJECTED_DESC
+
+	# 	on_sent_effect = {
+	# 		#
+	# 	}
+
+	# 	complete_effect = {
+	# 		#
+	# 	}
+
+	# 	ai_desire = {
+	# 		#
+	# 	}
+
+	# 	ai_acceptance = {
+	# 		#
+	# 	}
+	# }
+	offer_financing_diplomatic_action = {
+		icon = 1
+		allowed = {
+			always = yes
+		}
+
+		visible = {
+			always = yes
+		}
+
+		
+
+		
+		selectable = {
+			ROOT = {
+				custom_trigger_tooltip = {
+					tooltip = trigger_offer_financing_diplomatic_action_tooltip	
+					OR = {
+						check_variable = { money_printer_calc_2 < root.total_money_reserves }
+						check_variable = { money_printer_calc_2 = root.total_money_reserves }
+					}					
+				}
+			}
+		
+		}
+
+		cost = 0
+
+		requires_acceptance = yes
+		show_acceptance_on_action_button = yes
+
+		send_description = OFFER_FINANCING_DIPLOMATIC_ACTION_LOC		
+		receive_description = OFFER_FINANCING_DIPLOMATIC_ACTION_RECIEVER_LOC
+		
+		accept_title = OFFER_FINANCING_DIPLOMATIC_ACTION_ACCEPTED_TITLE
+		accept_description = OFFER_FINANCING_DIPLOMATIC_ACTION_ACCEPTED_DESC
+		
+		reject_title = OFFER_FINANCING_DIPLOMATIC_ACTION_REJECTED_TITLE
+		reject_description = OFFER_FINANCING_DIPLOMATIC_ACTION_REJECTED_DESC
+
+		can_be_accepted = { always = yes }
+
+
+		can_be_sent = { always = yes }
+
+		ai_desire = {
+			#
+		}
+
+		ai_acceptance = {
+			#
+		}
+
+		complete_effect = {
+			#
+		}
+
+		on_sent_effect = {
+			ROOT = {
+				country_event = root_economic_diplomacy.1
+			}
+		}
+
+		reject_effect = {
+			ROOT = {
+				country_event = root_economic_diplomacy.3
+			}
+		}
+
+		complete_effect = {
+			set_variable = { var = root_send_money_mount_1 value = root.money_printer_calc_2 }
+				
+			set_temp_variable = { var = exchange_rate_calc_1 value = root.root_apreciation_level } 
+			set_temp_variable = { var = exchange_rate_calc_2 value = root.root_devaluation_level }
+
+			root_calculate_the_buy_and_sell_of_money = yes
+
+			set_variable = { var = root_convert_money_calc_1 value = exchange_rate_calc_diplomacy_3 }
+			set_variable = { var = root_convert_money_calc_2 value = exchange_rate_calc_21 }
+			set_variable = { var = root_convert_money_calc_3 value = exchange_rate_calc_21 }
+
+			country_event = root_economic_diplomacy.2
+		}		
+	}
+
+	buy_foreign_currencies_diplomatic_action = {
+		icon = 16
+		allowed = {
+			#
+		}
+
+		visible = {
+			#
+		}
+
+		selectable = {
+			#
+		
+		}
+
+		can_be_accepted = {
+			#
+		}
+
+		can_be_sent = {
+			#
+		}
+
+		cost = 0
+
+		requires_acceptance = no
+		show_acceptance_on_action_button = yes
+
+		send_description = BUY_FOREIGN_CURRENCIES_DIPLOMATIC_ACTION_LOC		
+		receive_description = BUY_FOREIGN_CURRENCIES_DIPLOMATIC_ACTION_RECIEVER_LOC
+		
+		accept_title = BUY_FOREIGN_CURRENCIES_DIPLOMATIC_ACTION_ACCEPTED_TITLE
+		accept_description = BUY_FOREIGN_CURRENCIES_DIPLOMATIC_ACTION_ACCEPTED_DESC
+		
+		reject_title = BUY_FOREIGN_CURRENCIES_DIPLOMATIC_ACTION_REJECTED_TITLE
+		reject_description = BUY_FOREIGN_CURRENCIES_DIPLOMATIC_ACTION_REJECTED_DESC
+
+		on_sent_effect = {
+			#
+		}
+
+		complete_effect = {
+			#
+		}
+
+		ai_desire = {
+			#
+		}
+
+		ai_acceptance = {
+			#
+		}
+	}
+	
+}	

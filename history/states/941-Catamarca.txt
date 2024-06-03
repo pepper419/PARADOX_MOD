@@ -1,0 +1,33 @@
+
+state={
+	id=941
+	name="STATE_941"
+
+	resources={
+		coal = 36
+		steel = 26
+		meat = 16
+	}
+
+	history={
+		owner = CTM
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = CTM
+
+		victory_points = {
+			12978 4
+		}
+
+	}
+
+	provinces={
+		8253 11022 12978 13634 13762 13763 13767 13768 13769 13771 13775 13777 13779 
+	}
+	manpower=2381623
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

@@ -1,0 +1,31 @@
+
+state={
+	id=481
+	name="STATE_481"
+
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 2
+			dockyard = 1
+			8057 = {
+				naval_base = 3
+
+			}
+
+		}
+		add_core_of = USA
+		victory_points = {
+			7921 10 
+		}
+
+	}
+
+	provinces={
+		1945 4946 7921 8003 8057 10853 10871 10895 12804 14737 14738 14739 14740 14741 14742 14743 14744 14745 14746 14747 14748 14749 14751 14753 14754 14756 14757 14758 14759 14760 14761 14764 14765 14766 14767 14768 14771 14772 14774 14776 14778 14782 14785 14787 14788 14789 14790 14792 14795 14800 14801 14804 14808 
+	}
+	manpower=1255094
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

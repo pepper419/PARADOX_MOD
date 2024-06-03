@@ -1,0 +1,32 @@
+
+state={
+	id=938
+	name="STATE_938"
+
+	resources={
+		grain = 36
+		meat = 28
+		wood = 72
+	}
+
+	history={
+		owner = CRR
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = CRR
+		victory_points = {
+			12964 4 
+		}
+
+	}
+
+	provinces={
+		8187 8238 12964 13343 13350 13357 13361 13365 13371 13372 13378 13382 
+	}
+	manpower=2374641
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

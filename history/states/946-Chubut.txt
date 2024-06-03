@@ -1,0 +1,32 @@
+
+state={
+	id=946
+	name="STATE_946"
+
+	resources={
+		wool = 38
+		grain = 16
+	}
+
+	history={
+		owner = CBT
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = CBT
+
+		victory_points = {
+			10953 4 
+		}
+
+	}
+
+	provinces={
+		2169 8161 8176 10953 11005 12349 13662 13663 13665 13667 13668 13671 13672 13673 13676 13677 13678 13679 13680 13682 13683 13684 13685 13686 13688 13689 13690 13691 13692 13693 13694 13696 13697 13701 
+	}
+	manpower=524273
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}
